@@ -141,7 +141,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: servicio de checkout que coordina carrito, pago e inventario.
-- [ ] Ejemplo: API simple para enviar notificaciones multicanal.
+- [x] Ejemplo: API simple para enviar notificaciones multicanal.
 - [ ] Ejemplo: generador de reporte que oculta carga, cálculo y render.
 
 #### 11. Flyweight
