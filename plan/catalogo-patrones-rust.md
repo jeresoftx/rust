@@ -91,7 +91,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: creación de procesadores de archivos CSV, JSON y XML.
 - [x] Ejemplo: creación de métodos de pago según canal.
-- [ ] Ejemplo: creación de clientes HTTP por ambiente.
+- [x] Ejemplo: creación de clientes HTTP por ambiente.
 
 #### 4. Prototype
 
@@ -386,7 +386,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit: README principal.
 - [x] Commit individual por cada ejemplo de Abstract Factory.
 - [x] Commit individual por cada ejemplo de Builder.
-- [ ] Commit individual por cada ejemplo de Factory Method.
+- [x] Commit individual por cada ejemplo de Factory Method.
 - [ ] Commit individual por cada ejemplo de Prototype.
 - [ ] Commit individual por cada ejemplo de Singleton.
 - [ ] Commit individual por cada ejemplo de Adapter.

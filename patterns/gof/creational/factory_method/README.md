@@ -38,7 +38,7 @@ Factory Method crea un producto concreto de una familia. Abstract Factory crea f
 
 - [x] Creación de procesadores de archivos CSV, JSON y XML.
 - [x] Creación de métodos de pago según canal.
-- [ ] Creación de clientes HTTP por ambiente.
+- [x] Creación de clientes HTTP por ambiente.
 
 ### Procesadores de archivos
 
@@ -51,6 +51,12 @@ Este ejemplo mantiene la lógica de creación en `processor_for`, que funciona c
 El módulo `payment_methods` recibe un `PaymentChannel` y crea el método de pago concreto para tarjeta, transferencia bancaria o wallet.
 
 El cliente llama `charge` y no conoce las structs concretas `CardPayment`, `BankTransferPayment` ni `WalletPayment`.
+
+### Clientes HTTP por ambiente
+
+El módulo `http_clients` crea un cliente distinto para local, staging o producción. Cada cliente encapsula base URL, timeout y reintentos.
+
+El cliente llama `request_summary` con un `Environment` y no conoce los tipos concretos de cliente HTTP.
 
 ## Comandos
 
