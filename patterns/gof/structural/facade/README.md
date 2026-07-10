@@ -38,7 +38,7 @@ Adapter convierte una interfaz incompatible. Facade simplifica el acceso a un su
 
 - [x] Servicio de checkout que coordina carrito, pago e inventario.
 - [x] API simple para enviar notificaciones multicanal.
-- [ ] Generador de reporte que oculta carga, cálculo y render.
+- [x] Generador de reporte que oculta carga, cálculo y render.
 
 ### Checkout
 
@@ -51,6 +51,12 @@ El ejemplo muestra cómo el cliente ejecuta un checkout con un solo método y re
 El módulo `notifications` expone `NotificationFacade` para enviar mensajes por email, SMS y push.
 
 El ejemplo muestra cómo publicar alertas críticas sin que el cliente conozca cada canal ni su orden de envío.
+
+### Generador de reportes
+
+El módulo `report_generator` expone `ReportFacade` para cargar datos, calcular totales y renderizar el resultado.
+
+El ejemplo muestra cómo el cliente genera un reporte sin coordinar manualmente carga, cálculo ni formato de salida.
 
 ## Comandos
 

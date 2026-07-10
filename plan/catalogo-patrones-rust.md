@@ -142,7 +142,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: servicio de checkout que coordina carrito, pago e inventario.
 - [x] Ejemplo: API simple para enviar notificaciones multicanal.
-- [ ] Ejemplo: generador de reporte que oculta carga, cálculo y render.
+- [x] Ejemplo: generador de reporte que oculta carga, cálculo y render.
 
 #### 11. Flyweight
 
@@ -393,7 +393,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Bridge.
 - [x] Commit individual por cada ejemplo de Composite.
 - [x] Commit individual por cada ejemplo de Decorator.
-- [ ] Commit individual por cada ejemplo de Facade.
+- [x] Commit individual por cada ejemplo de Facade.
 - [ ] Commit individual por cada ejemplo de Flyweight.
 - [ ] Commit individual por cada ejemplo de Proxy.
 - [ ] Commit individual por cada ejemplo de Chain of Responsibility.
@@ -429,4 +429,4 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-Continuar con la Fase 1 de patrones GoF, siguiendo con Facade y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
+Continuar con la Fase 1 de patrones GoF, siguiendo con Flyweight y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
