@@ -17,7 +17,7 @@ En Rust aparece mucho como:
 
 - Configuracion de servidor HTTP: `src/patterns/gof/creational/builder/http_server_config.rs`
 - Consultas de busqueda con filtros opcionales: `src/patterns/gof/creational/builder/search_query.rs`
-- Payload de email transaccional.
+- Payload de email transaccional: `src/patterns/gof/creational/builder/transactional_email.rs`
 
 ## Guia tecnica
 

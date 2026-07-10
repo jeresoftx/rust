@@ -84,7 +84,7 @@ Primero construiremos los 23 patrones clasicos GoF, explicando como traducirlos 
 - [x] Documentacion del patron.
 - [x] Ejemplo: construccion de configuracion de servidor HTTP.
 - [x] Ejemplo: construccion de consultas de busqueda con filtros opcionales.
-- [ ] Ejemplo: construccion de payload de email transaccional.
+- [x] Ejemplo: construccion de payload de email transaccional.
 
 #### 3. Factory Method
 
@@ -385,7 +385,7 @@ Esta fase conectara los patrones anteriores con diseno de sistemas. El objetivo 
 - [x] Commit: base del crate Rust.
 - [x] Commit: README principal.
 - [x] Commit individual por cada ejemplo de Abstract Factory.
-- [ ] Commit individual por cada ejemplo de Builder.
+- [x] Commit individual por cada ejemplo de Builder.
 - [ ] Commit individual por cada ejemplo de Factory Method.
 - [ ] Commit individual por cada ejemplo de Prototype.
 - [ ] Commit individual por cada ejemplo de Singleton.

@@ -39,7 +39,7 @@ La version clasica suele separar builder y director. En Rust muchas veces basta 
 
 - [x] Construccion de configuracion de servidor HTTP.
 - [x] Construccion de consultas de busqueda con filtros opcionales.
-- [ ] Construccion de payload de email transaccional.
+- [x] Construccion de payload de email transaccional.
 
 ### Configuracion de servidor HTTP
 
@@ -52,6 +52,12 @@ El metodo `build()` valida que la cantidad de workers sea positiva y devuelve `R
 El modulo `search_query` construye una query con termino obligatorio y filtros opcionales: categoria, score minimo, tags y ordenamiento.
 
 El metodo `build()` valida que el termino no este vacio y `to_query_string()` muestra como quedaria una representacion simple para una API.
+
+### Payload de email transaccional
+
+El modulo `transactional_email` muestra un builder para correos de sistema con destinatario, asunto, cuerpo, copias y headers opcionales.
+
+El metodo `build()` valida los campos obligatorios y devuelve errores especificos para que el llamador pueda responder con mensajes claros.
 
 ## Comandos
 
