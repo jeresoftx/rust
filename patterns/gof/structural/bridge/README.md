@@ -38,7 +38,7 @@ Adapter traduce una interfaz incompatible. Bridge diseña dos dimensiones que ev
 
 - [x] Notificaciones desacopladas de canales email, SMS y push.
 - [x] Reportes desacoplados de renderizadores PDF, HTML y texto.
-- [ ] Almacenamiento desacoplado de proveedores local y nube.
+- [x] Almacenamiento desacoplado de proveedores local y nube.
 
 ### Notificaciones y canales
 
@@ -51,6 +51,12 @@ El ejemplo muestra cómo una misma notificación puede enviarse por canales dist
 El módulo `reports` separa la lógica de `SalesReport` de los renderizadores `PdfRenderer`, `HtmlRenderer` y `TextRenderer`.
 
 El ejemplo muestra cómo cambiar la salida del reporte sin modificar el cálculo ni el formato lógico del reporte.
+
+### Almacenamiento y proveedores
+
+El módulo `storage` separa `DocumentStore` de los proveedores `LocalStorageProvider` y `CloudStorageProvider`.
+
+El ejemplo muestra cómo guardar el mismo documento en destinos distintos sin cambiar el flujo de alto nivel.
 
 ## Comandos
 

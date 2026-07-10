@@ -121,7 +121,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: notificaciones desacopladas de canales email, SMS y push.
 - [x] Ejemplo: reportes desacoplados de renderizadores PDF, HTML y texto.
-- [ ] Ejemplo: almacenamiento desacoplado de proveedores local y nube.
+- [x] Ejemplo: almacenamiento desacoplado de proveedores local y nube.
 
 #### 8. Composite
 
@@ -390,7 +390,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Prototype.
 - [x] Commit individual por cada ejemplo de Singleton.
 - [x] Commit individual por cada ejemplo de Adapter.
-- [ ] Commit individual por cada ejemplo de Bridge.
+- [x] Commit individual por cada ejemplo de Bridge.
 - [ ] Commit individual por cada ejemplo de Composite.
 - [ ] Commit individual por cada ejemplo de Decorator.
 - [ ] Commit individual por cada ejemplo de Facade.
@@ -429,4 +429,4 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-Continuar con la Fase 1 de patrones GoF, siguiendo con Bridge y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
+Continuar con la Fase 1 de patrones GoF, siguiendo con Composite y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.

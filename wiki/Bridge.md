@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Notificaciones desacopladas de canales email, SMS y push: `src/patterns/gof/structural/bridge/notifications.rs`
 - Reportes desacoplados de renderizadores PDF, HTML y texto: `src/patterns/gof/structural/bridge/reports.rs`
-- Almacenamiento desacoplado de proveedores local y nube.
+- Almacenamiento desacoplado de proveedores local y nube: `src/patterns/gof/structural/bridge/storage.rs`
 
 ## Guía técnica
 
