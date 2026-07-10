@@ -36,9 +36,15 @@ Adapter convierte una interfaz incompatible. Facade simplifica el acceso a un su
 
 ## Ejemplos
 
-- [ ] Servicio de checkout que coordina carrito, pago e inventario.
+- [x] Servicio de checkout que coordina carrito, pago e inventario.
 - [ ] API simple para enviar notificaciones multicanal.
 - [ ] Generador de reporte que oculta carga, cálculo y render.
+
+### Checkout
+
+El módulo `checkout` expone `CheckoutFacade` para coordinar carrito, inventario y pagos.
+
+El ejemplo muestra cómo el cliente ejecuta un checkout con un solo método y recibe errores de negocio sin conocer los subsistemas internos.
 
 ## Comandos
 

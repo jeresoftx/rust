@@ -14,7 +14,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Servicio de checkout que coordina carrito, pago e inventario.
+- Servicio de checkout que coordina carrito, pago e inventario: `src/patterns/gof/structural/facade/checkout.rs`
 - API simple para enviar notificaciones multicanal.
 - Generador de reporte que oculta carga, cálculo y render.
 

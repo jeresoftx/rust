@@ -140,7 +140,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 #### 10. Facade
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: servicio de checkout que coordina carrito, pago e inventario.
+- [x] Ejemplo: servicio de checkout que coordina carrito, pago e inventario.
 - [ ] Ejemplo: API simple para enviar notificaciones multicanal.
 - [ ] Ejemplo: generador de reporte que oculta carga, cálculo y render.
 

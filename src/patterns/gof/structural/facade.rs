@@ -1,1 +1,3 @@
 //! Facade.
+
+pub mod checkout;
