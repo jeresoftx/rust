@@ -37,7 +37,7 @@ Adapter traduce una interfaz incompatible. Bridge diseña dos dimensiones que ev
 ## Ejemplos
 
 - [x] Notificaciones desacopladas de canales email, SMS y push.
-- [ ] Reportes desacoplados de renderizadores PDF, HTML y texto.
+- [x] Reportes desacoplados de renderizadores PDF, HTML y texto.
 - [ ] Almacenamiento desacoplado de proveedores local y nube.
 
 ### Notificaciones y canales
@@ -45,6 +45,12 @@ Adapter traduce una interfaz incompatible. Bridge diseña dos dimensiones que ev
 El módulo `notifications` separa la abstracción `AlertNotification` de los canales `EmailChannel`, `SmsChannel` y `PushChannel`.
 
 El ejemplo muestra cómo una misma notificación puede enviarse por canales distintos sin crear una struct por cada combinación.
+
+### Reportes y renderizadores
+
+El módulo `reports` separa la lógica de `SalesReport` de los renderizadores `PdfRenderer`, `HtmlRenderer` y `TextRenderer`.
+
+El ejemplo muestra cómo cambiar la salida del reporte sin modificar el cálculo ni el formato lógico del reporte.
 
 ## Comandos
 

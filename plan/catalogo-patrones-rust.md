@@ -120,7 +120,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: notificaciones desacopladas de canales email, SMS y push.
-- [ ] Ejemplo: reportes desacoplados de renderizadores PDF, HTML y texto.
+- [x] Ejemplo: reportes desacoplados de renderizadores PDF, HTML y texto.
 - [ ] Ejemplo: almacenamiento desacoplado de proveedores local y nube.
 
 #### 8. Composite
