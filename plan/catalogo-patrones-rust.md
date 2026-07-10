@@ -74,7 +74,7 @@ Primero construiremos los 23 patrones clasicos GoF, explicando como traducirlos 
 
 #### 1. Abstract Factory
 
-- [ ] Documentacion del patron.
+- [x] Documentacion del patron.
 - [ ] Ejemplo: familia de conectores para bases de datos SQL y NoSQL.
 - [ ] Ejemplo: componentes de UI para consola y web.
 - [ ] Ejemplo: clientes de proveedor de pagos para Stripe-like y PayPal-like.

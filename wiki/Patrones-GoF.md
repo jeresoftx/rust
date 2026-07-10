@@ -4,7 +4,7 @@ La Fase 1 cubre los 23 patrones GoF.
 
 ## Creacionales
 
-- Abstract Factory
+- [Abstract Factory](Abstract-Factory.md)
 - Builder
 - Factory Method
 - Prototype
