@@ -1,0 +1,1 @@
+//! Patrones idiomaticos de Rust.

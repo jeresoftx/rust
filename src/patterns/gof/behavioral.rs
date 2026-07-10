@@ -1,0 +1,1 @@
+//! Patrones GoF de comportamiento.

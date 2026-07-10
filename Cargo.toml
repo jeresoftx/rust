@@ -1,0 +1,12 @@
+[package]
+name = "design-patterns-rust"
+version = "0.1.0"
+edition = "2024"
+description = "Catalogo didactico de patrones de diseno, patrones Rust idiomaticos y patrones de arquitectura."
+license = "MIT"
+
+[lib]
+name = "design_patterns_rust"
+path = "src/lib.rs"
+
+[dependencies]
