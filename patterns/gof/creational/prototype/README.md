@@ -38,7 +38,7 @@ Builder construye paso a paso. Prototype parte de una instancia existente y la c
 
 - [x] Clonar plantillas de reportes con ajustes por cliente.
 - [x] Duplicar configuraciones base de despliegue.
-- [ ] Crear órdenes desde una plantilla preconfigurada.
+- [x] Crear órdenes desde una plantilla preconfigurada.
 
 ### Plantillas de reportes
 
@@ -51,6 +51,12 @@ El ejemplo demuestra que la plantilla original no se modifica al crear un report
 El módulo `deployment_configs` clona una configuración base de servicio web para crear variantes de staging y producción.
 
 Cada variante cambia ambiente, réplicas y dominio sin modificar la configuración base.
+
+### Órdenes desde plantilla
+
+El módulo `order_templates` clona una orden recurrente de insumos de oficina y ajusta cliente y cantidad.
+
+El ejemplo muestra cómo crear órdenes repetibles sin mutar la plantilla original.
 
 ## Comandos
 

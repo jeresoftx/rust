@@ -98,7 +98,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: clonar plantillas de reportes con ajustes por cliente.
 - [x] Ejemplo: duplicar configuraciones base de despliegue.
-- [ ] Ejemplo: crear órdenes desde una plantilla preconfigurada.
+- [x] Ejemplo: crear órdenes desde una plantilla preconfigurada.
 
 #### 5. Singleton
 
@@ -387,7 +387,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Abstract Factory.
 - [x] Commit individual por cada ejemplo de Builder.
 - [x] Commit individual por cada ejemplo de Factory Method.
-- [ ] Commit individual por cada ejemplo de Prototype.
+- [x] Commit individual por cada ejemplo de Prototype.
 - [ ] Commit individual por cada ejemplo de Singleton.
 - [ ] Commit individual por cada ejemplo de Adapter.
 - [ ] Commit individual por cada ejemplo de Bridge.
@@ -429,4 +429,4 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-Continuar con la Fase 1 de patrones GoF, siguiendo con Factory Method y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
+Continuar con la Fase 1 de patrones GoF, siguiendo con Singleton y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.

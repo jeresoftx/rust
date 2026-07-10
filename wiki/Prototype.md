@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Plantillas de reportes con ajustes por cliente: `src/patterns/gof/creational/prototype/report_templates.rs`
 - Configuraciones base de despliegue: `src/patterns/gof/creational/prototype/deployment_configs.rs`
-- Órdenes creadas desde una plantilla preconfigurada.
+- Órdenes creadas desde una plantilla preconfigurada: `src/patterns/gof/creational/prototype/order_templates.rs`
 
 ## Guía técnica
 
