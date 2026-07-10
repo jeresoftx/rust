@@ -97,7 +97,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: clonar plantillas de reportes con ajustes por cliente.
-- [ ] Ejemplo: duplicar configuraciones base de despliegue.
+- [x] Ejemplo: duplicar configuraciones base de despliegue.
 - [ ] Ejemplo: crear órdenes desde una plantilla preconfigurada.
 
 #### 5. Singleton
