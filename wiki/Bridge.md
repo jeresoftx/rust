@@ -14,7 +14,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Notificaciones desacopladas de canales email, SMS y push.
+- Notificaciones desacopladas de canales email, SMS y push: `src/patterns/gof/structural/bridge/notifications.rs`
 - Reportes desacoplados de renderizadores PDF, HTML y texto.
 - Almacenamiento desacoplado de proveedores local y nube.
 

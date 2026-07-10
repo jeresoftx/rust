@@ -36,9 +36,15 @@ Adapter traduce una interfaz incompatible. Bridge diseña dos dimensiones que ev
 
 ## Ejemplos
 
-- [ ] Notificaciones desacopladas de canales email, SMS y push.
+- [x] Notificaciones desacopladas de canales email, SMS y push.
 - [ ] Reportes desacoplados de renderizadores PDF, HTML y texto.
 - [ ] Almacenamiento desacoplado de proveedores local y nube.
+
+### Notificaciones y canales
+
+El módulo `notifications` separa la abstracción `AlertNotification` de los canales `EmailChannel`, `SmsChannel` y `PushChannel`.
+
+El ejemplo muestra cómo una misma notificación puede enviarse por canales distintos sin crear una struct por cada combinación.
 
 ## Comandos
 
