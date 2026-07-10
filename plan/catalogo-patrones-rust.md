@@ -132,7 +132,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 #### 9. Decorator
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: cliente HTTP con retry, timeout y logging.
 - [ ] Ejemplo: repositorio con caché encima de almacenamiento base.
 - [ ] Ejemplo: pipeline de validaciones sobre una orden.
