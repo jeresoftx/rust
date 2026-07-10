@@ -37,9 +37,15 @@ La version clasica suele separar builder y director. En Rust muchas veces basta 
 
 ## Ejemplos
 
-- [ ] Construccion de configuracion de servidor HTTP.
+- [x] Construccion de configuracion de servidor HTTP.
 - [ ] Construccion de consultas de busqueda con filtros opcionales.
 - [ ] Construccion de payload de email transaccional.
+
+### Configuracion de servidor HTTP
+
+El modulo `http_server_config` muestra un builder encadenable para una configuracion con defaults claros: host local, puerto `3000`, TLS apagado y cuatro workers.
+
+El metodo `build()` valida que la cantidad de workers sea positiva y devuelve `Result<HttpServerConfig, ConfigError>`.
 
 ## Comandos
 

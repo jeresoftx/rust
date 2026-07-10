@@ -15,7 +15,7 @@ En Rust aparece mucho como:
 
 ## Ejemplos del repositorio
 
-- Configuracion de servidor HTTP.
+- Configuracion de servidor HTTP: `src/patterns/gof/creational/builder/http_server_config.rs`
 - Consultas de busqueda con filtros opcionales.
 - Payload de email transaccional.
 
