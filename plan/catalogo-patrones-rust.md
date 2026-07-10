@@ -88,7 +88,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 #### 3. Factory Method
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: creación de procesadores de archivos CSV, JSON y XML.
 - [ ] Ejemplo: creación de métodos de pago según canal.
 - [ ] Ejemplo: creación de clientes HTTP por ambiente.
