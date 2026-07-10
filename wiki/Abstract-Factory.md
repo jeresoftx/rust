@@ -17,7 +17,7 @@ En Rust, la implementacion suele apoyarse en:
 
 - Conectores SQL y NoSQL: `src/patterns/gof/creational/abstract_factory/database_connectors.rs`
 - Componentes de UI para consola y web: `src/patterns/gof/creational/abstract_factory/ui_components.rs`
-- Proveedores de pago Stripe-like y PayPal-like.
+- Proveedores de pago Stripe-like y PayPal-like: `src/patterns/gof/creational/abstract_factory/payment_providers.rs`
 
 ## Guia tecnica
 

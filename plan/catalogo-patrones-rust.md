@@ -77,7 +77,7 @@ Primero construiremos los 23 patrones clasicos GoF, explicando como traducirlos 
 - [x] Documentacion del patron.
 - [x] Ejemplo: familia de conectores para bases de datos SQL y NoSQL.
 - [x] Ejemplo: componentes de UI para consola y web.
-- [ ] Ejemplo: clientes de proveedor de pagos para Stripe-like y PayPal-like.
+- [x] Ejemplo: clientes de proveedor de pagos para Stripe-like y PayPal-like.
 
 #### 2. Builder
 
@@ -384,7 +384,7 @@ Esta fase conectara los patrones anteriores con diseno de sistemas. El objetivo 
 - [x] Commit: reorganizacion del catalogo en fases GoF, Rust idiomatico y arquitectura.
 - [x] Commit: base del crate Rust.
 - [x] Commit: README principal.
-- [ ] Commit individual por cada ejemplo de Abstract Factory.
+- [x] Commit individual por cada ejemplo de Abstract Factory.
 - [ ] Commit individual por cada ejemplo de Builder.
 - [ ] Commit individual por cada ejemplo de Factory Method.
 - [ ] Commit individual por cada ejemplo de Prototype.

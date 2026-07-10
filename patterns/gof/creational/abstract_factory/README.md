@@ -38,7 +38,7 @@ La version clasica suele depender de jerarquias de clases. En Rust preferimos tr
 
 - [x] Familia de conectores para bases de datos SQL y NoSQL.
 - [x] Componentes de UI para consola y web.
-- [ ] Clientes de proveedor de pagos para Stripe-like y PayPal-like.
+- [x] Clientes de proveedor de pagos para Stripe-like y PayPal-like.
 
 ### Familia de conectores SQL y NoSQL
 
@@ -54,6 +54,15 @@ El modulo `database_connectors` define una factory abstracta que crea dos produc
 El modulo `ui_components` define una factory abstracta para crear botones y entradas de texto compatibles dentro de una misma familia visual.
 
 `ConsoleUiFactory` renderiza un formulario de login para terminal. `WebUiFactory` renderiza los mismos conceptos como HTML. El cliente usa `render_login_form` contra el trait `UiFactory`.
+
+### Clientes de proveedor de pagos
+
+El modulo `payment_providers` crea una familia completa de piezas para checkout:
+
+- Un autorizador de pago.
+- Un publicador de recibos.
+
+`StripeLikeFactory` y `PaypalLikeFactory` producen familias compatibles con el mismo flujo `checkout`, pero con formatos de autorizacion y recibo propios de cada proveedor.
 
 ## Comandos
 
