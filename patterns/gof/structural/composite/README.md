@@ -37,7 +37,7 @@ Composite organiza objetos en árboles. Decorator envuelve un objeto para añadi
 ## Ejemplos
 
 - [x] Árbol de permisos por módulo y acción.
-- [ ] Estructura de menú con submenús.
+- [x] Estructura de menú con submenús.
 - [ ] Carpeta con archivos y subcarpetas para calcular tamaño.
 
 ### Árbol de permisos
@@ -45,6 +45,12 @@ Composite organiza objetos en árboles. Decorator envuelve un objeto para añadi
 El módulo `permissions` modela permisos individuales y grupos anidados con una misma estructura compuesta.
 
 El ejemplo muestra cómo consultar permisos y listar rutas de autorización sin distinguir manualmente entre hojas y grupos.
+
+### Menú con submenús
+
+El módulo `menu` modela enlaces y secciones anidadas como elementos de un mismo árbol.
+
+El ejemplo muestra cómo renderizar un menú completo y buscar una URL dentro de submenús sin lógica especial por nivel.
 
 ## Comandos
 

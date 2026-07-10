@@ -127,7 +127,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: árbol de permisos por módulo y acción.
-- [ ] Ejemplo: estructura de menú con submenús.
+- [x] Ejemplo: estructura de menú con submenús.
 - [ ] Ejemplo: carpeta con archivos y subcarpetas para calcular tamaño.
 
 #### 9. Decorator
