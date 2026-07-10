@@ -104,7 +104,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: configuración global de aplicación con `OnceLock`.
-- [ ] Ejemplo: registro centralizado de métricas.
+- [x] Ejemplo: registro centralizado de métricas.
 - [ ] Ejemplo: pool compartido simulado para recursos costosos.
 
 ### Subfase 1.2: Patrones estructurales
