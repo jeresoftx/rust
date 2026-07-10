@@ -14,7 +14,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Cliente externo de pagos adaptado a una interfaz interna.
+- Cliente externo de pagos adaptado a una interfaz interna: `src/patterns/gof/structural/adapter/payment_gateway.rs`
 - Formato legacy de usuario adaptado a un modelo nuevo.
 - Logger de terceros adaptado a un trait propio.
 

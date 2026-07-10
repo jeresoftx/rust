@@ -38,9 +38,15 @@ Adapter cambia una interfaz para que encaje con otra. Facade ofrece una entrada 
 
 ## Ejemplos
 
-- [ ] Adaptar un cliente externo de pagos a una interfaz interna.
+- [x] Adaptar un cliente externo de pagos a una interfaz interna.
 - [ ] Adaptar formatos legacy de usuario a un modelo nuevo.
 - [ ] Adaptar logger de terceros a un trait propio.
+
+### Cliente externo de pagos
+
+El módulo `payment_gateway` envuelve un cliente externo con nombres ajenos al dominio y lo expone como `PaymentGateway`.
+
+El ejemplo muestra cómo el código cliente cobra usando un trait interno sin depender de los métodos del proveedor.
 
 ## Comandos
 
