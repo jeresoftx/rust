@@ -95,7 +95,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 #### 4. Prototype
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: clonar plantillas de reportes con ajustes por cliente.
 - [ ] Ejemplo: duplicar configuraciones base de despliegue.
 - [ ] Ejemplo: crear órdenes desde una plantilla preconfigurada.

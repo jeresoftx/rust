@@ -7,7 +7,7 @@ La Fase 1 cubre los 23 patrones GoF.
 - [Abstract Factory](Abstract-Factory.md)
 - [Builder](Builder.md)
 - [Factory Method](Factory-Method.md)
-- Prototype
+- [Prototype](Prototype.md)
 - Singleton
 
 ## Estructurales
