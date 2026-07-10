@@ -12,7 +12,7 @@ La Fase 1 cubre los 23 patrones GoF.
 
 ## Estructurales
 
-- Adapter
+- [Adapter](Adapter.md)
 - Bridge
 - Composite
 - Decorator

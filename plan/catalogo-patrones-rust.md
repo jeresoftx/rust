@@ -111,7 +111,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 #### 6. Adapter
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: adaptar un cliente externo de pagos a una interfaz interna.
 - [ ] Ejemplo: adaptar formatos legacy de usuario a un modelo nuevo.
 - [ ] Ejemplo: adaptar logger de terceros a un trait propio.
