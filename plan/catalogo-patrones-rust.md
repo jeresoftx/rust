@@ -83,7 +83,7 @@ Primero construiremos los 23 patrones clasicos GoF, explicando como traducirlos 
 
 - [x] Documentacion del patron.
 - [x] Ejemplo: construccion de configuracion de servidor HTTP.
-- [ ] Ejemplo: construccion de consultas de busqueda con filtros opcionales.
+- [x] Ejemplo: construccion de consultas de busqueda con filtros opcionales.
 - [ ] Ejemplo: construccion de payload de email transaccional.
 
 #### 3. Factory Method

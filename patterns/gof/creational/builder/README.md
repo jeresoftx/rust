@@ -38,7 +38,7 @@ La version clasica suele separar builder y director. En Rust muchas veces basta 
 ## Ejemplos
 
 - [x] Construccion de configuracion de servidor HTTP.
-- [ ] Construccion de consultas de busqueda con filtros opcionales.
+- [x] Construccion de consultas de busqueda con filtros opcionales.
 - [ ] Construccion de payload de email transaccional.
 
 ### Configuracion de servidor HTTP
@@ -46,6 +46,12 @@ La version clasica suele separar builder y director. En Rust muchas veces basta 
 El modulo `http_server_config` muestra un builder encadenable para una configuracion con defaults claros: host local, puerto `3000`, TLS apagado y cuatro workers.
 
 El metodo `build()` valida que la cantidad de workers sea positiva y devuelve `Result<HttpServerConfig, ConfigError>`.
+
+### Consultas de busqueda
+
+El modulo `search_query` construye una query con termino obligatorio y filtros opcionales: categoria, score minimo, tags y ordenamiento.
+
+El metodo `build()` valida que el termino no este vacio y `to_query_string()` muestra como quedaria una representacion simple para una API.
 
 ## Comandos
 
