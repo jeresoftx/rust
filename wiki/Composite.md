@@ -14,7 +14,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Árbol de permisos por módulo y acción.
+- Árbol de permisos por módulo y acción: `src/patterns/gof/structural/composite/permissions.rs`
 - Estructura de menú con submenús.
 - Carpeta con archivos y subcarpetas para calcular tamaño.
 

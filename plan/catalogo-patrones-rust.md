@@ -126,7 +126,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 #### 8. Composite
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: árbol de permisos por módulo y acción.
+- [x] Ejemplo: árbol de permisos por módulo y acción.
 - [ ] Ejemplo: estructura de menú con submenús.
 - [ ] Ejemplo: carpeta con archivos y subcarpetas para calcular tamaño.
 

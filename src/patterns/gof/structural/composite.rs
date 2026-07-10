@@ -1,1 +1,3 @@
 //! Composite.
+
+pub mod permissions;
