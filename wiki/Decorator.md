@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Cliente HTTP con retry, timeout y logging: `src/patterns/gof/structural/decorator/http_client.rs`
 - Repositorio con caché encima de almacenamiento base: `src/patterns/gof/structural/decorator/cached_repository.rs`
-- Pipeline de validaciones sobre una orden.
+- Pipeline de validaciones sobre una orden: `src/patterns/gof/structural/decorator/order_validation.rs`
 
 ## Guía técnica
 

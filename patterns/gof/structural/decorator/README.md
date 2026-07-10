@@ -38,7 +38,7 @@ Composite organiza objetos en árboles. Decorator envuelve un objeto para añadi
 
 - [x] Cliente HTTP con retry, timeout y logging.
 - [x] Repositorio con caché encima de almacenamiento base.
-- [ ] Pipeline de validaciones sobre una orden.
+- [x] Pipeline de validaciones sobre una orden.
 
 ### Cliente HTTP con capas
 
@@ -51,6 +51,12 @@ El ejemplo muestra cómo componer capas alrededor de la misma interfaz `HttpClie
 El módulo `cached_repository` envuelve un repositorio en memoria con una capa de caché.
 
 El ejemplo muestra cómo reducir lecturas al almacenamiento base manteniendo la misma interfaz `ProductRepository`.
+
+### Pipeline de validaciones
+
+El módulo `order_validation` envuelve una validación base con reglas de orden no vacía, monto mínimo e inventario.
+
+El ejemplo muestra cómo componer reglas manteniendo una misma interfaz `ValidationStep`.
 
 ## Comandos
 

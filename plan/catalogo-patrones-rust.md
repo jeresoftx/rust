@@ -135,7 +135,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: cliente HTTP con retry, timeout y logging.
 - [x] Ejemplo: repositorio con caché encima de almacenamiento base.
-- [ ] Ejemplo: pipeline de validaciones sobre una orden.
+- [x] Ejemplo: pipeline de validaciones sobre una orden.
 
 #### 10. Facade
 
@@ -392,7 +392,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Adapter.
 - [x] Commit individual por cada ejemplo de Bridge.
 - [x] Commit individual por cada ejemplo de Composite.
-- [ ] Commit individual por cada ejemplo de Decorator.
+- [x] Commit individual por cada ejemplo de Decorator.
 - [ ] Commit individual por cada ejemplo de Facade.
 - [ ] Commit individual por cada ejemplo de Flyweight.
 - [ ] Commit individual por cada ejemplo de Proxy.
@@ -429,4 +429,4 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-Continuar con la Fase 1 de patrones GoF, siguiendo con Decorator y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
+Continuar con la Fase 1 de patrones GoF, siguiendo con Facade y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
