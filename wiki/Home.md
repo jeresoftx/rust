@@ -1,6 +1,6 @@
 # Wiki: Design Patterns Rust
 
-Esta wiki local acompaña al repositorio como guía de estudio. Su objetivo es explicar el porqué de cada patrón, cuándo conviene usarlo en Rust y cómo se conecta con ejemplos reales del código.
+Esta wiki acompaña al repositorio como guía de estudio. Su objetivo es explicar el porqué de cada patrón, cuándo conviene usarlo en Rust y cómo se conecta con ejemplos reales del código.
 
 ## Páginas iniciales
 
@@ -17,4 +17,4 @@ Esta wiki local acompaña al repositorio como guía de estudio. Su objetivo es e
 - La wiki contiene la explicación didáctica, comparaciones, rutas de lectura y enlaces al código.
 - El archivo `plan/catalogo-patrones-rust.md` registra el avance y los commits esperados.
 
-Cuando decidamos publicar la GitHub Wiki real, estas páginas servirán como fuente inicial.
+Estas páginas se irán ampliando conforme agreguemos nuevos patrones, ejemplos y commits individuales.
