@@ -14,7 +14,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Configuración global de aplicación con `OnceLock`.
+- Configuración global de aplicación con `OnceLock`: `src/patterns/gof/creational/singleton/app_config.rs`
 - Registro centralizado de métricas.
 - Pool compartido simulado para recursos costosos.
 

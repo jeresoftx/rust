@@ -1,1 +1,3 @@
 //! Singleton.
+
+pub mod app_config;

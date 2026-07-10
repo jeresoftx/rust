@@ -38,9 +38,15 @@ Singleton no significa "usar variables globales sin control". En Rust, el patró
 
 ## Ejemplos
 
-- [ ] Configuración global de aplicación con `OnceLock`.
+- [x] Configuración global de aplicación con `OnceLock`.
 - [ ] Registro centralizado de métricas.
 - [ ] Pool compartido simulado para recursos costosos.
+
+### Configuración global de aplicación
+
+El módulo `app_config` usa `OnceLock` para inicializar una sola configuración de aplicación.
+
+El ejemplo muestra cómo consultar la misma instancia compartida sin reconstruir la configuración en cada módulo.
 
 ## Comandos
 
