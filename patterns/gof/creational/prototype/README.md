@@ -36,9 +36,15 @@ Builder construye paso a paso. Prototype parte de una instancia existente y la c
 
 ## Ejemplos
 
-- [ ] Clonar plantillas de reportes con ajustes por cliente.
+- [x] Clonar plantillas de reportes con ajustes por cliente.
 - [ ] Duplicar configuraciones base de despliegue.
 - [ ] Crear órdenes desde una plantilla preconfigurada.
+
+### Plantillas de reportes
+
+El módulo `report_templates` usa `Clone` para copiar una plantilla financiera estándar y personalizar cliente y período.
+
+El ejemplo demuestra que la plantilla original no se modifica al crear un reporte derivado.
 
 ## Comandos
 

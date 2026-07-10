@@ -14,7 +14,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Plantillas de reportes con ajustes por cliente.
+- Plantillas de reportes con ajustes por cliente: `src/patterns/gof/creational/prototype/report_templates.rs`
 - Configuraciones base de despliegue.
 - Órdenes creadas desde una plantilla preconfigurada.
 
