@@ -36,9 +36,15 @@ Factory Method crea un producto concreto de una familia. Abstract Factory crea f
 
 ## Ejemplos
 
-- [ ] Creación de procesadores de archivos CSV, JSON y XML.
+- [x] Creación de procesadores de archivos CSV, JSON y XML.
 - [ ] Creación de métodos de pago según canal.
 - [ ] Creación de clientes HTTP por ambiente.
+
+### Procesadores de archivos
+
+El módulo `file_processors` decide qué procesador crear a partir de la extensión del archivo. El cliente llama `process_file` y recibe el resultado sin conocer `CsvProcessor`, `JsonProcessor` ni `XmlProcessor`.
+
+Este ejemplo mantiene la lógica de creación en `processor_for`, que funciona como Factory Method.
 
 ## Comandos
 
