@@ -134,7 +134,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: cliente HTTP con retry, timeout y logging.
-- [ ] Ejemplo: repositorio con caché encima de almacenamiento base.
+- [x] Ejemplo: repositorio con caché encima de almacenamiento base.
 - [ ] Ejemplo: pipeline de validaciones sobre una orden.
 
 #### 10. Facade

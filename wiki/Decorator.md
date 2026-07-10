@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Cliente HTTP con retry, timeout y logging: `src/patterns/gof/structural/decorator/http_client.rs`
-- Repositorio con caché encima de almacenamiento base.
+- Repositorio con caché encima de almacenamiento base: `src/patterns/gof/structural/decorator/cached_repository.rs`
 - Pipeline de validaciones sobre una orden.
 
 ## Guía técnica

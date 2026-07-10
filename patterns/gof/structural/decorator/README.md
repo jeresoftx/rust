@@ -37,7 +37,7 @@ Composite organiza objetos en árboles. Decorator envuelve un objeto para añadi
 ## Ejemplos
 
 - [x] Cliente HTTP con retry, timeout y logging.
-- [ ] Repositorio con caché encima de almacenamiento base.
+- [x] Repositorio con caché encima de almacenamiento base.
 - [ ] Pipeline de validaciones sobre una orden.
 
 ### Cliente HTTP con capas
@@ -45,6 +45,12 @@ Composite organiza objetos en árboles. Decorator envuelve un objeto para añadi
 El módulo `http_client` define un cliente base y decoradores para timeout, retry y logging.
 
 El ejemplo muestra cómo componer capas alrededor de la misma interfaz `HttpClient` sin cambiar el cliente base.
+
+### Repositorio con caché
+
+El módulo `cached_repository` envuelve un repositorio en memoria con una capa de caché.
+
+El ejemplo muestra cómo reducir lecturas al almacenamiento base manteniendo la misma interfaz `ProductRepository`.
 
 ## Comandos
 
