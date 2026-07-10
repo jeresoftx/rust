@@ -81,7 +81,7 @@ Primero construiremos los 23 patrones clasicos GoF, explicando como traducirlos 
 
 #### 2. Builder
 
-- [ ] Documentacion del patron.
+- [x] Documentacion del patron.
 - [ ] Ejemplo: construccion de configuracion de servidor HTTP.
 - [ ] Ejemplo: construccion de consultas de busqueda con filtros opcionales.
 - [ ] Ejemplo: construccion de payload de email transaccional.
