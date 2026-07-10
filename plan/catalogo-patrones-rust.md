@@ -102,7 +102,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 #### 5. Singleton
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: configuración global de aplicación con `OnceLock`.
 - [ ] Ejemplo: registro centralizado de métricas.
 - [ ] Ejemplo: pool compartido simulado para recursos costosos.
