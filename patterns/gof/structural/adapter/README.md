@@ -40,7 +40,7 @@ Adapter cambia una interfaz para que encaje con otra. Facade ofrece una entrada 
 
 - [x] Adaptar un cliente externo de pagos a una interfaz interna.
 - [x] Adaptar formatos legacy de usuario a un modelo nuevo.
-- [ ] Adaptar logger de terceros a un trait propio.
+- [x] Adaptar logger de terceros a un trait propio.
 
 ### Cliente externo de pagos
 
@@ -53,6 +53,12 @@ El ejemplo muestra cómo el código cliente cobra usando un trait interno sin de
 El módulo `legacy_user` convierte registros antiguos hacia un `UserProfile` moderno.
 
 El ejemplo muestra una adaptación fallible: si el correo legacy no cumple la regla mínima, la conversión devuelve un error explícito.
+
+### Logger de terceros
+
+El módulo `logger` adapta una librería simulada de logging al trait interno `AppLogger`.
+
+El ejemplo muestra cómo el código de aplicación emite eventos sin conocer los códigos ni el método original del logger externo.
 
 ## Comandos
 

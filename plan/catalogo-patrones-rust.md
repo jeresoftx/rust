@@ -114,7 +114,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: adaptar un cliente externo de pagos a una interfaz interna.
 - [x] Ejemplo: adaptar formatos legacy de usuario a un modelo nuevo.
-- [ ] Ejemplo: adaptar logger de terceros a un trait propio.
+- [x] Ejemplo: adaptar logger de terceros a un trait propio.
 
 #### 7. Bridge
 
@@ -389,7 +389,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Factory Method.
 - [x] Commit individual por cada ejemplo de Prototype.
 - [x] Commit individual por cada ejemplo de Singleton.
-- [ ] Commit individual por cada ejemplo de Adapter.
+- [x] Commit individual por cada ejemplo de Adapter.
 - [ ] Commit individual por cada ejemplo de Bridge.
 - [ ] Commit individual por cada ejemplo de Composite.
 - [ ] Commit individual por cada ejemplo de Decorator.
@@ -429,4 +429,4 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-Continuar con la Fase 1 de patrones GoF, siguiendo con Adapter y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
+Continuar con la Fase 1 de patrones GoF, siguiendo con Bridge y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.

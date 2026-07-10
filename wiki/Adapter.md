@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Cliente externo de pagos adaptado a una interfaz interna: `src/patterns/gof/structural/adapter/payment_gateway.rs`
 - Formato legacy de usuario adaptado a un modelo nuevo: `src/patterns/gof/structural/adapter/legacy_user.rs`
-- Logger de terceros adaptado a un trait propio.
+- Logger de terceros adaptado a un trait propio: `src/patterns/gof/structural/adapter/logger.rs`
 
 ## Guía técnica
 
