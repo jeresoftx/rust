@@ -15,7 +15,7 @@ En Rust, la implementacion suele apoyarse en:
 
 ## Ejemplos del repositorio
 
-- Conectores SQL y NoSQL.
+- Conectores SQL y NoSQL: `src/patterns/gof/creational/abstract_factory/database_connectors.rs`
 - Componentes de UI para consola y web.
 - Proveedores de pago Stripe-like y PayPal-like.
 

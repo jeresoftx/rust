@@ -34,11 +34,20 @@ En Rust se suele modelar con traits para los productos y un trait o struct facto
 
 La version clasica suele depender de jerarquias de clases. En Rust preferimos traits, generics, enums y composicion. El objetivo no es imitar clases abstractas, sino separar la decision de familia del codigo que consume los productos.
 
-## Ejemplos planeados
+## Ejemplos
 
-- [ ] Familia de conectores para bases de datos SQL y NoSQL.
+- [x] Familia de conectores para bases de datos SQL y NoSQL.
 - [ ] Componentes de UI para consola y web.
 - [ ] Clientes de proveedor de pagos para Stripe-like y PayPal-like.
+
+### Familia de conectores SQL y NoSQL
+
+El modulo `database_connectors` define una factory abstracta que crea dos productos compatibles:
+
+- Una conexion de base de datos.
+- Un constructor de consultas.
+
+`SqlDatabaseFactory` entrega una familia Postgres + SQL. `NoSqlDatabaseFactory` entrega una familia MongoDB + consulta documental. El codigo cliente usa `describe_database_stack` contra el trait `DatabaseFactory`, sin conocer los tipos concretos.
 
 ## Comandos
 
