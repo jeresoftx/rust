@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Configuración global de aplicación con `OnceLock`: `src/patterns/gof/creational/singleton/app_config.rs`
 - Registro centralizado de métricas: `src/patterns/gof/creational/singleton/metrics_registry.rs`
-- Pool compartido simulado para recursos costosos.
+- Pool compartido simulado para recursos costosos: `src/patterns/gof/creational/singleton/resource_pool.rs`
 
 ## Guía técnica
 

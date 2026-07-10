@@ -40,7 +40,7 @@ Singleton no significa "usar variables globales sin control". En Rust, el patró
 
 - [x] Configuración global de aplicación con `OnceLock`.
 - [x] Registro centralizado de métricas.
-- [ ] Pool compartido simulado para recursos costosos.
+- [x] Pool compartido simulado para recursos costosos.
 
 ### Configuración global de aplicación
 
@@ -53,6 +53,12 @@ El ejemplo muestra cómo consultar la misma instancia compartida sin reconstruir
 El módulo `metrics_registry` usa un `OnceLock` con `Mutex` para compartir contadores de métricas.
 
 El ejemplo muestra cómo incrementar y leer métricas desde un único registro global protegido.
+
+### Pool compartido de recursos
+
+El módulo `resource_pool` usa un singleton para compartir un conjunto pequeño de conexiones simuladas.
+
+El ejemplo muestra cómo adquirir, liberar y reutilizar recursos sin crear un pool nuevo en cada llamada.
 
 ## Comandos
 

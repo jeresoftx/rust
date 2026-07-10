@@ -105,7 +105,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: configuración global de aplicación con `OnceLock`.
 - [x] Ejemplo: registro centralizado de métricas.
-- [ ] Ejemplo: pool compartido simulado para recursos costosos.
+- [x] Ejemplo: pool compartido simulado para recursos costosos.
 
 ### Subfase 1.2: Patrones estructurales
 
@@ -388,7 +388,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Builder.
 - [x] Commit individual por cada ejemplo de Factory Method.
 - [x] Commit individual por cada ejemplo de Prototype.
-- [ ] Commit individual por cada ejemplo de Singleton.
+- [x] Commit individual por cada ejemplo de Singleton.
 - [ ] Commit individual por cada ejemplo de Adapter.
 - [ ] Commit individual por cada ejemplo de Bridge.
 - [ ] Commit individual por cada ejemplo de Composite.
@@ -429,4 +429,4 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-Continuar con la Fase 1 de patrones GoF, siguiendo con Singleton y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
+Continuar con la Fase 1 de patrones GoF, siguiendo con Adapter y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
