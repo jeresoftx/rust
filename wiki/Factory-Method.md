@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Procesadores de archivos CSV, JSON y XML: `src/patterns/gof/creational/factory_method/file_processors.rs`
-- Métodos de pago según canal.
+- Métodos de pago según canal: `src/patterns/gof/creational/factory_method/payment_methods.rs`
 - Clientes HTTP por ambiente.
 
 ## Guía técnica

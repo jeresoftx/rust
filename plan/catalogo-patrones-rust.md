@@ -90,7 +90,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: creación de procesadores de archivos CSV, JSON y XML.
-- [ ] Ejemplo: creación de métodos de pago según canal.
+- [x] Ejemplo: creación de métodos de pago según canal.
 - [ ] Ejemplo: creación de clientes HTTP por ambiente.
 
 #### 4. Prototype
