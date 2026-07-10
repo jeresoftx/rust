@@ -59,9 +59,10 @@ La estructura exacta puede ajustarse cuando creemos el crate, pero el objetivo s
 
 - [x] Crear carpeta `plan/` y documento de progreso.
 - [x] Crear crate Rust base con `Cargo.toml`.
-- [ ] Crear README principal del repositorio.
+- [x] Crear README principal del repositorio.
+- [x] Crear wiki local versionada en `wiki/`.
 - [x] Crear modulos base por familia: GoF, Rust idiomatico y arquitectura.
-- [ ] Definir convenciones de nombres, pruebas y comandos.
+- [x] Definir convenciones de nombres, pruebas y comandos.
 - [x] Verificar `cargo fmt`, `cargo check` y `cargo test`.
 - [x] Commit de la base del proyecto.
 
@@ -382,7 +383,7 @@ Esta fase conectara los patrones anteriores con diseno de sistemas. El objetivo 
 - [x] Commit: plan inicial del catalogo.
 - [x] Commit: reorganizacion del catalogo en fases GoF, Rust idiomatico y arquitectura.
 - [x] Commit: base del crate Rust.
-- [ ] Commit: README principal.
+- [x] Commit: README principal.
 - [ ] Commit individual por cada ejemplo de Abstract Factory.
 - [ ] Commit individual por cada ejemplo de Builder.
 - [ ] Commit individual por cada ejemplo de Factory Method.
