@@ -1,18 +1,18 @@
 # Design Patterns Rust
 
-Catalogo didactico de patrones de diseno implementados en Rust. El proyecto avanza en tres niveles:
+Catálogo didáctico de patrones de diseño implementados en Rust. El proyecto avanza en tres niveles:
 
-1. Patrones GoF traducidos a Rust de forma idiomatica.
-2. Patrones propios del dia a dia en Rust.
+1. Patrones GoF traducidos a Rust de forma idiomática.
+2. Patrones propios del día a día en Rust.
 3. Patrones de arquitectura para sistemas reales.
 
-Cada ejemplo busca resolver un caso cotidiano de sistemas: configuracion, pagos, notificaciones, cache, logs, APIs, colas, reportes, permisos o procesamiento de datos.
+Cada ejemplo busca resolver un caso cotidiano de sistemas: configuración, pagos, notificaciones, caché, logs, APIs, colas, reportes, permisos o procesamiento de datos.
 
-## Ruta rapida
+## Ruta rápida
 
 - Plan vivo del proyecto: [plan/catalogo-patrones-rust.md](plan/catalogo-patrones-rust.md)
 - Wiki local: [wiki/Home.md](wiki/Home.md)
-- Como ejecutar los ejemplos: [wiki/Como-ejecutar-los-ejemplos.md](wiki/Como-ejecutar-los-ejemplos.md)
+- Cómo ejecutar los ejemplos: [wiki/Como-ejecutar-los-ejemplos.md](wiki/Como-ejecutar-los-ejemplos.md)
 - Ruta de aprendizaje: [wiki/Ruta-de-aprendizaje.md](wiki/Ruta-de-aprendizaje.md)
 
 ## Estructura
@@ -27,7 +27,7 @@ Cada ejemplo busca resolver un caso cotidiano de sistemas: configuracion, pagos,
 └── wiki/
 ```
 
-La documentacion didactica vive en `wiki/`. La documentacion tecnica cercana al codigo vivira junto a cada patron conforme se agreguen ejemplos.
+La documentación didáctica vive en `wiki/`. La documentación técnica cercana al código vivirá junto a cada patrón conforme se agreguen ejemplos.
 
 ## Comandos
 
@@ -39,10 +39,10 @@ cargo test
 
 ## Convenciones
 
-- Cada patron tiene documentacion propia.
+- Cada patrón tiene documentación propia.
 - Cada ejemplo tiene una prueba o assert ejecutable.
-- Cada ejemplo practico se agrega en un commit individual.
-- El README funciona como portada; la wiki funciona como guia de estudio.
+- Cada ejemplo práctico se agrega en un commit individual.
+- El README funciona como portada; la wiki funciona como guía de estudio.
 - El plan marca el avance real del proyecto.
 
 ## Fases
@@ -53,10 +53,10 @@ cargo test
 - Estructurales: Adapter, Bridge, Composite, Decorator, Facade, Flyweight, Proxy.
 - Comportamiento: Chain of Responsibility, Command, Interpreter, Iterator, Mediator, Memento, Observer, State, Strategy, Template Method, Visitor.
 
-### Fase 2: Patrones Rust idiomaticos
+### Fase 2: Patrones Rust idiomáticos
 
 Newtype, Typestate, RAII, Extension Trait, Iterator Adapters, manejo de errores con `Result`, interior mutability, message passing y workers estilo actor.
 
 ### Fase 3: Patrones de arquitectura
 
-Layered Architecture, Hexagonal Architecture, Clean Architecture, DDD tactico, CQRS, Event Sourcing, Repository and Unit of Work, Service Layer, Pipeline Architecture y Plugin Architecture.
+Layered Architecture, Hexagonal Architecture, Clean Architecture, DDD táctico, CQRS, Event Sourcing, Repository and Unit of Work, Service Layer, Pipeline Architecture y Plugin Architecture.

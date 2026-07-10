@@ -1,11 +1,11 @@
 # Patrones de arquitectura
 
-La Fase 3 conecta los ejemplos pequenos con diseno de sistemas.
+La Fase 3 conecta los ejemplos pequeños con diseño de sistemas.
 
 - Layered Architecture
 - Hexagonal Architecture
 - Clean Architecture
-- Domain-Driven Design Tactico
+- Domain-Driven Design Táctico
 - CQRS
 - Event Sourcing
 - Repository and Unit of Work
@@ -13,4 +13,4 @@ La Fase 3 conecta los ejemplos pequenos con diseno de sistemas.
 - Pipeline Architecture
 - Plugin Architecture
 
-Cada patron de arquitectura debe mostrar una estructura de aplicacion entendible, con dependencias claras y pruebas enfocadas.
+Cada patrón de arquitectura debe mostrar una estructura de aplicación entendible, con dependencias claras y pruebas enfocadas.

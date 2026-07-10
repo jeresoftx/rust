@@ -1,4 +1,4 @@
-# Patrones Rust idiomaticos
+# Patrones Rust idiomáticos
 
 La Fase 2 explica patrones que aparecen naturalmente en Rust real.
 

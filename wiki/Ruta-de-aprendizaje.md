@@ -1,6 +1,6 @@
 # Ruta de aprendizaje
 
-La ruta recomendada va de patrones pequenos a estructuras de sistema completas.
+La ruta recomendada va de patrones pequeños a estructuras de sistema completas.
 
 ## 1. Base de Rust para patrones
 
@@ -10,17 +10,17 @@ Antes de estudiar patrones conviene tener claros estos conceptos:
 - Generics.
 - Ownership y borrowing.
 - `Result` y errores de dominio.
-- Modulos y visibilidad.
+- Módulos y visibilidad.
 - Tests con `cargo test`.
 
 ## 2. Patrones GoF
 
-Los patrones GoF ayudan a nombrar soluciones recurrentes. En Rust no siempre se implementan igual que en lenguajes OOP clasicos; muchas veces se reemplaza herencia por traits, enums, generics o composicion.
+Los patrones GoF ayudan a nombrar soluciones recurrentes. En Rust no siempre se implementan igual que en lenguajes OOP clásicos; muchas veces se reemplaza herencia por traits, enums, generics o composición.
 
-## 3. Patrones Rust idiomaticos
+## 3. Patrones Rust idiomáticos
 
-Despues de GoF, estudiamos soluciones que aparecen mucho en Rust real: Newtype, Typestate, RAII, iteradores, message passing e interior mutability.
+Después de GoF, estudiamos soluciones que aparecen mucho en Rust real: Newtype, Typestate, RAII, iteradores, message passing e interior mutability.
 
 ## 4. Patrones de arquitectura
 
-Finalmente conectamos los patrones con diseno de aplicaciones completas: capas, puertos y adaptadores, CQRS, Event Sourcing y pipelines.
+Finalmente conectamos los patrones con diseño de aplicaciones completas: capas, puertos y adaptadores, CQRS, Event Sourcing y pipelines.

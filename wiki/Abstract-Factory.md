@@ -1,17 +1,17 @@
 # Abstract Factory
 
-Abstract Factory permite construir familias de objetos compatibles detras de una interfaz comun.
+Abstract Factory permite construir familias de objetos compatibles detrás de una interfaz común.
 
 ## Idea central
 
 El cliente pide una familia de productos. La factory decide que implementaciones concretas entregar.
 
-En Rust, la implementacion suele apoyarse en:
+En Rust, la implementación suele apoyarse en:
 
 - Traits para definir contratos.
 - Structs concretos para cada familia.
-- `Box<dyn Trait>` cuando se necesita polimorfismo dinamico.
-- Generics cuando la familia puede resolverse en tiempo de compilacion.
+- `Box<dyn Trait>` cuando se necesita polimorfismo dinámico.
+- Generics cuando la familia puede resolverse en tiempo de compilación.
 
 ## Ejemplos del repositorio
 
@@ -19,8 +19,8 @@ En Rust, la implementacion suele apoyarse en:
 - Componentes de UI para consola y web: `src/patterns/gof/creational/abstract_factory/ui_components.rs`
 - Proveedores de pago Stripe-like y PayPal-like: `src/patterns/gof/creational/abstract_factory/payment_providers.rs`
 
-## Guia tecnica
+## Guía técnica
 
-La guia cercana al codigo vive en:
+La guía cercana al código vive en:
 
 `patterns/gof/creational/abstract_factory/README.md`

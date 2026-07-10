@@ -1,4 +1,4 @@
-# Como ejecutar los ejemplos
+# Cómo ejecutar los ejemplos
 
 Todos los ejemplos deben compilar con Cargo y tener pruebas o asserts ejecutables.
 
@@ -10,21 +10,21 @@ cargo check
 cargo test
 ```
 
-## Ejecutar una prueba especifica
+## Ejecutar una prueba específica
 
 ```bash
 cargo test exposes_the_three_learning_families
 ```
 
-## Convencion para futuros ejemplos
+## Convención para futuros ejemplos
 
-Cada patron agregara una documentacion local con:
+Cada patrón agregará una documentación local con:
 
-- Intencion del patron.
+- Intención del patrón.
 - Problema cotidiano que resuelve.
-- Cuando usarlo en Rust.
-- Cuando evitarlo.
+- Cuándo usarlo en Rust.
+- Cuándo evitarlo.
 - Ejemplos incluidos.
 - Comando para ejecutar sus pruebas.
 
-Cada ejemplo practico debe entrar en un commit individual.
+Cada ejemplo práctico debe entrar en un commit individual.
