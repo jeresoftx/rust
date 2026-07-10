@@ -76,7 +76,7 @@ Primero construiremos los 23 patrones clasicos GoF, explicando como traducirlos 
 
 - [x] Documentacion del patron.
 - [x] Ejemplo: familia de conectores para bases de datos SQL y NoSQL.
-- [ ] Ejemplo: componentes de UI para consola y web.
+- [x] Ejemplo: componentes de UI para consola y web.
 - [ ] Ejemplo: clientes de proveedor de pagos para Stripe-like y PayPal-like.
 
 #### 2. Builder
