@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Árbol de permisos por módulo y acción: `src/patterns/gof/structural/composite/permissions.rs`
 - Estructura de menú con submenús: `src/patterns/gof/structural/composite/menu.rs`
-- Carpeta con archivos y subcarpetas para calcular tamaño.
+- Carpeta con archivos y subcarpetas para calcular tamaño: `src/patterns/gof/structural/composite/file_system.rs`
 
 ## Guía técnica
 

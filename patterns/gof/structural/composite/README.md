@@ -38,7 +38,7 @@ Composite organiza objetos en árboles. Decorator envuelve un objeto para añadi
 
 - [x] Árbol de permisos por módulo y acción.
 - [x] Estructura de menú con submenús.
-- [ ] Carpeta con archivos y subcarpetas para calcular tamaño.
+- [x] Carpeta con archivos y subcarpetas para calcular tamaño.
 
 ### Árbol de permisos
 
@@ -51,6 +51,12 @@ El ejemplo muestra cómo consultar permisos y listar rutas de autorización sin 
 El módulo `menu` modela enlaces y secciones anidadas como elementos de un mismo árbol.
 
 El ejemplo muestra cómo renderizar un menú completo y buscar una URL dentro de submenús sin lógica especial por nivel.
+
+### Carpetas y archivos
+
+El módulo `file_system` modela archivos y carpetas como entradas de un árbol común.
+
+El ejemplo muestra cómo calcular tamaño total y listar rutas completas recorriendo la estructura compuesta.
 
 ## Comandos
 

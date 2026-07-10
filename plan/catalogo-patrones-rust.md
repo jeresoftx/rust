@@ -128,7 +128,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: árbol de permisos por módulo y acción.
 - [x] Ejemplo: estructura de menú con submenús.
-- [ ] Ejemplo: carpeta con archivos y subcarpetas para calcular tamaño.
+- [x] Ejemplo: carpeta con archivos y subcarpetas para calcular tamaño.
 
 #### 9. Decorator
 
@@ -391,7 +391,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Singleton.
 - [x] Commit individual por cada ejemplo de Adapter.
 - [x] Commit individual por cada ejemplo de Bridge.
-- [ ] Commit individual por cada ejemplo de Composite.
+- [x] Commit individual por cada ejemplo de Composite.
 - [ ] Commit individual por cada ejemplo de Decorator.
 - [ ] Commit individual por cada ejemplo de Facade.
 - [ ] Commit individual por cada ejemplo de Flyweight.
@@ -429,4 +429,4 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-Continuar con la Fase 1 de patrones GoF, siguiendo con Composite y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
+Continuar con la Fase 1 de patrones GoF, siguiendo con Decorator y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
