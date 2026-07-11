@@ -14,7 +14,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Coordinador de eventos entre formulario, validación y guardado: pendiente.
+- Coordinador de eventos entre formulario, validación y guardado: `src/patterns/gof/behavioral/mediator/form_workflow.rs`
 - Sala de chat que media usuarios: pendiente.
 - Orquestador de módulos de checkout: pendiente.
 
