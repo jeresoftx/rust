@@ -170,7 +170,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 #### 14. Command
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: comandos de CLI para crear, actualizar y borrar usuarios.
+- [x] Ejemplo: comandos de CLI para crear, actualizar y borrar usuarios.
 - [ ] Ejemplo: acciones reversibles para editar una orden.
 - [ ] Ejemplo: cola de trabajos con comandos serializables.
 

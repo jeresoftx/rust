@@ -14,7 +14,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Comandos de CLI para crear, actualizar y borrar usuarios.
+- Comandos de CLI para crear, actualizar y borrar usuarios: `src/patterns/gof/behavioral/command/user_cli.rs`
 - Acciones reversibles para editar una orden.
 - Cola de trabajos con comandos serializables.
 
