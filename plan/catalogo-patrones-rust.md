@@ -190,7 +190,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 #### 17. Mediator
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: coordinador de eventos entre formulario, validación y guardado.
 - [ ] Ejemplo: sala de chat que media usuarios.
 - [ ] Ejemplo: orquestador de módulos de checkout.
