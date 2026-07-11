@@ -39,7 +39,7 @@ Mediator coordina una conversación entre participantes. Observer distribuye eve
 ## Ejemplos
 
 - [x] Eventos de dominio para orden creada.
-- [ ] Suscriptores de métricas y logs.
+- [x] Suscriptores de métricas y logs.
 - [ ] Notificaciones al cambiar estado de inventario.
 
 ### Eventos de dominio para orden creada
@@ -47,6 +47,12 @@ Mediator coordina una conversación entre participantes. Observer distribuye eve
 El módulo `order_events` implementa un bus pequeño para publicar `OrderCreated`.
 
 El ejemplo muestra cómo auditoría, fulfillment u otros consumidores pueden suscribirse al evento sin que la lógica de órdenes conozca a cada receptor.
+
+### Suscriptores de métricas y logs
+
+El módulo `metrics_logs` publica eventos de un proceso hacia observadores de métricas y logs.
+
+El ejemplo muestra cómo cada suscriptor reacciona al mismo evento con una responsabilidad distinta.
 
 ## Comandos
 

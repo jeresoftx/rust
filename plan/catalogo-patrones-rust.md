@@ -206,7 +206,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: eventos de dominio para orden creada.
-- [ ] Ejemplo: suscriptores de métricas y logs.
+- [x] Ejemplo: suscriptores de métricas y logs.
 - [ ] Ejemplo: notificaciones al cambiar estado de inventario.
 
 #### 20. State
