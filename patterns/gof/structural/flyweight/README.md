@@ -36,9 +36,15 @@ Singleton busca una única instancia global de un recurso. Flyweight comparte mu
 
 ## Ejemplos
 
-- [ ] Catálogo compartido de monedas o países.
+- [x] Catálogo compartido de monedas o países.
 - [ ] Caché de metadatos de productos repetidos.
 - [ ] Reutilización de estilos en render de documentos.
+
+### Catálogo de monedas
+
+El módulo `currency_catalog` usa `Arc<Currency>` para compartir definiciones de moneda entre muchos montos.
+
+El ejemplo muestra cómo mantener el estado variable en `MoneyAmount` y reutilizar la moneda como estado intrínseco.
 
 ## Comandos
 

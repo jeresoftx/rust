@@ -14,7 +14,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Catálogo compartido de monedas o países.
+- Catálogo compartido de monedas o países: `src/patterns/gof/structural/flyweight/currency_catalog.rs`
 - Caché de metadatos de productos repetidos.
 - Reutilización de estilos en render de documentos.
 
