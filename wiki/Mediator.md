@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Coordinador de eventos entre formulario, validación y guardado: `src/patterns/gof/behavioral/mediator/form_workflow.rs`
-- Sala de chat que media usuarios: pendiente.
+- Sala de chat que media usuarios: `src/patterns/gof/behavioral/mediator/chat_room.rs`
 - Orquestador de módulos de checkout: pendiente.
 
 ## Guía técnica

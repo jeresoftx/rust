@@ -39,7 +39,7 @@ Facade ofrece una entrada simple a un subsistema. Mediator coordina participante
 ## Ejemplos
 
 - [x] Coordinador de eventos entre formulario, validación y guardado.
-- [ ] Sala de chat que media usuarios.
+- [x] Sala de chat que media usuarios.
 - [ ] Orquestador de módulos de checkout.
 
 ### Coordinador de formulario
@@ -47,6 +47,12 @@ Facade ofrece una entrada simple a un subsistema. Mediator coordina participante
 El módulo `form_workflow` modela un mediador que recibe un formulario de registro y coordina validación, persistencia y notificación.
 
 El ejemplo muestra cómo los participantes no necesitan llamarse entre sí: el mediador decide si guardar, qué evento emitir y cuándo cortar el flujo.
+
+### Sala de chat
+
+El módulo `chat_room` representa una sala que media mensajes entre usuarios.
+
+El ejemplo muestra broadcast, mensajes privados y fallas de entrega sin que un usuario tenga referencias directas a los demás.
 
 ## Comandos
 
