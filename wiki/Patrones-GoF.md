@@ -17,7 +17,7 @@ La Fase 1 cubre los 23 patrones GoF.
 - [Composite](Composite.md)
 - [Decorator](Decorator.md)
 - [Facade](Facade.md)
-- Flyweight
+- [Flyweight](Flyweight.md)
 - Proxy
 
 ## Comportamiento
