@@ -38,7 +38,7 @@ Un pipeline normalmente transforma datos en cada paso. Chain of Responsibility d
 
 - [x] Pipeline de validación de requests.
 - [x] Resolución de soporte por niveles.
-- [ ] Filtros de moderación de contenido.
+- [x] Filtros de moderación de contenido.
 
 ### Validación de requests
 
@@ -51,6 +51,12 @@ El ejemplo muestra cómo detener el flujo en el primer error y devolver una resp
 El módulo `support_levels` modela una cadena de soporte donde cada nivel decide si puede resolver un ticket.
 
 El ejemplo muestra cómo un caso simple se resuelve en nivel 1 y un incidente de infraestructura escala hasta nivel 3.
+
+### Moderación de contenido
+
+El módulo `content_moderation` revisa un mensaje con filtros de spam, palabras prohibidas y longitud.
+
+El ejemplo muestra cómo un mensaje limpio atraviesa toda la cadena y cómo un rechazo temprano evita ejecutar reglas posteriores.
 
 ## Comandos
 

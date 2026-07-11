@@ -165,7 +165,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: pipeline de validación de requests.
 - [x] Ejemplo: resolución de soporte por niveles.
-- [ ] Ejemplo: filtros de moderación de contenido.
+- [x] Ejemplo: filtros de moderación de contenido.
 
 #### 14. Command
 
