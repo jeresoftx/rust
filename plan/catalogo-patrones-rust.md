@@ -153,7 +153,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 #### 12. Proxy
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: proxy con caché para API externa.
 - [ ] Ejemplo: proxy con autorización para repositorio.
 - [ ] Ejemplo: proxy lazy para cargar archivos grandes.
