@@ -40,7 +40,7 @@ Facade ofrece una entrada simple a un subsistema. Mediator coordina participante
 
 - [x] Coordinador de eventos entre formulario, validación y guardado.
 - [x] Sala de chat que media usuarios.
-- [ ] Orquestador de módulos de checkout.
+- [x] Orquestador de módulos de checkout.
 
 ### Coordinador de formulario
 
@@ -53,6 +53,12 @@ El ejemplo muestra cómo los participantes no necesitan llamarse entre sí: el m
 El módulo `chat_room` representa una sala que media mensajes entre usuarios.
 
 El ejemplo muestra broadcast, mensajes privados y fallas de entrega sin que un usuario tenga referencias directas a los demás.
+
+### Orquestador de checkout
+
+El módulo `checkout_orchestrator` coordina inventario, pago, envío y notificación.
+
+El ejemplo muestra un flujo exitoso, un rechazo por inventario y una compensación cuando el pago falla después de reservar stock.
 
 ## Comandos
 

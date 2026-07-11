@@ -193,7 +193,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: coordinador de eventos entre formulario, validación y guardado.
 - [x] Ejemplo: sala de chat que media usuarios.
-- [ ] Ejemplo: orquestador de módulos de checkout.
+- [x] Ejemplo: orquestador de módulos de checkout.
 
 #### 18. Memento
 

@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Coordinador de eventos entre formulario, validación y guardado: `src/patterns/gof/behavioral/mediator/form_workflow.rs`
 - Sala de chat que media usuarios: `src/patterns/gof/behavioral/mediator/chat_room.rs`
-- Orquestador de módulos de checkout: pendiente.
+- Orquestador de módulos de checkout: `src/patterns/gof/behavioral/mediator/checkout_orchestrator.rs`
 
 ## Guía técnica
 
