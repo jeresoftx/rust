@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Eventos de dominio para orden creada: `src/patterns/gof/behavioral/observer/order_events.rs`
 - Suscriptores de métricas y logs: `src/patterns/gof/behavioral/observer/metrics_logs.rs`
-- Notificaciones al cambiar estado de inventario: pendiente.
+- Notificaciones al cambiar estado de inventario: `src/patterns/gof/behavioral/observer/inventory_notifications.rs`
 
 ## Guía técnica
 

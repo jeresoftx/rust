@@ -40,7 +40,7 @@ Mediator coordina una conversación entre participantes. Observer distribuye eve
 
 - [x] Eventos de dominio para orden creada.
 - [x] Suscriptores de métricas y logs.
-- [ ] Notificaciones al cambiar estado de inventario.
+- [x] Notificaciones al cambiar estado de inventario.
 
 ### Eventos de dominio para orden creada
 
@@ -53,6 +53,12 @@ El ejemplo muestra cómo auditoría, fulfillment u otros consumidores pueden sus
 El módulo `metrics_logs` publica eventos de un proceso hacia observadores de métricas y logs.
 
 El ejemplo muestra cómo cada suscriptor reacciona al mismo evento con una responsabilidad distinta.
+
+### Notificaciones de inventario
+
+El módulo `inventory_notifications` publica cambios de stock hacia observadores de reabastecimiento y ventas.
+
+El ejemplo muestra cómo distintos equipos pueden reaccionar al mismo cambio sin acoplarse a la lógica que actualiza inventario.
 
 ## Comandos
 
