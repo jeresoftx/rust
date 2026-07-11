@@ -1,1 +1,3 @@
 //! Strategy.
+
+pub mod discounts;

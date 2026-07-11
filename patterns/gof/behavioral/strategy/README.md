@@ -38,9 +38,15 @@ State cambia el comportamiento por una transición interna del objeto. Strategy 
 
 ## Ejemplos
 
-- [ ] Estrategias de descuento.
+- [x] Estrategias de descuento.
 - [ ] Estrategias de ordenamiento de resultados.
 - [ ] Estrategias de cálculo de envío.
+
+### Estrategias de descuento
+
+El módulo `discounts` modela un checkout que puede calcular el total con descuento porcentual, descuento fijo o descuento por volumen.
+
+El ejemplo muestra cómo el flujo principal no cambia cuando se agrega una nueva regla de descuento: solo se intercambia la estrategia.
 
 ## Comandos
 

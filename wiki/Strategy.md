@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Estrategias de descuento: pendiente.
+- Estrategias de descuento: `src/patterns/gof/behavioral/strategy/discounts.rs`
 - Estrategias de ordenamiento de resultados: pendiente.
 - Estrategias de cálculo de envío: pendiente.
 
