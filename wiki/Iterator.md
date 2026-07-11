@@ -14,7 +14,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Paginación sobre resultados de API: pendiente.
+- Paginación sobre resultados de API: `src/patterns/gof/behavioral/iterator/paginated_api.rs`
 - Iterador de lotes para procesamiento de registros: pendiente.
 - Recorrido de árbol de categorías: pendiente.
 

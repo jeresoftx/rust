@@ -38,9 +38,15 @@ Composite modela objetos en forma de árbol. Iterator define una forma de recorr
 
 ## Ejemplos
 
-- [ ] Paginación sobre resultados de API.
+- [x] Paginación sobre resultados de API.
 - [ ] Iterador de lotes para procesamiento de registros.
 - [ ] Recorrido de árbol de categorías.
+
+### Paginación sobre resultados de API
+
+El módulo `paginated_api` simula una fuente que entrega páginas de resultados.
+
+El ejemplo muestra cómo un iterador puede ocultar la mecánica de paginación y entregar elementos uno por uno con `next` o `collect`.
 
 ## Comandos
 
