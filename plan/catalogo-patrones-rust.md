@@ -185,7 +185,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: paginación sobre resultados de API.
-- [ ] Ejemplo: iterador de lotes para procesamiento de registros.
+- [x] Ejemplo: iterador de lotes para procesamiento de registros.
 - [ ] Ejemplo: recorrido de árbol de categorías.
 
 #### 17. Mediator
