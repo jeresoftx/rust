@@ -14,7 +14,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Eventos de dominio para orden creada: pendiente.
+- Eventos de dominio para orden creada: `src/patterns/gof/behavioral/observer/order_events.rs`
 - Suscriptores de métricas y logs: pendiente.
 - Notificaciones al cambiar estado de inventario: pendiente.
 
