@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Filtros simples de búsqueda `campo operador valor`: `src/patterns/gof/behavioral/interpreter/search_filter.rs`
-- Reglas de descuentos expresadas como árbol.
+- Reglas de descuentos expresadas como árbol: `src/patterns/gof/behavioral/interpreter/discount_rules.rs`
 - Mini lenguaje para permisos.
 
 ## Guía técnica

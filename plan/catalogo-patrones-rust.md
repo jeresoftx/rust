@@ -178,7 +178,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: filtros simples de búsqueda `campo operador valor`.
-- [ ] Ejemplo: reglas de descuentos expresadas como árbol.
+- [x] Ejemplo: reglas de descuentos expresadas como árbol.
 - [ ] Ejemplo: mini lenguaje para permisos.
 
 #### 16. Iterator
