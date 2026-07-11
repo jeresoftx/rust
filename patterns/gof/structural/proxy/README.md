@@ -36,9 +36,15 @@ Decorator agrega responsabilidades manteniendo una cadena de envoltorios. Proxy 
 
 ## Ejemplos
 
-- [ ] Proxy con caché para API externa.
+- [x] Proxy con caché para API externa.
 - [ ] Proxy con autorización para repositorio.
 - [ ] Proxy lazy para cargar archivos grandes.
+
+### Caché para API externa
+
+El módulo `cached_api` expone `CachedApiProxy`, que conserva respuestas por id de producto antes de volver a consultar la API real.
+
+El ejemplo muestra cómo proteger al cliente de llamadas repetidas a un recurso externo lento, caro o sujeto a límites.
 
 ## Comandos
 
