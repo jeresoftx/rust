@@ -212,7 +212,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 #### 20. State
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: flujo de orden pendiente, pagada, enviada y cancelada.
+- [x] Ejemplo: flujo de orden pendiente, pagada, enviada y cancelada.
 - [ ] Ejemplo: máquina de estados de autenticación.
 - [ ] Ejemplo: lifecycle de ticket de soporte.
 
