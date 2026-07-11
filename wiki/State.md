@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Flujo de orden pendiente, pagada, enviada y cancelada: `src/patterns/gof/behavioral/state/order_flow.rs`
 - Máquina de estados de autenticación: `src/patterns/gof/behavioral/state/auth_machine.rs`
-- Lifecycle de ticket de soporte: pendiente.
+- Lifecycle de ticket de soporte: `src/patterns/gof/behavioral/state/support_ticket.rs`
 
 ## Guía técnica
 

@@ -40,7 +40,7 @@ Strategy cambia un algoritmo elegido por el cliente. State cambia el comportamie
 
 - [x] Flujo de orden pendiente, pagada, enviada y cancelada.
 - [x] Máquina de estados de autenticación.
-- [ ] Lifecycle de ticket de soporte.
+- [x] Lifecycle de ticket de soporte.
 
 ### Flujo de orden
 
@@ -53,6 +53,12 @@ El ejemplo muestra cómo el estado actual decide qué operaciones son válidas y
 El módulo `auth_machine` modela una sesión que pasa por contraseña aceptada, segundo factor y bloqueo.
 
 El ejemplo muestra cómo el estado actual evita saltarse pasos y bloquea la sesión después de demasiados intentos inválidos.
+
+### Lifecycle de ticket de soporte
+
+El módulo `support_ticket` modela tickets `Open`, `Assigned`, `Resolved` y `Closed`.
+
+El ejemplo muestra cómo asignar, resolver, reabrir y cerrar tickets con errores claros cuando una transición no corresponde.
 
 ## Comandos
 
