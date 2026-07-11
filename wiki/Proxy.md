@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Proxy con caché para API externa: `src/patterns/gof/structural/proxy/cached_api.rs`
-- Proxy con autorización para repositorio.
+- Proxy con autorización para repositorio: `src/patterns/gof/structural/proxy/authorized_repository.rs`
 - Proxy lazy para cargar archivos grandes.
 
 ## Guía técnica
