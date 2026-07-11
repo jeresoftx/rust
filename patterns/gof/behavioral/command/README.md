@@ -37,7 +37,7 @@ Strategy cambia el algoritmo usado para resolver una tarea. Command representa u
 ## Ejemplos
 
 - [x] Comandos de CLI para crear, actualizar y borrar usuarios.
-- [ ] Acciones reversibles para editar una orden.
+- [x] Acciones reversibles para editar una orden.
 - [ ] Cola de trabajos con comandos serializables.
 
 ### CLI de usuarios
@@ -45,6 +45,12 @@ Strategy cambia el algoritmo usado para resolver una tarea. Command representa u
 El módulo `user_cli` usa un enum `UserCommand` para representar acciones de crear, actualizar y borrar usuarios.
 
 El ejemplo muestra cómo un invocador ejecuta comandos y mantiene una bitácora sin exponer los detalles de cada acción.
+
+### Acciones reversibles de orden
+
+El módulo `reversible_order` usa comandos con `execute` y `undo` para aplicar descuentos y notas sobre una orden.
+
+El ejemplo muestra cómo un historial puede deshacer la última acción sin que el cliente conozca los detalles internos de cada comando.
 
 ## Comandos
 
