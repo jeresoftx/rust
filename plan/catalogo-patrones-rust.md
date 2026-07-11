@@ -204,7 +204,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 #### 19. Observer
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: eventos de dominio para orden creada.
 - [ ] Ejemplo: suscriptores de métricas y logs.
 - [ ] Ejemplo: notificaciones al cambiar estado de inventario.
