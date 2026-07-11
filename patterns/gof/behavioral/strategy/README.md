@@ -40,7 +40,7 @@ State cambia el comportamiento por una transición interna del objeto. Strategy 
 
 - [x] Estrategias de descuento.
 - [x] Estrategias de ordenamiento de resultados.
-- [ ] Estrategias de cálculo de envío.
+- [x] Estrategias de cálculo de envío.
 
 ### Estrategias de descuento
 
@@ -53,6 +53,12 @@ El ejemplo muestra cómo el flujo principal no cambia cuando se agrega una nueva
 El módulo `result_sorting` modela resultados de búsqueda que pueden ordenarse por relevancia, menor precio o fecha más reciente.
 
 El ejemplo muestra cómo una API puede cambiar el criterio de ordenamiento sin mezclar esas reglas con la presentación de resultados.
+
+### Estrategias de cálculo de envío
+
+El módulo `shipping` modela cotizaciones por tarifa fija, distancia con peso y envío gratis sobre un subtotal mínimo.
+
+El ejemplo muestra cómo un carrito o checkout puede cambiar la política logística sin tocar el cálculo principal.
 
 ## Comandos
 

@@ -221,7 +221,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: estrategias de descuento.
 - [x] Ejemplo: estrategias de ordenamiento de resultados.
-- [ ] Ejemplo: estrategias de cálculo de envío.
+- [x] Ejemplo: estrategias de cálculo de envío.
 
 #### 22. Template Method
 

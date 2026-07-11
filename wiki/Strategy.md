@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 
 - Estrategias de descuento: `src/patterns/gof/behavioral/strategy/discounts.rs`
 - Estrategias de ordenamiento de resultados: `src/patterns/gof/behavioral/strategy/result_sorting.rs`
-- Estrategias de cálculo de envío: pendiente.
+- Estrategias de cálculo de envío: `src/patterns/gof/behavioral/strategy/shipping.rs`
 
 ## Guía técnica
 
