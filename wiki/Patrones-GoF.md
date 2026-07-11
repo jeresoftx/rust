@@ -25,7 +25,7 @@ La Fase 1 cubre los 23 patrones GoF.
 - [Chain of Responsibility](Chain-of-Responsibility.md)
 - [Command](Command.md)
 - [Interpreter](Interpreter.md)
-- Iterator
+- [Iterator](Iterator.md)
 - Mediator
 - Memento
 - Observer
