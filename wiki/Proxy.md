@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Proxy con caché para API externa: `src/patterns/gof/structural/proxy/cached_api.rs`
 - Proxy con autorización para repositorio: `src/patterns/gof/structural/proxy/authorized_repository.rs`
-- Proxy lazy para cargar archivos grandes.
+- Proxy lazy para cargar archivos grandes: `src/patterns/gof/structural/proxy/lazy_file.rs`
 
 ## Guía técnica
 

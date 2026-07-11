@@ -38,7 +38,7 @@ Decorator agrega responsabilidades manteniendo una cadena de envoltorios. Proxy 
 
 - [x] Proxy con caché para API externa.
 - [x] Proxy con autorización para repositorio.
-- [ ] Proxy lazy para cargar archivos grandes.
+- [x] Proxy lazy para cargar archivos grandes.
 
 ### Caché para API externa
 
@@ -51,6 +51,12 @@ El ejemplo muestra cómo proteger al cliente de llamadas repetidas a un recurso 
 El módulo `authorized_repository` expone `AuthorizedDocumentRepository`, que valida la sesión antes de consultar documentos sensibles.
 
 El ejemplo muestra cómo negar una operación sin tocar el repositorio real cuando el usuario no tiene permisos.
+
+### Carga diferida de archivos grandes
+
+El módulo `lazy_file` expone `LazyFileProxy`, que recibe un archivo grande pero retrasa la carga del contenido hasta que alguien lo solicita.
+
+El ejemplo muestra cómo evitar trabajo costoso al construir objetos y reutilizar el contenido cargado en lecturas posteriores.
 
 ## Comandos
 
