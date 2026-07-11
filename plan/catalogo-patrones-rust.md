@@ -163,7 +163,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 #### 13. Chain of Responsibility
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: pipeline de validación de requests.
+- [x] Ejemplo: pipeline de validación de requests.
 - [ ] Ejemplo: resolución de soporte por niveles.
 - [ ] Ejemplo: filtros de moderación de contenido.
 

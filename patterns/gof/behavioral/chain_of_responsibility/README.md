@@ -36,9 +36,15 @@ Un pipeline normalmente transforma datos en cada paso. Chain of Responsibility d
 
 ## Ejemplos
 
-- [ ] Pipeline de validación de requests.
+- [x] Pipeline de validación de requests.
 - [ ] Resolución de soporte por niveles.
 - [ ] Filtros de moderación de contenido.
+
+### Validación de requests
+
+El módulo `request_validation` usa una cadena de validadores para revisar autenticación, permisos y payload.
+
+El ejemplo muestra cómo detener el flujo en el primer error y devolver una respuesta clara sin ejecutar validaciones posteriores.
 
 ## Comandos
 
