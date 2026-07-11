@@ -36,9 +36,15 @@ Strategy selecciona un algoritmo intercambiable. Interpreter representa una expr
 
 ## Ejemplos
 
-- [ ] Filtros simples de búsqueda `campo operador valor`.
+- [x] Filtros simples de búsqueda `campo operador valor`.
 - [ ] Reglas de descuentos expresadas como árbol.
 - [ ] Mini lenguaje para permisos.
+
+### Filtros de búsqueda
+
+El módulo `search_filter` interpreta expresiones como `status = paid` y `total > 100`.
+
+El ejemplo muestra cómo convertir texto simple en una expresión evaluable contra registros de búsqueda.
 
 ## Comandos
 
