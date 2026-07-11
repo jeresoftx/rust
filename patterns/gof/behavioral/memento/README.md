@@ -40,7 +40,7 @@ Command encapsula una acción y puede saber cómo deshacerla. Memento guarda un 
 
 - [x] Snapshots de configuración para rollback.
 - [x] Historial de cambios de documento.
-- [ ] Restaurar estado de carrito.
+- [x] Restaurar estado de carrito.
 
 ### Snapshots de configuración
 
@@ -53,6 +53,12 @@ El ejemplo muestra cómo probar cambios riesgosos y volver a un estado anterior 
 El módulo `document_history` guarda checkpoints de un editor de documento.
 
 El ejemplo muestra cómo restaurar versiones anteriores de título, cuerpo y etiquetas sin exponer la estructura privada del estado.
+
+### Recuperación de carrito
+
+El módulo `cart_recovery` guarda snapshots de un carrito por sesión.
+
+El ejemplo muestra cómo recuperar artículos, cupón y totales después de un checkout interrumpido o una sesión restaurada.
 
 ## Comandos
 

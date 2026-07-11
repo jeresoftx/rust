@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Snapshots de configuración para rollback: `src/patterns/gof/behavioral/memento/config_snapshots.rs`
 - Historial de cambios de documento: `src/patterns/gof/behavioral/memento/document_history.rs`
-- Restaurar estado de carrito: pendiente.
+- Restaurar estado de carrito: `src/patterns/gof/behavioral/memento/cart_recovery.rs`
 
 ## Guía técnica
 
