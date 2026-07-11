@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Filtros simples de búsqueda `campo operador valor`: `src/patterns/gof/behavioral/interpreter/search_filter.rs`
 - Reglas de descuentos expresadas como árbol: `src/patterns/gof/behavioral/interpreter/discount_rules.rs`
-- Mini lenguaje para permisos.
+- Mini lenguaje para permisos: `src/patterns/gof/behavioral/interpreter/permission_language.rs`
 
 ## Guía técnica
 

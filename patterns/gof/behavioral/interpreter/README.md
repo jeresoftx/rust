@@ -38,7 +38,7 @@ Strategy selecciona un algoritmo intercambiable. Interpreter representa una expr
 
 - [x] Filtros simples de búsqueda `campo operador valor`.
 - [x] Reglas de descuentos expresadas como árbol.
-- [ ] Mini lenguaje para permisos.
+- [x] Mini lenguaje para permisos.
 
 ### Filtros de búsqueda
 
@@ -51,6 +51,12 @@ El ejemplo muestra cómo convertir texto simple en una expresión evaluable cont
 El módulo `discount_rules` representa reglas de promoción como un árbol con condiciones `And` y `Or`.
 
 El ejemplo muestra cómo evaluar una regla compuesta contra un carrito sin esconder la estructura de la expresión.
+
+### Mini lenguaje de permisos
+
+El módulo `permission_language` interpreta reglas como `role:admin AND scope:orders.write`.
+
+El ejemplo muestra cómo convertir una regla de autorización compacta en una expresión evaluable contra roles y scopes.
 
 ## Comandos
 
