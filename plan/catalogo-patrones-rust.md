@@ -394,16 +394,16 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Composite.
 - [x] Commit individual por cada ejemplo de Decorator.
 - [x] Commit individual por cada ejemplo de Facade.
-- [ ] Commit individual por cada ejemplo de Flyweight.
-- [ ] Commit individual por cada ejemplo de Proxy.
-- [ ] Commit individual por cada ejemplo de Chain of Responsibility.
-- [ ] Commit individual por cada ejemplo de Command.
-- [ ] Commit individual por cada ejemplo de Interpreter.
-- [ ] Commit individual por cada ejemplo de Iterator.
-- [ ] Commit individual por cada ejemplo de Mediator.
-- [ ] Commit individual por cada ejemplo de Memento.
-- [ ] Commit individual por cada ejemplo de Observer.
-- [ ] Commit individual por cada ejemplo de State.
+- [x] Commit individual por cada ejemplo de Flyweight.
+- [x] Commit individual por cada ejemplo de Proxy.
+- [x] Commit individual por cada ejemplo de Chain of Responsibility.
+- [x] Commit individual por cada ejemplo de Command.
+- [x] Commit individual por cada ejemplo de Interpreter.
+- [x] Commit individual por cada ejemplo de Iterator.
+- [x] Commit individual por cada ejemplo de Mediator.
+- [x] Commit individual por cada ejemplo de Memento.
+- [x] Commit individual por cada ejemplo de Observer.
+- [x] Commit individual por cada ejemplo de State.
 - [ ] Commit individual por cada ejemplo de Strategy.
 - [ ] Commit individual por cada ejemplo de Template Method.
 - [ ] Commit individual por cada ejemplo de Visitor.
