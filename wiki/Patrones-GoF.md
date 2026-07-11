@@ -27,7 +27,7 @@ La Fase 1 cubre los 23 patrones GoF.
 - [Interpreter](Interpreter.md)
 - [Iterator](Iterator.md)
 - [Mediator](Mediator.md)
-- Memento
+- [Memento](Memento.md)
 - Observer
 - State
 - Strategy

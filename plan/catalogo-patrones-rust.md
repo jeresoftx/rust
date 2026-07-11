@@ -197,7 +197,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 #### 18. Memento
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: snapshots de configuración para rollback.
 - [ ] Ejemplo: historial de cambios de documento.
 - [ ] Ejemplo: restaurar estado de carrito.
