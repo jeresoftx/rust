@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Pipeline de validación de requests: `src/patterns/gof/behavioral/chain_of_responsibility/request_validation.rs`
-- Resolución de soporte por niveles.
+- Resolución de soporte por niveles: `src/patterns/gof/behavioral/chain_of_responsibility/support_levels.rs`
 - Filtros de moderación de contenido.
 
 ## Guía técnica

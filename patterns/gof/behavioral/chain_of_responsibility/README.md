@@ -37,7 +37,7 @@ Un pipeline normalmente transforma datos en cada paso. Chain of Responsibility d
 ## Ejemplos
 
 - [x] Pipeline de validación de requests.
-- [ ] Resolución de soporte por niveles.
+- [x] Resolución de soporte por niveles.
 - [ ] Filtros de moderación de contenido.
 
 ### Validación de requests
@@ -45,6 +45,12 @@ Un pipeline normalmente transforma datos en cada paso. Chain of Responsibility d
 El módulo `request_validation` usa una cadena de validadores para revisar autenticación, permisos y payload.
 
 El ejemplo muestra cómo detener el flujo en el primer error y devolver una respuesta clara sin ejecutar validaciones posteriores.
+
+### Soporte por niveles
+
+El módulo `support_levels` modela una cadena de soporte donde cada nivel decide si puede resolver un ticket.
+
+El ejemplo muestra cómo un caso simple se resuelve en nivel 1 y un incidente de infraestructura escala hasta nivel 3.
 
 ## Comandos
 
