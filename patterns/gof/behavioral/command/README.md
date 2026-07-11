@@ -38,7 +38,7 @@ Strategy cambia el algoritmo usado para resolver una tarea. Command representa u
 
 - [x] Comandos de CLI para crear, actualizar y borrar usuarios.
 - [x] Acciones reversibles para editar una orden.
-- [ ] Cola de trabajos con comandos serializables.
+- [x] Cola de trabajos con comandos serializables.
 
 ### CLI de usuarios
 
@@ -51,6 +51,12 @@ El ejemplo muestra cómo un invocador ejecuta comandos y mantiene una bitácora 
 El módulo `reversible_order` usa comandos con `execute` y `undo` para aplicar descuentos y notas sobre una orden.
 
 El ejemplo muestra cómo un historial puede deshacer la última acción sin que el cliente conozca los detalles internos de cada comando.
+
+### Cola de trabajos
+
+El módulo `job_queue` usa un enum `JobCommand` para representar trabajos que pueden serializarse y ejecutarse después.
+
+El ejemplo muestra cómo encolar comandos, persistirlos como texto simple y ejecutarlos en orden FIFO.
 
 ## Comandos
 

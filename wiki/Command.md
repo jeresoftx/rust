@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Comandos de CLI para crear, actualizar y borrar usuarios: `src/patterns/gof/behavioral/command/user_cli.rs`
 - Acciones reversibles para editar una orden: `src/patterns/gof/behavioral/command/reversible_order.rs`
-- Cola de trabajos con comandos serializables.
+- Cola de trabajos con comandos serializables: `src/patterns/gof/behavioral/command/job_queue.rs`
 
 ## Guía técnica
 
