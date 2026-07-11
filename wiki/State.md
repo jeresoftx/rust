@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Flujo de orden pendiente, pagada, enviada y cancelada: `src/patterns/gof/behavioral/state/order_flow.rs`
-- Máquina de estados de autenticación: pendiente.
+- Máquina de estados de autenticación: `src/patterns/gof/behavioral/state/auth_machine.rs`
 - Lifecycle de ticket de soporte: pendiente.
 
 ## Guía técnica

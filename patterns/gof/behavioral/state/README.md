@@ -39,7 +39,7 @@ Strategy cambia un algoritmo elegido por el cliente. State cambia el comportamie
 ## Ejemplos
 
 - [x] Flujo de orden pendiente, pagada, enviada y cancelada.
-- [ ] Máquina de estados de autenticación.
+- [x] Máquina de estados de autenticación.
 - [ ] Lifecycle de ticket de soporte.
 
 ### Flujo de orden
@@ -47,6 +47,12 @@ Strategy cambia un algoritmo elegido por el cliente. State cambia el comportamie
 El módulo `order_flow` modela una orden que transita entre `Pending`, `Paid`, `Shipped` y `Cancelled`.
 
 El ejemplo muestra cómo el estado actual decide qué operaciones son válidas y qué errores se devuelven cuando la transición no corresponde.
+
+### Máquina de estados de autenticación
+
+El módulo `auth_machine` modela una sesión que pasa por contraseña aceptada, segundo factor y bloqueo.
+
+El ejemplo muestra cómo el estado actual evita saltarse pasos y bloquea la sesión después de demasiados intentos inválidos.
 
 ## Comandos
 

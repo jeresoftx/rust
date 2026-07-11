@@ -213,7 +213,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: flujo de orden pendiente, pagada, enviada y cancelada.
-- [ ] Ejemplo: máquina de estados de autenticación.
+- [x] Ejemplo: máquina de estados de autenticación.
 - [ ] Ejemplo: lifecycle de ticket de soporte.
 
 #### 21. Strategy
