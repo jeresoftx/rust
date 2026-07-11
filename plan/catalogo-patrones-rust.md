@@ -218,7 +218,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 #### 21. Strategy
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: estrategias de descuento.
 - [ ] Ejemplo: estrategias de ordenamiento de resultados.
 - [ ] Ejemplo: estrategias de cálculo de envío.
