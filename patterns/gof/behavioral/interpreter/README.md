@@ -1,0 +1,47 @@
+# Interpreter
+
+## Intención
+
+Interpreter define una forma de representar y evaluar expresiones de un lenguaje pequeño.
+
+## Problema cotidiano
+
+En sistemas reales aparecen lenguajes simples en muchos lugares:
+
+- Filtros de búsqueda como `status = paid` o `total > 100`.
+- Reglas de descuentos que combinan condiciones de carrito y cliente.
+- Permisos expresados como `role:admin AND scope:orders.write`.
+
+Si estas reglas se codifican como `if` dispersos, se vuelven difíciles de reutilizar o explicar. Interpreter modela la regla como un árbol o estructura que puede evaluarse contra un contexto.
+
+## Cómo se ve en Rust
+
+En Rust, Interpreter suele encajar bien con enums recursivos, traits para expresiones o parsers pequeños. Para lenguajes cerrados, un enum con variantes como `And`, `Or`, `Equals` o `GreaterThan` suele ser claro y seguro.
+
+## Cuándo usarlo
+
+- Cuando tienes un lenguaje pequeño y estable.
+- Cuando quieres evaluar reglas contra distintos contextos.
+- Cuando la estructura de la expresión importa tanto como su resultado.
+
+## Cuándo evitarlo
+
+- Si una función directa comunica mejor la regla.
+- Si el lenguaje crecerá hasta necesitar un parser formal.
+- Si las expresiones vendrán de usuarios sin validación ni límites.
+
+## Diferencia con Strategy
+
+Strategy selecciona un algoritmo intercambiable. Interpreter representa una expresión compuesta que se evalúa contra un contexto.
+
+## Ejemplos
+
+- [ ] Filtros simples de búsqueda `campo operador valor`.
+- [ ] Reglas de descuentos expresadas como árbol.
+- [ ] Mini lenguaje para permisos.
+
+## Comandos
+
+```bash
+cargo test interpreter
+```
