@@ -39,7 +39,7 @@ State cambia el comportamiento por una transición interna del objeto. Strategy 
 ## Ejemplos
 
 - [x] Estrategias de descuento.
-- [ ] Estrategias de ordenamiento de resultados.
+- [x] Estrategias de ordenamiento de resultados.
 - [ ] Estrategias de cálculo de envío.
 
 ### Estrategias de descuento
@@ -47,6 +47,12 @@ State cambia el comportamiento por una transición interna del objeto. Strategy 
 El módulo `discounts` modela un checkout que puede calcular el total con descuento porcentual, descuento fijo o descuento por volumen.
 
 El ejemplo muestra cómo el flujo principal no cambia cuando se agrega una nueva regla de descuento: solo se intercambia la estrategia.
+
+### Estrategias de ordenamiento de resultados
+
+El módulo `result_sorting` modela resultados de búsqueda que pueden ordenarse por relevancia, menor precio o fecha más reciente.
+
+El ejemplo muestra cómo una API puede cambiar el criterio de ordenamiento sin mezclar esas reglas con la presentación de resultados.
 
 ## Comandos
 
