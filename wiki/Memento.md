@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Snapshots de configuración para rollback: `src/patterns/gof/behavioral/memento/config_snapshots.rs`
-- Historial de cambios de documento: pendiente.
+- Historial de cambios de documento: `src/patterns/gof/behavioral/memento/document_history.rs`
 - Restaurar estado de carrito: pendiente.
 
 ## Guía técnica

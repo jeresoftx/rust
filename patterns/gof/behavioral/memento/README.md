@@ -39,7 +39,7 @@ Command encapsula una acción y puede saber cómo deshacerla. Memento guarda un 
 ## Ejemplos
 
 - [x] Snapshots de configuración para rollback.
-- [ ] Historial de cambios de documento.
+- [x] Historial de cambios de documento.
 - [ ] Restaurar estado de carrito.
 
 ### Snapshots de configuración
@@ -47,6 +47,12 @@ Command encapsula una acción y puede saber cómo deshacerla. Memento guarda un 
 El módulo `config_snapshots` modela un editor de configuración que puede guardar y restaurar snapshots.
 
 El ejemplo muestra cómo probar cambios riesgosos y volver a un estado anterior sin que el consumidor reconstruya todos los campos manualmente.
+
+### Historial de documento
+
+El módulo `document_history` guarda checkpoints de un editor de documento.
+
+El ejemplo muestra cómo restaurar versiones anteriores de título, cuerpo y etiquetas sin exponer la estructura privada del estado.
 
 ## Comandos
 

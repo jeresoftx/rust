@@ -199,7 +199,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: snapshots de configuración para rollback.
-- [ ] Ejemplo: historial de cambios de documento.
+- [x] Ejemplo: historial de cambios de documento.
 - [ ] Ejemplo: restaurar estado de carrito.
 
 #### 19. Observer
