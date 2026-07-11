@@ -40,7 +40,7 @@ Composite modela objetos en forma de árbol. Iterator define una forma de recorr
 
 - [x] Paginación sobre resultados de API.
 - [x] Iterador de lotes para procesamiento de registros.
-- [ ] Recorrido de árbol de categorías.
+- [x] Recorrido de árbol de categorías.
 
 ### Paginación sobre resultados de API
 
@@ -53,6 +53,12 @@ El ejemplo muestra cómo un iterador puede ocultar la mecánica de paginación y
 El módulo `record_batches` recibe registros y los entrega en grupos de tamaño fijo.
 
 El ejemplo representa tareas comunes como enviar datos a una API por bloques, procesar filas de una exportación o repartir trabajo sin exponer índices al consumidor.
+
+### Recorrido de árbol de categorías
+
+El módulo `category_tree` modela categorías anidadas y expone `depth_first`.
+
+El ejemplo muestra cómo un iterador puede recorrer una estructura de árbol sin que el consumidor administre una pila, índices ni detalles internos de los hijos.
 
 ## Comandos
 

@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Paginación sobre resultados de API: `src/patterns/gof/behavioral/iterator/paginated_api.rs`
 - Iterador de lotes para procesamiento de registros: `src/patterns/gof/behavioral/iterator/record_batches.rs`
-- Recorrido de árbol de categorías: pendiente.
+- Recorrido de árbol de categorías: `src/patterns/gof/behavioral/iterator/category_tree.rs`
 
 ## Guía técnica
 
