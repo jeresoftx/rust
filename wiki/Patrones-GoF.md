@@ -29,7 +29,7 @@ La Fase 1 cubre los 23 patrones GoF.
 - [Mediator](Mediator.md)
 - [Memento](Memento.md)
 - [Observer](Observer.md)
-- State
+- [State](State.md)
 - Strategy
 - Template Method
 - Visitor
