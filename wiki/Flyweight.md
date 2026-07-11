@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 - Catálogo compartido de monedas o países: `src/patterns/gof/structural/flyweight/currency_catalog.rs`
 - Caché de metadatos de productos repetidos: `src/patterns/gof/structural/flyweight/product_metadata.rs`
-- Reutilización de estilos en render de documentos.
+- Reutilización de estilos en render de documentos: `src/patterns/gof/structural/flyweight/document_styles.rs`
 
 ## Guía técnica
 

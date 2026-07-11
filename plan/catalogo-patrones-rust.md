@@ -149,7 +149,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: catálogo compartido de monedas o países.
 - [x] Ejemplo: caché de metadatos de productos repetidos.
-- [ ] Ejemplo: reutilización de estilos en render de documentos.
+- [x] Ejemplo: reutilización de estilos en render de documentos.
 
 #### 12. Proxy
 

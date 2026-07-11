@@ -38,7 +38,7 @@ Singleton busca una única instancia global de un recurso. Flyweight comparte mu
 
 - [x] Catálogo compartido de monedas o países.
 - [x] Caché de metadatos de productos repetidos.
-- [ ] Reutilización de estilos en render de documentos.
+- [x] Reutilización de estilos en render de documentos.
 
 ### Catálogo de monedas
 
@@ -51,6 +51,12 @@ El ejemplo muestra cómo mantener el estado variable en `MoneyAmount` y reutiliz
 El módulo `product_metadata` comparte metadatos por familia de producto entre variantes con color y stock propios.
 
 El ejemplo muestra cómo evitar duplicar descripción y familia cuando muchas variantes usan el mismo dato base.
+
+### Estilos de documento
+
+El módulo `document_styles` comparte estilos por nombre entre muchos fragmentos de texto.
+
+El ejemplo muestra cómo mantener el texto como estado propio de cada `TextRun` y reutilizar fuente, tamaño y peso como estado compartido.
 
 ## Comandos
 
