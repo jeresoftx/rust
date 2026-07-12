@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Flujo común para importar archivos con pasos variables: pendiente.
+- Flujo común para importar archivos con pasos variables: `src/patterns/gof/behavioral/template_method/file_import.rs`
 - Generación de reportes con secciones personalizadas: pendiente.
 - Proceso de onboarding con hooks por tipo de cuenta: pendiente.
 
