@@ -51,9 +51,20 @@ Las pruebas pueden apuntar a cada frontera: dominio sin infraestructura, aplicac
 
 ## Ejemplos
 
-- [ ] API de usuarios con capas de presentación, aplicación y dominio.
+- [x] API de usuarios con capas de presentación, aplicación y dominio.
 - [ ] Separación entre DTOs, entidades y repositorios.
 - [ ] Pruebas por capa con dependencias reemplazables.
+
+### API de usuarios con capas
+
+El módulo `user_api` separa una operación de registro de usuarios en cuatro capas:
+
+- `presentation`: traduce requests y responses.
+- `application`: coordina el caso de uso.
+- `domain`: valida reglas del usuario.
+- `infrastructure`: guarda usuarios en memoria.
+
+La presentación no conoce cómo se persiste el usuario y el dominio no conoce detalles HTTP. Cada frontera queda visible en el tipo que intercambia datos con la siguiente capa.
 
 ## Comandos
 

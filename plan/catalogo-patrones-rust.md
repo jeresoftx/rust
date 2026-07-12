@@ -311,7 +311,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 ### 33. Layered Architecture
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: API de usuarios con capas de presentación, aplicación y dominio.
+- [x] Ejemplo: API de usuarios con capas de presentación, aplicación y dominio.
 - [ ] Ejemplo: separación entre DTOs, entidades y repositorios.
 - [ ] Ejemplo: pruebas por capa con dependencias reemplazables.
 
