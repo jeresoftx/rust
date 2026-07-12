@@ -48,7 +48,7 @@ Los mensajes se mueven entre hilos. Eso reduce la necesidad de locks cuando el d
 
 - [x] Worker que procesa jobs desde un canal.
 - [x] Fan-out de eventos a consumidores.
-- [ ] Pipeline de etapas con canales.
+- [x] Pipeline de etapas con canales.
 
 ### Worker que procesa jobs desde un canal
 
@@ -61,6 +61,12 @@ Los productores envían `Job` por el canal. El worker vive en otro hilo, consume
 El módulo `event_fanout` muestra que `mpsc` no es broadcast automático: para entregar un evento a varios consumidores, el publicador conserva un `Sender` por consumidor y clona el evento.
 
 Este estilo funciona bien para eventos pequeños de dominio, auditoría, métricas o notificaciones internas donde cada consumidor procesa su propia copia.
+
+### Pipeline de etapas con canales
+
+El módulo `pipeline` conecta etapas con canales: entrada de órdenes crudas, validación y planeación de fulfillment.
+
+Cada etapa recibe ownership de su mensaje, decide si lo transforma o lo descarta, y pasa el resultado a la siguiente etapa. Este diseño ayuda a separar responsabilidades cuando un proceso tiene pasos independientes.
 
 ## Comandos
 

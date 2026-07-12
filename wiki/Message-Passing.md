@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 
 - Worker que procesa jobs desde un canal: `job_worker`.
 - Fan-out de eventos a consumidores: `event_fanout`.
-- Pipeline de etapas con canales: pendiente.
+- Pipeline de etapas con canales: `pipeline`.
 
 ## Guía técnica
 
