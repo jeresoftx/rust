@@ -1,0 +1,68 @@
+# Extension Trait
+
+## Intención
+
+Extension Trait agrega métodos de conveniencia a tipos existentes sin modificar su definición original. Es una forma idiomática de hacer que operaciones frecuentes se lean como métodos propios del dominio.
+
+## Problema cotidiano
+
+En sistemas reales repetimos transformaciones pequeñas sobre tipos que no controlamos:
+
+- Normalizar strings de entrada antes de validar o guardar.
+- Convertir errores genéricos en errores de dominio.
+- Paginar o partir colecciones sin repetir cálculos de índices.
+
+Sin Extension Trait, estas operaciones suelen quedar como funciones sueltas y se vuelven menos descubribles en el código.
+
+## Cómo se ve en Rust
+
+En Rust se define un trait propio y se implementa para un tipo existente:
+
+```rust
+pub trait StringNormalizationExt {
+    fn normalized_slug(&self) -> String;
+}
+
+impl StringNormalizationExt for str {
+    fn normalized_slug(&self) -> String {
+        self.trim().to_lowercase().replace(' ', "-")
+    }
+}
+```
+
+Quien importa el trait puede llamar el método como si fuera parte del tipo:
+
+```rust
+use crate::StringNormalizationExt;
+
+let slug = "  Orden Nueva  ".normalized_slug();
+```
+
+## Cuándo usarlo
+
+- Cuando una operación es común, pequeña y cercana a un tipo existente.
+- Cuando quieres mejorar legibilidad y descubrimiento sin crear wrappers.
+- Cuando el trait vive cerca del dominio que da sentido a los métodos.
+
+## Cuándo evitarlo
+
+- Si el método sorprende o cambia expectativas del tipo original.
+- Si el trait mezcla demasiadas responsabilidades.
+- Si un newtype expresa mejor invariantes o validación fuerte.
+- Si el método solo se usa una vez y una función simple sería más clara.
+
+## Relación con Newtype
+
+Newtype crea un tipo nuevo para reforzar significado e invariantes. Extension Trait no cambia el tipo; solo agrega métodos cuando el trait está en scope.
+
+## Ejemplos
+
+- [ ] Helpers de strings para normalizar entradas.
+- [ ] Helpers de `Result` para mapear errores de dominio.
+- [ ] Helpers de colecciones para paginar resultados.
+
+## Comandos
+
+```bash
+cargo test extension_trait
+```

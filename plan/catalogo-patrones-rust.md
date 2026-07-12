@@ -264,7 +264,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 
 ### 27. Extension Trait
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: helpers de strings para normalizar entradas.
 - [ ] Ejemplo: helpers de `Result` para mapear errores de dominio.
 - [ ] Ejemplo: helpers de colecciones para paginar resultados.
