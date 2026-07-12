@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 
 - Comandos separados de consultas para inventario: `inventory_commands_queries`.
 - Modelo de lectura optimizado para dashboard: `dashboard_read_model`.
-- Sincronización simple entre escritura y lectura: pendiente.
+- Sincronización simple entre escritura y lectura: `write_read_sync`.
 
 ## Guía técnica
 

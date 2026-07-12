@@ -341,7 +341,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Documentación del patrón.
 - [x] Ejemplo: comandos separados de consultas para inventario.
 - [x] Ejemplo: modelo de lectura optimizado para dashboard.
-- [ ] Ejemplo: sincronización simple entre escritura y lectura.
+- [x] Ejemplo: sincronización simple entre escritura y lectura.
 
 ### 38. Event Sourcing
 

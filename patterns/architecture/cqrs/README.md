@@ -54,7 +54,7 @@ El handler de comando puede devolver un resultado pequeño, mientras que el hand
 
 - [x] Comandos separados de consultas para inventario.
 - [x] Modelo de lectura optimizado para dashboard.
-- [ ] Sincronización simple entre escritura y lectura.
+- [x] Sincronización simple entre escritura y lectura.
 
 ### Comandos separados de consultas para inventario
 
@@ -67,6 +67,12 @@ Las consultas no cambian el estado y los comandos no devuelven una vista de dash
 El módulo `dashboard_read_model` usa snapshots de inventario para construir tarjetas listas para UI. La consulta puede pedir todos los productos o solo los que necesitan atención.
 
 La read model ordena primero productos sin stock, luego stock bajo y al final productos saludables. Esta vista está diseñada para leer y presentar, no para proteger invariantes de escritura.
+
+### Sincronización simple entre escritura y lectura
+
+El módulo `write_read_sync` usa eventos `StockChanged` para mover cambios del write model al read model. El lado de escritura emite eventos al recibir o reservar stock; la proyección aplica esos eventos en orden.
+
+El ejemplo también muestra cómo reconstruir un read model desde una lista de eventos, útil para explicar la relación entre escritura, proyección y lectura sin introducir infraestructura externa.
 
 ## Comandos
 
