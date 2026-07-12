@@ -55,9 +55,21 @@ Ok(payment)
 
 ## Ejemplos
 
-- [ ] Errores de dominio para checkout.
+- [x] Errores de dominio para checkout.
 - [ ] Conversión de errores de infraestructura a errores de aplicación.
 - [ ] Validación acumulada y validación fail-fast.
+
+### Errores de dominio para checkout
+
+El módulo `checkout_domain` representa las fallas esperadas de un checkout con un enum de dominio:
+
+- Carrito vacío.
+- Método de pago faltante.
+- SKU inexistente.
+- Inventario insuficiente.
+- Pago rechazado.
+
+La función principal devuelve `Result<Receipt, CheckoutError>`. Así, el caso exitoso contiene un recibo y cada falla queda tipada para que la capa llamadora pueda responder con precisión.
 
 ## Comandos
 

@@ -279,7 +279,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 ### 29. Error Handling con Result
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: errores de dominio para checkout.
+- [x] Ejemplo: errores de dominio para checkout.
 - [ ] Ejemplo: conversión de errores de infraestructura a errores de aplicación.
 - [ ] Ejemplo: validación acumulada y validación fail-fast.
 
