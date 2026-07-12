@@ -50,9 +50,15 @@ Para concurrencia se usan primitivas seguras como `Mutex` y `RwLock`.
 
 ## Ejemplos
 
-- [ ] Caché en memoria con `RefCell`.
+- [x] Caché en memoria con `RefCell`.
 - [ ] Contador compartido con `Mutex`.
 - [ ] Lectura concurrente con `RwLock`.
+
+### Caché en memoria con `RefCell`
+
+El módulo `refcell_cache` modela un catálogo de productos que expone `find_product(&self)`, pero internamente actualiza una caché.
+
+`RefCell` permite que la mutación se mantenga encapsulada en tiempo de ejecución. Desde fuera, el servicio se usa como una dependencia de solo lectura; por dentro, evita lecturas repetidas al origen de datos.
 
 ## Comandos
 

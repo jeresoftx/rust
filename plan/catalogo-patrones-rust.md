@@ -286,7 +286,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 ### 30. Interior Mutability
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: caché en memoria con `RefCell`.
+- [x] Ejemplo: caché en memoria con `RefCell`.
 - [ ] Ejemplo: contador compartido con `Mutex`.
 - [ ] Ejemplo: lectura concurrente con `RwLock`.
 

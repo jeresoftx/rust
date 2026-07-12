@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Caché en memoria con `RefCell`: pendiente.
+- Caché en memoria con `RefCell`: `refcell_cache`.
 - Contador compartido con `Mutex`: pendiente.
 - Lectura concurrente con `RwLock`: pendiente.
 
