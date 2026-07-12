@@ -56,7 +56,7 @@ Ok(payment)
 ## Ejemplos
 
 - [x] Errores de dominio para checkout.
-- [ ] Conversión de errores de infraestructura a errores de aplicación.
+- [x] Conversión de errores de infraestructura a errores de aplicación.
 - [ ] Validación acumulada y validación fail-fast.
 
 ### Errores de dominio para checkout
@@ -70,6 +70,12 @@ El módulo `checkout_domain` representa las fallas esperadas de un checkout con 
 - Pago rechazado.
 
 La función principal devuelve `Result<Receipt, CheckoutError>`. Así, el caso exitoso contiene un recibo y cada falla queda tipada para que la capa llamadora pueda responder con precisión.
+
+### Conversión de errores de infraestructura
+
+El módulo `infrastructure_conversion` simula un repositorio que puede fallar por conexión o por una fila inexistente. La capa de aplicación no expone esos errores técnicos directamente; los traduce a `AppError`.
+
+Esta frontera permite que el dominio hable en términos útiles para el producto, mientras la infraestructura conserva sus propios detalles internos.
 
 ## Comandos
 

@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Errores de dominio para checkout: `checkout_domain`.
-- Conversión de errores de infraestructura a errores de aplicación: pendiente.
+- Conversión de errores de infraestructura a errores de aplicación: `infrastructure_conversion`.
 - Validación acumulada y validación fail-fast: pendiente.
 
 ## Guía técnica
