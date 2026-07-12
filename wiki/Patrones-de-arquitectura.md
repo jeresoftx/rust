@@ -2,7 +2,7 @@
 
 La Fase 3 conecta los ejemplos pequeños con diseño de sistemas.
 
-- Layered Architecture
+- [Layered Architecture](Layered-Architecture.md)
 - Hexagonal Architecture
 - Clean Architecture
 - Domain-Driven Design Táctico
