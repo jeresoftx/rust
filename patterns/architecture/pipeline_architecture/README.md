@@ -32,9 +32,15 @@ Evítalo cuando el flujo necesita decisiones altamente ramificadas o interacció
 
 ## Ejemplos
 
-- [ ] Pipeline ETL para importar CSV.
+- [x] Pipeline ETL para importar CSV.
 - [ ] Pipeline de validación y enriquecimiento de eventos.
 - [ ] Pipeline de procesamiento de imágenes simulado.
+
+### Pipeline ETL para importar CSV
+
+El módulo `csv_etl` divide una importación en pasos pequeños: validar encabezado, parsear filas, normalizar campos y validar datos requeridos.
+
+El resultado es un `ImportReport` con clientes importados y errores por fila. En un sistema real este estilo ayuda a mostrar al usuario qué filas debe corregir sin detener toda la importación.
 
 ## Cómo ejecutar
 
