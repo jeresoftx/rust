@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 
 - API de usuarios con capas de presentación, aplicación y dominio: `user_api`.
 - Separación entre DTOs, entidades y repositorios: `dto_entity_repository`.
-- Pruebas por capa con dependencias reemplazables: pendiente.
+- Pruebas por capa con dependencias reemplazables: `replaceable_dependencies`.
 
 ## Guía técnica
 

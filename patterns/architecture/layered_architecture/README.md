@@ -53,7 +53,7 @@ Las pruebas pueden apuntar a cada frontera: dominio sin infraestructura, aplicac
 
 - [x] API de usuarios con capas de presentación, aplicación y dominio.
 - [x] Separación entre DTOs, entidades y repositorios.
-- [ ] Pruebas por capa con dependencias reemplazables.
+- [x] Pruebas por capa con dependencias reemplazables.
 
 ### API de usuarios con capas
 
@@ -76,6 +76,16 @@ El módulo `dto_entity_repository` muestra un flujo de órdenes donde:
 - El repositorio en memoria vive en infraestructura.
 
 El repositorio almacena entidades de dominio, no DTOs de entrada ni DTOs de respuesta.
+
+### Pruebas por capa con dependencias reemplazables
+
+El módulo `replaceable_dependencies` muestra pruebas enfocadas por capa:
+
+- Dominio: se prueba sin infraestructura.
+- Aplicación: usa traits para reemplazar repositorio y notificador.
+- Presentación: valida la traducción de request a comando y response.
+
+Los traits permiten cambiar dependencias sin alterar el caso de uso.
 
 ## Comandos
 

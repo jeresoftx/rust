@@ -313,7 +313,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Documentación del patrón.
 - [x] Ejemplo: API de usuarios con capas de presentación, aplicación y dominio.
 - [x] Ejemplo: separación entre DTOs, entidades y repositorios.
-- [ ] Ejemplo: pruebas por capa con dependencias reemplazables.
+- [x] Ejemplo: pruebas por capa con dependencias reemplazables.
 
 ### 34. Hexagonal Architecture
 
