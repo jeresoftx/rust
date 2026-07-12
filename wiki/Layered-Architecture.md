@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - API de usuarios con capas de presentación, aplicación y dominio: `user_api`.
-- Separación entre DTOs, entidades y repositorios: pendiente.
+- Separación entre DTOs, entidades y repositorios: `dto_entity_repository`.
 - Pruebas por capa con dependencias reemplazables: pendiente.
 
 ## Guía técnica

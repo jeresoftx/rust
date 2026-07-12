@@ -52,7 +52,7 @@ Las pruebas pueden apuntar a cada frontera: dominio sin infraestructura, aplicac
 ## Ejemplos
 
 - [x] API de usuarios con capas de presentación, aplicación y dominio.
-- [ ] Separación entre DTOs, entidades y repositorios.
+- [x] Separación entre DTOs, entidades y repositorios.
 - [ ] Pruebas por capa con dependencias reemplazables.
 
 ### API de usuarios con capas
@@ -65,6 +65,17 @@ El módulo `user_api` separa una operación de registro de usuarios en cuatro ca
 - `infrastructure`: guarda usuarios en memoria.
 
 La presentación no conoce cómo se persiste el usuario y el dominio no conoce detalles HTTP. Cada frontera queda visible en el tipo que intercambia datos con la siguiente capa.
+
+### Separación entre DTOs, entidades y repositorios
+
+El módulo `dto_entity_repository` muestra un flujo de órdenes donde:
+
+- Los DTOs viven en presentación.
+- Las entidades y reglas viven en dominio.
+- El caso de uso vive en aplicación.
+- El repositorio en memoria vive en infraestructura.
+
+El repositorio almacena entidades de dominio, no DTOs de entrada ni DTOs de respuesta.
 
 ## Comandos
 
