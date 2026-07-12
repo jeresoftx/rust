@@ -14,7 +14,7 @@ Circuit Breaker protege un servicio cuando una dependencia empieza a fallar. El 
 
 - [x] Abrir circuito después de fallas consecutivas.
 - [x] Estado half-open para probar recuperación.
-- [ ] Métricas de rechazos por circuito abierto.
+- [x] Métricas de rechazos por circuito abierto.
 
 ## Código
 
@@ -22,3 +22,4 @@ Circuit Breaker protege un servicio cuando una dependencia empieza a fallar. El 
 - Módulo Rust: `src/patterns/distributed_systems/circuit_breaker.rs`
 - Ejemplo de fallas consecutivas: `src/patterns/distributed_systems/circuit_breaker/consecutive_failures.rs`
 - Ejemplo de recuperación half-open: `src/patterns/distributed_systems/circuit_breaker/half_open_recovery.rs`
+- Ejemplo de métricas de rechazos: `src/patterns/distributed_systems/circuit_breaker/open_rejection_metrics.rs`

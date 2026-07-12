@@ -446,7 +446,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Documentación del patrón.
 - [x] Ejemplo: abrir circuito después de fallas consecutivas.
 - [x] Ejemplo: estado half-open para probar recuperación.
-- [ ] Ejemplo: métricas de rechazos por circuito abierto.
+- [x] Ejemplo: métricas de rechazos por circuito abierto.
 
 ### 45. Bulkhead
 
@@ -508,7 +508,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 - [x] Commit: base documental de sistemas distribuidos y resiliencia.
 - [x] Commit individual por cada ejemplo de Retry with Backoff.
-- [ ] Commit individual por cada ejemplo de Circuit Breaker.
+- [x] Commit individual por cada ejemplo de Circuit Breaker.
 - [ ] Commit individual por cada ejemplo de Bulkhead.
 - [ ] Commit individual por cada ejemplo de Rate Limiting.
 - [ ] Commit individual por cada ejemplo de Idempotency Key.

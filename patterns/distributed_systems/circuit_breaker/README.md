@@ -35,7 +35,7 @@ Evítalo cuando la operación es local y barata, cuando no existe una estrategia
 
 - [x] Abrir circuito después de fallas consecutivas.
 - [x] Estado half-open para probar recuperación.
-- [ ] Métricas de rechazos por circuito abierto.
+- [x] Métricas de rechazos por circuito abierto.
 
 ### Abrir circuito después de fallas consecutivas
 
@@ -52,6 +52,8 @@ El módulo `half_open_recovery` usa un reloj lógico en ticks. Así se puede pro
 ### Métricas de rechazos por circuito abierto
 
 El tercer ejemplo registra cuántas llamadas fueron rechazadas sin tocar la dependencia. Esto ayuda a observabilidad, alertas y decisiones operativas.
+
+El módulo `open_rejection_metrics` separa métricas de llamadas reales, éxitos, fallas y rechazos. Así un servicio puede alertar por circuitos abiertos sin confundir rechazos locales con errores de la dependencia.
 
 ## Cómo ejecutar
 

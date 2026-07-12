@@ -5,3 +5,4 @@
 
 pub mod consecutive_failures;
 pub mod half_open_recovery;
+pub mod open_rejection_metrics;
