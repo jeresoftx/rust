@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Repositorio en memoria para pruebas: `in_memory_repository`.
-- Unidad de trabajo para confirmar varios cambios: pendiente.
+- Unidad de trabajo para confirmar varios cambios: `commit_changes`.
 - Transacción simulada con rollback: pendiente.
 
 ## Guía técnica
