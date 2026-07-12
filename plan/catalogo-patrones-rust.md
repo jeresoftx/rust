@@ -487,7 +487,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: chequeos de dependencias críticas.
-- [ ] Ejemplo: readiness separado de liveness.
+- [x] Ejemplo: readiness separado de liveness.
 - [ ] Ejemplo: reporte agregado para orquestadores.
 
 ### 51. Cache Aside

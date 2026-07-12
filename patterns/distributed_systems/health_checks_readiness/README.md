@@ -26,7 +26,7 @@ Evítalo como reemplazo de métricas profundas. Un health check debe ser rápido
 ## Ejemplos
 
 - [x] Chequeos de dependencias críticas.
-- [ ] Readiness separado de liveness.
+- [x] Readiness separado de liveness.
 - [ ] Reporte agregado para orquestadores.
 
 ### Chequeos de dependencias críticas
@@ -38,6 +38,8 @@ El módulo `critical_dependencies` distingue dependencias críticas y opcionales
 ### Readiness separado de liveness
 
 El segundo ejemplo muestra que un proceso puede estar vivo pero no listo.
+
+El módulo `readiness_liveness` separa liveness del estado de preparación: un proceso vivo puede no estar listo si aún no cargó configuración o no conectó dependencias.
 
 ### Reporte agregado para orquestadores
 
