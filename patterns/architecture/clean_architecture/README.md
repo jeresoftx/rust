@@ -52,7 +52,7 @@ El caso de uso depende del trait, no de una base de datos concreta. El controlad
 ## Ejemplos
 
 - [x] Entidades, casos de uso, gateways y controladores.
-- [ ] Reglas de negocio independientes de framework.
+- [x] Reglas de negocio independientes de framework.
 - [ ] Presenter para respuesta HTTP y respuesta CLI.
 
 ### Entidades, casos de uso, gateways y controladores
@@ -60,6 +60,12 @@ El caso de uso depende del trait, no de una base de datos concreta. El controlad
 El módulo `registration_flow` modela un registro de usuario. La entidad valida el nombre y el email, el caso de uso coordina la creación, el gateway asigna identidad y persiste en memoria, y el controlador traduce una petición externa a una respuesta con código de estado.
 
 La dependencia apunta hacia el núcleo: el controlador conoce al caso de uso, el caso de uso conoce el trait del gateway y la entidad no depende de ningún adaptador.
+
+### Reglas de negocio independientes de framework
+
+El módulo `framework_independent_rules` calcula descuentos de carrito usando entidades y casos de uso propios del núcleo. La regla de descuento recibe un `Cart`, una `DiscountPolicy` y devuelve un resultado sin usar tipos HTTP.
+
+El controlador HTTP del ejemplo solo transforma DTOs externos en tipos del caso de uso y formatea la respuesta. Si mañana el mismo caso de uso se expone por CLI, job o cola de mensajes, la regla no cambia.
 
 ## Comandos
 

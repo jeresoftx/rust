@@ -326,7 +326,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: entidades, casos de uso, gateways y controladores.
-- [ ] Ejemplo: reglas de negocio independientes de framework.
+- [x] Ejemplo: reglas de negocio independientes de framework.
 - [ ] Ejemplo: presenter para respuesta HTTP y respuesta CLI.
 
 ### 36. Domain-Driven Design Táctico
