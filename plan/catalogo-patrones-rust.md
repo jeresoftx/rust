@@ -257,7 +257,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 
 ### 26. RAII
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: lock guard para secciones críticas.
 - [ ] Ejemplo: transacción que hace rollback si no se confirma.
 - [ ] Ejemplo: archivo temporal que se limpia al salir de scope.

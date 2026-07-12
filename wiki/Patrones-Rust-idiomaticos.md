@@ -4,7 +4,7 @@ La Fase 2 explica patrones que aparecen naturalmente en Rust real.
 
 - [Newtype](Newtype.md)
 - [Typestate](Typestate.md)
-- RAII
+- [RAII](RAII.md)
 - Extension Trait
 - Iterator Adapters
 - Error Handling con `Result`
