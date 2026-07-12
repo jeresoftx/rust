@@ -347,7 +347,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: cuenta bancaria reconstruida desde eventos.
-- [ ] Ejemplo: auditoría de cambios de orden.
+- [x] Ejemplo: auditoría de cambios de orden.
 - [ ] Ejemplo: snapshots para acelerar reconstrucción.
 
 ### 39. Repository and Unit of Work
