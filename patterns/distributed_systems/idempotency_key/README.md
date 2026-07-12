@@ -33,13 +33,15 @@ Evítalo para lecturas simples o cuando no puedes almacenar de forma confiable e
 
 ## Ejemplos
 
-- [ ] Pagos protegidos contra doble envío.
+- [x] Pagos protegidos contra doble envío.
 - [ ] Caché de respuestas por llave de idempotencia.
 - [ ] Conflicto cuando la misma llave trae payload distinto.
 
 ### Pagos protegidos contra doble envío
 
 El primer ejemplo registra pagos por llave. Si llega el mismo pago dos veces con la misma llave, devuelve el cargo original y no vuelve a ejecutar el cobro.
+
+El módulo `payment_deduplication` guarda la huella del pago y el resultado del cargo por llave. Las pruebas validan que los reintentos equivalentes regresan el mismo cargo y que llaves distintas generan cargos distintos.
 
 ### Caché de respuestas por llave de idempotencia
 
