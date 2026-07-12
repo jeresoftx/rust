@@ -59,7 +59,7 @@ Newtype crea un tipo nuevo para reforzar significado e invariantes. Extension Tr
 
 - [x] Helpers de strings para normalizar entradas.
 - [x] Helpers de `Result` para mapear errores de dominio.
-- [ ] Helpers de colecciones para paginar resultados.
+- [x] Helpers de colecciones para paginar resultados.
 
 ### Normalización de strings
 
@@ -72,6 +72,12 @@ El ejemplo muestra cómo normalizar espacios, emails y llaves tipo slug sin crea
 El módulo `result_mapping` define `ResultDomainExt` para convertir errores técnicos en `DomainError`.
 
 El ejemplo muestra cómo conservar valores exitosos y agregar contexto de dominio cuando una operación falla.
+
+### Paginación de colecciones
+
+El módulo `collection_pagination` define `CollectionPaginationExt` para paginar slices y vectores.
+
+El ejemplo muestra cómo calcular elementos, totales y páginas siguientes sin repetir lógica de índices en cada caso de uso.
 
 ## Comandos
 
