@@ -346,7 +346,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 ### 38. Event Sourcing
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: cuenta bancaria reconstruida desde eventos.
+- [x] Ejemplo: cuenta bancaria reconstruida desde eventos.
 - [ ] Ejemplo: auditoría de cambios de orden.
 - [ ] Ejemplo: snapshots para acelerar reconstrucción.
 

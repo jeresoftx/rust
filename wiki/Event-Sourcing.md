@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Cuenta bancaria reconstruida desde eventos: pendiente.
+- Cuenta bancaria reconstruida desde eventos: `bank_account`.
 - Auditoría de cambios de orden: pendiente.
 - Snapshots para acelerar reconstrucción: pendiente.
 

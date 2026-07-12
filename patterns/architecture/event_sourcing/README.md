@@ -52,9 +52,15 @@ El agregado puede reconstruirse con `fold` o aplicando cada evento a un estado i
 
 ## Ejemplos
 
-- [ ] Cuenta bancaria reconstruida desde eventos.
+- [x] Cuenta bancaria reconstruida desde eventos.
 - [ ] Auditoría de cambios de orden.
 - [ ] Snapshots para acelerar reconstrucción.
+
+### Cuenta bancaria reconstruida desde eventos
+
+El módulo `bank_account` reconstruye una cuenta aplicando eventos `Opened`, `Deposited` y `Withdrawn`. El saldo actual no se guarda como fuente primaria: se deriva del stream.
+
+Cuando se ejecuta un comando nuevo, como retirar dinero, el agregado valida la regla y registra un evento pendiente. Si la operación falla, no se agrega ningún evento.
 
 ## Comandos
 
