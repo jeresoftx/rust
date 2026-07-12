@@ -227,7 +227,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: flujo común para importar archivos con pasos variables.
-- [ ] Ejemplo: generación de reportes con secciones personalizadas.
+- [x] Ejemplo: generación de reportes con secciones personalizadas.
 - [ ] Ejemplo: proceso de onboarding con hooks por tipo de cuenta.
 
 #### 23. Visitor

@@ -39,7 +39,7 @@ Strategy intercambia algoritmos completos. Template Method fija el algoritmo pri
 ## Ejemplos
 
 - [x] Flujo común para importar archivos con pasos variables.
-- [ ] Generación de reportes con secciones personalizadas.
+- [x] Generación de reportes con secciones personalizadas.
 - [ ] Proceso de onboarding con hooks por tipo de cuenta.
 
 ### Flujo común para importar archivos
@@ -47,6 +47,12 @@ Strategy intercambia algoritmos completos. Template Method fija el algoritmo pri
 El módulo `file_import` modela un pipeline fijo para importar datos: leer, parsear, normalizar, validar y guardar.
 
 El ejemplo muestra cómo cada importador cambia el parser y el destino, mientras el orden del proceso se mantiene en un solo método plantilla.
+
+### Generación de reportes
+
+El módulo `report_generation` modela reportes con portada, resumen, secciones y pie.
+
+El ejemplo muestra cómo cada reporte personaliza sus secciones y puede usar un hook para cambiar el pie sin duplicar el flujo de generación.
 
 ## Comandos
 
