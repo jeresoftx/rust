@@ -6,3 +6,4 @@
 
 pub mod csv_etl;
 pub mod event_enrichment;
+pub mod image_processing;

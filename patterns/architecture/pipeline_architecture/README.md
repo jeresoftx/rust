@@ -34,7 +34,7 @@ Evítalo cuando el flujo necesita decisiones altamente ramificadas o interacció
 
 - [x] Pipeline ETL para importar CSV.
 - [x] Pipeline de validación y enriquecimiento de eventos.
-- [ ] Pipeline de procesamiento de imágenes simulado.
+- [x] Pipeline de procesamiento de imágenes simulado.
 
 ### Pipeline ETL para importar CSV
 
@@ -47,6 +47,12 @@ El resultado es un `ImportReport` con clientes importados y errores por fila. En
 El módulo `event_enrichment` procesa eventos crudos en varias etapas: valida actores permitidos, filtra ruido de baja prioridad, normaliza el tipo del evento y agrega una categoría.
 
 Este ejemplo es común en integraciones, auditoría, analítica o consumidores de colas donde cada evento debe pasar por reglas pequeñas antes de ser publicado a otro sistema.
+
+### Pipeline de procesamiento de imágenes simulado
+
+El módulo `image_processing` no depende de librerías externas; trabaja con metadatos de una imagen para mostrar el patrón. El flujo valida dimensiones, redimensiona a un ancho máximo, aplica una marca de agua y optimiza el tamaño simulado.
+
+El punto didáctico es que cada etapa recibe una imagen procesada parcial y devuelve la siguiente versión, dejando una lista de operaciones para auditar el flujo.
 
 ## Cómo ejecutar
 
