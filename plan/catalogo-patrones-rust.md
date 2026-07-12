@@ -464,7 +464,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 ### 47. Idempotency Key
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: pagos protegidos contra doble envío.
 - [ ] Ejemplo: caché de respuestas por llave de idempotencia.
 - [ ] Ejemplo: conflicto cuando la misma llave trae payload distinto.

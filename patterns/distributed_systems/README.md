@@ -10,7 +10,7 @@ Los ejemplos son simulados y deterministas para que puedan ejecutarse con `cargo
 - [Circuit Breaker](circuit_breaker/README.md)
 - [Bulkhead](bulkhead/README.md)
 - [Rate Limiting](rate_limiting/README.md)
-- [ ] Idempotency Key.
+- [Idempotency Key](idempotency_key/README.md)
 - [ ] Outbox Pattern.
 - [ ] Saga / Process Manager.
 - [ ] Health Checks y readiness.
