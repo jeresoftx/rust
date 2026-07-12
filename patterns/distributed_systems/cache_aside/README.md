@@ -28,7 +28,7 @@ Evítalo cuando la consistencia fuerte es obligatoria en cada lectura o cuando e
 
 - [x] Leer de caché o cargar del repositorio.
 - [x] Invalidación al actualizar datos.
-- [ ] TTL simulado con reloj determinista.
+- [x] TTL simulado con reloj determinista.
 
 ### Leer de caché o cargar del repositorio
 
@@ -45,6 +45,8 @@ El módulo `invalidation` actualiza el repositorio y elimina solo la entrada afe
 ### TTL simulado con reloj determinista
 
 El tercer ejemplo expira entradas con un reloj lógico para pruebas estables.
+
+El módulo `ttl_cache` asocia cada entrada con un tick de expiración. Antes del vencimiento usa cache; al vencer recarga desde la fuente de verdad.
 
 ## Cómo ejecutar
 

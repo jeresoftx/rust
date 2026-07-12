@@ -14,7 +14,7 @@ Cache Aside consulta primero el cache y, si no encuentra el dato, carga desde la
 
 - [x] Leer de caché o cargar del repositorio.
 - [x] Invalidación al actualizar datos.
-- [ ] TTL simulado con reloj determinista.
+- [x] TTL simulado con reloj determinista.
 
 ## Código
 
@@ -22,3 +22,4 @@ Cache Aside consulta primero el cache y, si no encuentra el dato, carga desde la
 - Módulo Rust: `src/patterns/distributed_systems/cache_aside.rs`
 - Ejemplo de lectura cache-aside: `src/patterns/distributed_systems/cache_aside/read_through.rs`
 - Ejemplo de invalidación: `src/patterns/distributed_systems/cache_aside/invalidation.rs`
+- Ejemplo de TTL determinista: `src/patterns/distributed_systems/cache_aside/ttl_cache.rs`

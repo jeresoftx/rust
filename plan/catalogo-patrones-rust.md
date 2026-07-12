@@ -495,7 +495,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Documentación del patrón.
 - [x] Ejemplo: leer de caché o cargar del repositorio.
 - [x] Ejemplo: invalidación al actualizar datos.
-- [ ] Ejemplo: TTL simulado con reloj determinista.
+- [x] Ejemplo: TTL simulado con reloj determinista.
 
 ### 52. Leader Election simulado
 
@@ -515,5 +515,5 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Commit individual por cada ejemplo de Outbox Pattern.
 - [x] Commit individual por cada ejemplo de Saga / Process Manager.
 - [x] Commit individual por cada ejemplo de Health Checks y Readiness.
-- [ ] Commit individual por cada ejemplo de Cache Aside.
+- [x] Commit individual por cada ejemplo de Cache Aside.
 - [ ] Commit individual por cada ejemplo de Leader Election simulado.
