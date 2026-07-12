@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Comandos separados de consultas para inventario: pendiente.
+- Comandos separados de consultas para inventario: `inventory_commands_queries`.
 - Modelo de lectura optimizado para dashboard: pendiente.
 - Sincronización simple entre escritura y lectura: pendiente.
 

@@ -52,9 +52,15 @@ El handler de comando puede devolver un resultado pequeño, mientras que el hand
 
 ## Ejemplos
 
-- [ ] Comandos separados de consultas para inventario.
+- [x] Comandos separados de consultas para inventario.
 - [ ] Modelo de lectura optimizado para dashboard.
 - [ ] Sincronización simple entre escritura y lectura.
+
+### Comandos separados de consultas para inventario
+
+El módulo `inventory_commands_queries` separa el lado de escritura y lectura para inventario. `ReceiveStockCommand` y `ReserveStockCommand` pasan por `InventoryCommandHandler`; `GetInventoryQuery` pasa por `InventoryQueryHandler`.
+
+Las consultas no cambian el estado y los comandos no devuelven una vista de dashboard. Esa separación mantiene clara la intención de cada operación.
 
 ## Comandos
 

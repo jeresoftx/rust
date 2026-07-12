@@ -339,7 +339,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 ### 37. CQRS
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: comandos separados de consultas para inventario.
+- [x] Ejemplo: comandos separados de consultas para inventario.
 - [ ] Ejemplo: modelo de lectura optimizado para dashboard.
 - [ ] Ejemplo: sincronización simple entre escritura y lectura.
 
