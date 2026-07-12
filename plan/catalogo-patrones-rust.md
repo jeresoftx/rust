@@ -413,7 +413,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Extension Trait.
 - [x] Commit individual por cada ejemplo de Iterator Adapters.
 - [x] Commit individual por cada ejemplo de Error Handling con Result.
-- [ ] Commit individual por cada ejemplo de Interior Mutability.
+- [x] Commit individual por cada ejemplo de Interior Mutability.
 - [ ] Commit individual por cada ejemplo de Message Passing.
 - [ ] Commit individual por cada ejemplo de Actor-like Workers.
 - [ ] Commit individual por cada ejemplo de Layered Architecture.
