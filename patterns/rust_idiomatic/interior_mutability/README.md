@@ -52,7 +52,7 @@ Para concurrencia se usan primitivas seguras como `Mutex` y `RwLock`.
 
 - [x] Caché en memoria con `RefCell`.
 - [x] Contador compartido con `Mutex`.
-- [ ] Lectura concurrente con `RwLock`.
+- [x] Lectura concurrente con `RwLock`.
 
 ### Caché en memoria con `RefCell`
 
@@ -65,6 +65,12 @@ El módulo `refcell_cache` modela un catálogo de productos que expone `find_pro
 El módulo `mutex_counter` muestra un contador de métricas que puede compartirse entre hilos con `Arc`.
 
 `Mutex` protege el `HashMap` interno para que varias tareas puedan incrementar métricas sin condiciones de carrera. La API sigue usando `&self`, pero cada operación toma el candado solo durante la sección crítica necesaria.
+
+### Lectura concurrente con `RwLock`
+
+El módulo `rwlock_config` representa un registro de configuración que se lee con mucha frecuencia y se actualiza ocasionalmente.
+
+`RwLock` permite que muchos lectores entren al mismo tiempo, mientras que una escritura toma acceso exclusivo. Es útil para datos compartidos donde las lecturas dominan el tráfico.
 
 ## Comandos
 

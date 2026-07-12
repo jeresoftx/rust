@@ -288,7 +288,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 - [x] Documentación del patrón.
 - [x] Ejemplo: caché en memoria con `RefCell`.
 - [x] Ejemplo: contador compartido con `Mutex`.
-- [ ] Ejemplo: lectura concurrente con `RwLock`.
+- [x] Ejemplo: lectura concurrente con `RwLock`.
 
 ### 31. Message Passing
 

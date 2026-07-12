@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 
 - Caché en memoria con `RefCell`: `refcell_cache`.
 - Contador compartido con `Mutex`: `mutex_counter`.
-- Lectura concurrente con `RwLock`: pendiente.
+- Lectura concurrente con `RwLock`: `rwlock_config`.
 
 ## Guía técnica
 
