@@ -429,4 +429,4 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-Continuar con la Fase 3 de patrones de arquitectura, siguiendo con Pipeline Architecture y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
+Continuar con la Fase 3 de patrones de arquitectura, siguiendo con Plugin Architecture y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
