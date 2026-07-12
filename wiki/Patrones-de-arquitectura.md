@@ -5,7 +5,7 @@ La Fase 3 conecta los ejemplos pequeños con diseño de sistemas.
 - [Layered Architecture](Layered-Architecture.md)
 - [Hexagonal Architecture](Hexagonal-Architecture.md)
 - [Clean Architecture](Clean-Architecture.md)
-- Domain-Driven Design Táctico
+- [Domain-Driven Design Táctico](Domain-Driven-Design-Tactico.md)
 - CQRS
 - Event Sourcing
 - Repository and Unit of Work
