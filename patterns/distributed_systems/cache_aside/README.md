@@ -27,7 +27,7 @@ Evítalo cuando la consistencia fuerte es obligatoria en cada lectura o cuando e
 ## Ejemplos
 
 - [x] Leer de caché o cargar del repositorio.
-- [ ] Invalidación al actualizar datos.
+- [x] Invalidación al actualizar datos.
 - [ ] TTL simulado con reloj determinista.
 
 ### Leer de caché o cargar del repositorio
@@ -39,6 +39,8 @@ El módulo `read_through` consulta el cache antes del repositorio. En miss carga
 ### Invalidación al actualizar datos
 
 El segundo ejemplo invalida el cache cuando se actualiza la fuente de verdad.
+
+El módulo `invalidation` actualiza el repositorio y elimina solo la entrada afectada del cache para que la siguiente lectura recargue el valor vigente.
 
 ### TTL simulado con reloj determinista
 

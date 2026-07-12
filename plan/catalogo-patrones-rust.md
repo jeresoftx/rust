@@ -494,7 +494,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: leer de caché o cargar del repositorio.
-- [ ] Ejemplo: invalidación al actualizar datos.
+- [x] Ejemplo: invalidación al actualizar datos.
 - [ ] Ejemplo: TTL simulado con reloj determinista.
 
 ### 52. Leader Election simulado

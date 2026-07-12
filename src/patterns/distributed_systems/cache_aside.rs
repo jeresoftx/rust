@@ -3,4 +3,5 @@
 //! Los ejemplos modelan lecturas cacheadas, invalidación en escritura y TTL con
 //! reloj determinista.
 
+pub mod invalidation;
 pub mod read_through;
