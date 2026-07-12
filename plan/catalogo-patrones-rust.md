@@ -324,7 +324,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ### 35. Clean Architecture
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: entidades, casos de uso, gateways y controladores.
 - [ ] Ejemplo: reglas de negocio independientes de framework.
 - [ ] Ejemplo: presenter para respuesta HTTP y respuesta CLI.
