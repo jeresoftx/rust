@@ -5,3 +5,4 @@
 
 pub mod checkout_flow;
 pub mod compensation;
+pub mod persistent_state;

@@ -481,7 +481,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Documentación del patrón.
 - [x] Ejemplo: reserva, pago y envío coordinados por pasos.
 - [x] Ejemplo: compensación cuando falla un paso intermedio.
-- [ ] Ejemplo: estado persistente del proceso.
+- [x] Ejemplo: estado persistente del proceso.
 
 ### 50. Health Checks y Readiness
 
@@ -513,7 +513,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Commit individual por cada ejemplo de Rate Limiting.
 - [x] Commit individual por cada ejemplo de Idempotency Key.
 - [x] Commit individual por cada ejemplo de Outbox Pattern.
-- [ ] Commit individual por cada ejemplo de Saga / Process Manager.
+- [x] Commit individual por cada ejemplo de Saga / Process Manager.
 - [ ] Commit individual por cada ejemplo de Health Checks y Readiness.
 - [ ] Commit individual por cada ejemplo de Cache Aside.
 - [ ] Commit individual por cada ejemplo de Leader Election simulado.

@@ -30,7 +30,7 @@ Evítalo si todo ocurre en una transacción local simple, o si no existe una com
 
 - [x] Reserva, pago y envío coordinados por pasos.
 - [x] Compensación cuando falla un paso intermedio.
-- [ ] Estado persistente del proceso.
+- [x] Estado persistente del proceso.
 
 ### Reserva, pago y envío coordinados por pasos
 
@@ -47,6 +47,8 @@ El módulo `compensation` registra la reserva de inventario, detecta falla de pa
 ### Estado persistente del proceso
 
 El tercer ejemplo guarda el estado de la saga para continuar después de una pausa o reinicio.
+
+El módulo `persistent_state` persiste la etapa actual por orden y permite reanudar el proceso desde el último paso guardado.
 
 ## Cómo ejecutar
 
