@@ -14,7 +14,7 @@ Leader Election simulado elige un nodo coordinador entre varios candidatos usand
 
 - [x] Elegir líder por prioridad.
 - [x] Failover cuando el líder deja de responder.
-- [ ] Evitar dos líderes activos en la misma ronda.
+- [x] Evitar dos líderes activos en la misma ronda.
 
 ## Código
 
@@ -22,3 +22,4 @@ Leader Election simulado elige un nodo coordinador entre varios candidatos usand
 - Módulo Rust: `src/patterns/distributed_systems/leader_election.rs`
 - Ejemplo de prioridad: `src/patterns/distributed_systems/leader_election/priority_election.rs`
 - Ejemplo de failover: `src/patterns/distributed_systems/leader_election/failover.rs`
+- Ejemplo de líder único por ronda: `src/patterns/distributed_systems/leader_election/single_leader_round.rs`

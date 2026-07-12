@@ -28,7 +28,7 @@ Evítalo si puedes delegar coordinación a infraestructura ya probada, como una 
 
 - [x] Elegir líder por prioridad.
 - [x] Failover cuando el líder deja de responder.
-- [ ] Evitar dos líderes activos en la misma ronda.
+- [x] Evitar dos líderes activos en la misma ronda.
 
 ### Elegir líder por prioridad
 
@@ -45,6 +45,8 @@ El módulo `failover` marca nodos sin heartbeat como no responsivos y promueve a
 ### Evitar dos líderes activos en la misma ronda
 
 El tercer ejemplo usa una ronda y lease para rechazar una segunda promoción simultánea.
+
+El módulo `single_leader_round` concede liderazgo solo una vez por ronda. Una nueva ronda libera el lease anterior y permite elegir otro líder.
 
 ## Cómo ejecutar
 

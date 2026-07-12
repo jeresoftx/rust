@@ -5,3 +5,4 @@
 
 pub mod failover;
 pub mod priority_election;
+pub mod single_leader_round;

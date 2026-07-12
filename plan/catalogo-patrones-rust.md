@@ -502,7 +502,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Documentación del patrón.
 - [x] Ejemplo: elegir líder por prioridad.
 - [x] Ejemplo: failover cuando el líder deja de responder.
-- [ ] Ejemplo: evitar dos líderes activos en la misma ronda.
+- [x] Ejemplo: evitar dos líderes activos en la misma ronda.
 
 ## Checklist de commits de Fase 4
 
@@ -516,4 +516,4 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Commit individual por cada ejemplo de Saga / Process Manager.
 - [x] Commit individual por cada ejemplo de Health Checks y Readiness.
 - [x] Commit individual por cada ejemplo de Cache Aside.
-- [ ] Commit individual por cada ejemplo de Leader Election simulado.
+- [x] Commit individual por cada ejemplo de Leader Election simulado.
