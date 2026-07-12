@@ -405,7 +405,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Observer.
 - [x] Commit individual por cada ejemplo de State.
 - [x] Commit individual por cada ejemplo de Strategy.
-- [ ] Commit individual por cada ejemplo de Template Method.
+- [x] Commit individual por cada ejemplo de Template Method.
 - [ ] Commit individual por cada ejemplo de Visitor.
 - [ ] Commit individual por cada ejemplo de Newtype.
 - [ ] Commit individual por cada ejemplo de Typestate.
