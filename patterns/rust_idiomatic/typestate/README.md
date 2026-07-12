@@ -48,7 +48,7 @@ State clásico suele cambiar comportamiento en tiempo de ejecución usando objet
 ## Ejemplos
 
 - [x] Request builder que no permite enviar sin URL.
-- [ ] Orden que solo puede enviarse después de pagarse.
+- [x] Orden que solo puede enviarse después de pagarse.
 - [ ] Conexión que solo ejecuta consultas después de autenticarse.
 
 ### Request builder con URL obligatoria
@@ -56,6 +56,12 @@ State clásico suele cambiar comportamiento en tiempo de ejecución usando objet
 El módulo `request_builder` modela un builder que empieza como `RequestBuilder<MissingUrl>` y solo se convierte en `RequestBuilder<ReadyToSend>` al llamar `url`.
 
 El ejemplo muestra cómo conservar método, headers y body durante la transición, mientras `send` solo existe para el estado listo.
+
+### Orden pagada antes de enviarse
+
+El módulo `paid_order` modela una orden que empieza como `Order<Draft>`, pasa a `Order<Paid>` al registrar un pago y solo entonces permite llamar `ship`.
+
+El ejemplo muestra cómo cancelar antes del pago, conservar artículos durante la transición y evitar que el envío exista para órdenes en borrador.
 
 ## Comandos
 
