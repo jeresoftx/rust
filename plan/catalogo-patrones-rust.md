@@ -360,7 +360,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 ### 40. Service Layer
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: servicio de aplicación para registrar usuario.
+- [x] Ejemplo: servicio de aplicación para registrar usuario.
 - [ ] Ejemplo: servicio de checkout que coordina repositorios y políticas.
 - [ ] Ejemplo: servicio de reportes para consultas complejas.
 

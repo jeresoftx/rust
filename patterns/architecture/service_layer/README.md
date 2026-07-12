@@ -33,9 +33,15 @@ Evítalo si solo estás envolviendo un CRUD trivial sin agregar intención. Un s
 
 ## Ejemplos
 
-- [ ] Servicio de aplicación para registrar usuario.
+- [x] Servicio de aplicación para registrar usuario.
 - [ ] Servicio de checkout que coordina repositorios y políticas.
 - [ ] Servicio de reportes para consultas complejas.
+
+### Servicio de aplicación para registrar usuario
+
+El módulo `user_registration` muestra un servicio que recibe un `RegistrationRequest`, valida reglas de aplicación, consulta un repositorio en memoria, persiste el usuario y coordina el envío de un correo de bienvenida mediante un gateway falso.
+
+Este ejemplo deja los controladores fuera de la ecuación: cualquier interfaz puede invocar `RegistrationService::register` y reutilizar la misma orquestación.
 
 ## Cómo ejecutar
 
