@@ -21,7 +21,7 @@ Plugin Architecture define contratos estables para agregar capacidades al sistem
 
 - [x] Exportadores JSON, CSV y texto.
 - [x] Estrategias cargadas por configuración.
-- [ ] Extensiones internas con traits y trait objects.
+- [x] Extensiones internas con traits y trait objects.
 
 ## Código
 
@@ -29,3 +29,4 @@ Plugin Architecture define contratos estables para agregar capacidades al sistem
 - Módulo Rust: `src/patterns/architecture/plugin_architecture.rs`
 - Ejemplo de exportadores: `src/patterns/architecture/plugin_architecture/export_plugins.rs`
 - Ejemplo de estrategias configuradas: `src/patterns/architecture/plugin_architecture/configured_strategies.rs`
+- Ejemplo de extensiones internas: `src/patterns/architecture/plugin_architecture/internal_extensions.rs`

@@ -34,7 +34,7 @@ Evítalo si solo tienes dos ramas fijas que no van a crecer. Un registro de plug
 
 - [x] Plugins de exportación JSON, CSV y texto.
 - [x] Registro de estrategias cargadas por configuración.
-- [ ] Extensiones internas mediante traits y trait objects.
+- [x] Extensiones internas mediante traits y trait objects.
 
 ### Plugins de exportación JSON, CSV y texto
 
@@ -47,6 +47,12 @@ Este estilo evita que un servicio principal acumule ramas por cada nuevo formato
 El módulo `configured_strategies` muestra un motor de precios que selecciona una estrategia a partir de `PricingConfig`. El registro conoce las estrategias disponibles y el núcleo solo pide el cálculo.
 
 Este enfoque aparece mucho en sistemas con reglas por cliente, ambiente, país o campaña.
+
+### Extensiones internas mediante traits y trait objects
+
+El módulo `internal_extensions` modela un procesador de solicitudes con extensiones internas. Cada extensión implementa `RequestExtension` y el `RequestProcessor` las ejecuta como `Box<dyn RequestExtension>`.
+
+Es una forma sencilla de abrir puntos de extensión dentro del mismo binario sin exponer el núcleo a detalles concretos.
 
 ## Cómo ejecutar
 

@@ -5,3 +5,4 @@
 
 pub mod configured_strategies;
 pub mod export_plugins;
+pub mod internal_extensions;

@@ -376,7 +376,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Documentación del patrón.
 - [x] Ejemplo: plugins de exportación JSON, CSV y texto.
 - [x] Ejemplo: registro de estrategias cargadas por configuración.
-- [ ] Ejemplo: extensiones internas mediante traits y trait objects.
+- [x] Ejemplo: extensiones internas mediante traits y trait objects.
 
 ## Checklist de commits
 
