@@ -353,7 +353,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 ### 39. Repository and Unit of Work
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: repositorio en memoria para pruebas.
+- [x] Ejemplo: repositorio en memoria para pruebas.
 - [ ] Ejemplo: unidad de trabajo para confirmar varios cambios.
 - [ ] Ejemplo: transacción simulada con rollback.
 

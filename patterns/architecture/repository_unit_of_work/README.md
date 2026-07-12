@@ -52,9 +52,15 @@ La unidad de trabajo puede mantener repositorios pendientes y aplicar cambios al
 
 ## Ejemplos
 
-- [ ] Repositorio en memoria para pruebas.
+- [x] Repositorio en memoria para pruebas.
 - [ ] Unidad de trabajo para confirmar varios cambios.
 - [ ] Transacción simulada con rollback.
+
+### Repositorio en memoria para pruebas
+
+El módulo `in_memory_repository` define el trait `CustomerRepository` y una implementación `InMemoryCustomerRepository`. Un servicio de aplicación puede registrar clientes y consultar emails sin depender de una base de datos real.
+
+Este ejemplo muestra cómo un repositorio en memoria permite pruebas rápidas, deterministas y enfocadas en reglas de aplicación.
 
 ## Comandos
 
