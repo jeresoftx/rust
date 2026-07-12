@@ -235,7 +235,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 - [x] Documentación del patrón.
 - [x] Ejemplo: exportar un árbol de expresiones a texto y JSON.
 - [x] Ejemplo: calcular totales recorriendo elementos de factura.
-- [ ] Ejemplo: validar nodos de un workflow.
+- [x] Ejemplo: validar nodos de un workflow.
 
 ## Fase 2: Patrones idiomáticos de Rust
 

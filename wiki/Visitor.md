@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 
 - Exportar un árbol de expresiones a texto y JSON: `src/patterns/gof/behavioral/visitor/expression_export.rs`
 - Calcular totales recorriendo elementos de factura: `src/patterns/gof/behavioral/visitor/invoice_totals.rs`
-- Validar nodos de un workflow: pendiente.
+- Validar nodos de un workflow: `src/patterns/gof/behavioral/visitor/workflow_validation.rs`
 
 ## Guía técnica
 

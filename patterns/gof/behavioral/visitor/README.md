@@ -40,7 +40,7 @@ Iterator define cómo recorrer elementos. Visitor define qué operación ejecuta
 
 - [x] Exportar un árbol de expresiones a texto y JSON.
 - [x] Calcular totales recorriendo elementos de factura.
-- [ ] Validar nodos de un workflow.
+- [x] Validar nodos de un workflow.
 
 ### Exportar un árbol de expresiones
 
@@ -53,6 +53,12 @@ El ejemplo muestra cómo agregar una nueva operación de exportación sin cambia
 El módulo `invoice_totals` modela una factura con líneas de producto, descuento e impuesto.
 
 El ejemplo muestra cómo un visitante puede recorrer distintos tipos de línea para acumular subtotal, descuentos, impuestos y total final.
+
+### Validar nodos de un workflow
+
+El módulo `workflow_validation` modela flujos con inicio, tareas, aprobaciones y cierre.
+
+El ejemplo muestra cómo un visitante valida reglas transversales como inicio obligatorio, cierre obligatorio, dueños, aprobadores e IDs duplicados.
 
 ## Comandos
 
