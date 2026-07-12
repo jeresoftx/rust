@@ -445,7 +445,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: abrir circuito después de fallas consecutivas.
-- [ ] Ejemplo: estado half-open para probar recuperación.
+- [x] Ejemplo: estado half-open para probar recuperación.
 - [ ] Ejemplo: métricas de rechazos por circuito abierto.
 
 ### 45. Bulkhead

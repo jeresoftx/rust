@@ -34,7 +34,7 @@ Evítalo cuando la operación es local y barata, cuando no existe una estrategia
 ## Ejemplos
 
 - [x] Abrir circuito después de fallas consecutivas.
-- [ ] Estado half-open para probar recuperación.
+- [x] Estado half-open para probar recuperación.
 - [ ] Métricas de rechazos por circuito abierto.
 
 ### Abrir circuito después de fallas consecutivas
@@ -46,6 +46,8 @@ El módulo `consecutive_failures` usa una dependencia simulada con respuestas pr
 ### Estado half-open para probar recuperación
 
 El segundo ejemplo agrega una transición controlada: después del periodo de enfriamiento, el circuito permite una llamada de prueba. Si funciona, cierra; si falla, vuelve a abrir.
+
+El módulo `half_open_recovery` usa un reloj lógico en ticks. Así se puede probar el periodo de enfriamiento sin `sleep`, validando que el circuito rechaza antes del tiempo permitido, entra a half-open al cumplirse el enfriamiento y decide cerrar o reabrir según la llamada de prueba.
 
 ### Métricas de rechazos por circuito abierto
 

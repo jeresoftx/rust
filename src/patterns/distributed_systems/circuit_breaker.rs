@@ -4,3 +4,4 @@
 //! conteo de fallas consecutivas, estado half-open y métricas de rechazos.
 
 pub mod consecutive_failures;
+pub mod half_open_recovery;
