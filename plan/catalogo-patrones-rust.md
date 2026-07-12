@@ -415,7 +415,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Error Handling con Result.
 - [x] Commit individual por cada ejemplo de Interior Mutability.
 - [x] Commit individual por cada ejemplo de Message Passing.
-- [ ] Commit individual por cada ejemplo de Actor-like Workers.
+- [x] Commit individual por cada ejemplo de Actor-like Workers.
 - [ ] Commit individual por cada ejemplo de Layered Architecture.
 - [ ] Commit individual por cada ejemplo de Hexagonal Architecture.
 - [ ] Commit individual por cada ejemplo de Clean Architecture.
