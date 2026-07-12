@@ -444,7 +444,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 ### 44. Circuit Breaker
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: abrir circuito después de fallas consecutivas.
+- [x] Ejemplo: abrir circuito después de fallas consecutivas.
 - [ ] Ejemplo: estado half-open para probar recuperación.
 - [ ] Ejemplo: métricas de rechazos por circuito abierto.
 

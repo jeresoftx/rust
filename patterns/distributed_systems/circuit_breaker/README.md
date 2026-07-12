@@ -33,13 +33,15 @@ Evítalo cuando la operación es local y barata, cuando no existe una estrategia
 
 ## Ejemplos
 
-- [ ] Abrir circuito después de fallas consecutivas.
+- [x] Abrir circuito después de fallas consecutivas.
 - [ ] Estado half-open para probar recuperación.
 - [ ] Métricas de rechazos por circuito abierto.
 
 ### Abrir circuito después de fallas consecutivas
 
 El primer ejemplo muestra un circuito cerrado que cuenta fallas consecutivas. Al alcanzar el umbral, pasa a estado abierto y deja de ejecutar la operación protegida.
+
+El módulo `consecutive_failures` usa una dependencia simulada con respuestas predecibles. La prueba confirma que el circuito se abre al alcanzar el umbral, que un éxito reinicia el contador y que un circuito abierto rechaza sin invocar la dependencia.
 
 ### Estado half-open para probar recuperación
 

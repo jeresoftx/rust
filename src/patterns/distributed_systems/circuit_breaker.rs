@@ -2,3 +2,5 @@
 //!
 //! Los ejemplos de este módulo modelan circuitos deterministas para pruebas:
 //! conteo de fallas consecutivas, estado half-open y métricas de rechazos.
+
+pub mod consecutive_failures;
