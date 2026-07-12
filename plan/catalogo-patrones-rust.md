@@ -366,7 +366,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ### 41. Pipeline Architecture
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: pipeline ETL para importar CSV.
 - [ ] Ejemplo: pipeline de validación y enriquecimiento de eventos.
 - [ ] Ejemplo: pipeline de procesamiento de imágenes simulado.
