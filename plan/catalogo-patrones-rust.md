@@ -271,7 +271,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 
 ### 28. Iterator Adapters
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: pipeline de filtrado y transformación de órdenes.
 - [ ] Ejemplo: procesamiento por lotes de registros.
 - [ ] Ejemplo: agregaciones de reportes sin estructuras intermedias.

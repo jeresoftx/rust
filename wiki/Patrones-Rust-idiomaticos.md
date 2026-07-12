@@ -6,7 +6,7 @@ La Fase 2 explica patrones que aparecen naturalmente en Rust real.
 - [Typestate](Typestate.md)
 - [RAII](RAII.md)
 - [Extension Trait](Extension-Trait.md)
-- Iterator Adapters
+- [Iterator Adapters](Iterator-Adapters.md)
 - Error Handling con `Result`
 - Interior Mutability
 - Message Passing
