@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Agregados y value objects para órdenes: pendiente.
+- Agregados y value objects para órdenes: `order_aggregate`.
 - Servicios de dominio para políticas de descuento: pendiente.
 - Eventos de dominio para integración interna: pendiente.
 

@@ -52,9 +52,15 @@ Un agregado puede exponer métodos de intención, como `add_item`, `confirm` o `
 
 ## Ejemplos
 
-- [ ] Agregados y value objects para órdenes.
+- [x] Agregados y value objects para órdenes.
 - [ ] Servicios de dominio para políticas de descuento.
 - [ ] Eventos de dominio para integración interna.
+
+### Agregados y value objects para órdenes
+
+El módulo `order_aggregate` modela una orden como agregado. `OrderId`, `Sku` y `Money` son value objects que evitan usar strings y enteros sin significado.
+
+El agregado `Order` protege invariantes: no permite líneas con cantidad cero, no permite confirmar órdenes vacías y bloquea cambios después de confirmar. La intención del dominio aparece en métodos como `add_item` y `confirm`.
 
 ## Comandos
 

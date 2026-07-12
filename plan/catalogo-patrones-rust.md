@@ -332,7 +332,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 ### 36. Domain-Driven Design Táctico
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: agregados y value objects para órdenes.
+- [x] Ejemplo: agregados y value objects para órdenes.
 - [ ] Ejemplo: servicios de dominio para políticas de descuento.
 - [ ] Ejemplo: eventos de dominio para integración interna.
 
