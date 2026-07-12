@@ -10,3 +10,4 @@ pub mod observer;
 pub mod state;
 pub mod strategy;
 pub mod template_method;
+pub mod visitor;

@@ -232,7 +232,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 #### 23. Visitor
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: exportar un árbol de expresiones a texto y JSON.
 - [ ] Ejemplo: calcular totales recorriendo elementos de factura.
 - [ ] Ejemplo: validar nodos de un workflow.

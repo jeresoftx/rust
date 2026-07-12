@@ -32,4 +32,4 @@ La Fase 1 cubre los 23 patrones GoF.
 - [State](State.md)
 - [Strategy](Strategy.md)
 - [Template Method](Template-Method.md)
-- Visitor
+- [Visitor](Visitor.md)
