@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Lock guard para secciones críticas: pendiente.
+- Lock guard para secciones críticas: `src/patterns/rust_idiomatic/raii/lock_guard.rs`
 - Transacción que hace rollback si no se confirma: pendiente.
 - Archivo temporal que se limpia al salir de scope: pendiente.
 
