@@ -34,7 +34,7 @@ Evítalo para lecturas simples o cuando no puedes almacenar de forma confiable e
 ## Ejemplos
 
 - [x] Pagos protegidos contra doble envío.
-- [ ] Caché de respuestas por llave de idempotencia.
+- [x] Caché de respuestas por llave de idempotencia.
 - [ ] Conflicto cuando la misma llave trae payload distinto.
 
 ### Pagos protegidos contra doble envío
@@ -46,6 +46,8 @@ El módulo `payment_deduplication` guarda la huella del pago y el resultado del 
 ### Caché de respuestas por llave de idempotencia
 
 El segundo ejemplo almacena una respuesta de API y la reutiliza en reintentos equivalentes.
+
+El módulo `cached_responses` simula la creación de órdenes. La primera solicitud ejecuta la operación y guarda la respuesta; los reintentos con la misma llave y payload reciben exactamente la misma respuesta.
 
 ### Conflicto cuando la misma llave trae payload distinto
 
