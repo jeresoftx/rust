@@ -49,7 +49,7 @@ State clásico suele cambiar comportamiento en tiempo de ejecución usando objet
 
 - [x] Request builder que no permite enviar sin URL.
 - [x] Orden que solo puede enviarse después de pagarse.
-- [ ] Conexión que solo ejecuta consultas después de autenticarse.
+- [x] Conexión que solo ejecuta consultas después de autenticarse.
 
 ### Request builder con URL obligatoria
 
@@ -62,6 +62,12 @@ El ejemplo muestra cómo conservar método, headers y body durante la transició
 El módulo `paid_order` modela una orden que empieza como `Order<Draft>`, pasa a `Order<Paid>` al registrar un pago y solo entonces permite llamar `ship`.
 
 El ejemplo muestra cómo cancelar antes del pago, conservar artículos durante la transición y evitar que el envío exista para órdenes en borrador.
+
+### Conexión autenticada antes de consultar
+
+El módulo `authenticated_connection` modela una conexión que empieza como `Connection<Connected>`, pasa a `Connection<Authenticated>` con credenciales válidas y solo entonces permite llamar `query`.
+
+El ejemplo muestra cómo rechazar credenciales incompletas, registrar consultas ejecutadas y producir un estado desconectado sin exponer operaciones de consulta.
 
 ## Comandos
 

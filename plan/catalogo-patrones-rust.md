@@ -253,7 +253,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 - [x] Documentación del patrón.
 - [x] Ejemplo: request builder que no permite enviar sin URL.
 - [x] Ejemplo: orden que solo puede enviarse después de pagarse.
-- [ ] Ejemplo: conexión que solo ejecuta consultas después de autenticarse.
+- [x] Ejemplo: conexión que solo ejecuta consultas después de autenticarse.
 
 ### 26. RAII
 

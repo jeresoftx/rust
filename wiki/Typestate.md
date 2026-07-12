@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 
 - Request builder que no permite enviar sin URL: `src/patterns/rust_idiomatic/typestate/request_builder.rs`
 - Orden que solo puede enviarse después de pagarse: `src/patterns/rust_idiomatic/typestate/paid_order.rs`
-- Conexión que solo ejecuta consultas después de autenticarse: pendiente.
+- Conexión que solo ejecuta consultas después de autenticarse: `src/patterns/rust_idiomatic/typestate/authenticated_connection.rs`
 
 ## Guía técnica
 
