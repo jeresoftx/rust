@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Caso de uso de checkout con puertos y adaptadores: pendiente.
+- Caso de uso de checkout con puertos y adaptadores: `checkout_ports_adapters`.
 - Repositorio en memoria y repositorio simulado externo: pendiente.
 - Adaptador de notificaciones intercambiable: pendiente.
 
