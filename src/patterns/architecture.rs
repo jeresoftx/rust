@@ -7,5 +7,6 @@ pub mod event_sourcing;
 pub mod hexagonal_architecture;
 pub mod layered_architecture;
 pub mod pipeline_architecture;
+pub mod plugin_architecture;
 pub mod repository_unit_of_work;
 pub mod service_layer;

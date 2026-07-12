@@ -373,7 +373,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ### 42. Plugin Architecture
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: plugins de exportación JSON, CSV y texto.
 - [ ] Ejemplo: registro de estrategias cargadas por configuración.
 - [ ] Ejemplo: extensiones internas mediante traits y trait objects.
