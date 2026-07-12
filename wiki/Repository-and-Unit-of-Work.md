@@ -18,7 +18,7 @@ En Rust suele aparecer como:
 
 - Repositorio en memoria para pruebas: `in_memory_repository`.
 - Unidad de trabajo para confirmar varios cambios: `commit_changes`.
-- Transacción simulada con rollback: pendiente.
+- Transacción simulada con rollback: `transaction_rollback`.
 
 ## Guía técnica
 

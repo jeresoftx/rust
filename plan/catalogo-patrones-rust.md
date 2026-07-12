@@ -355,7 +355,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Documentación del patrón.
 - [x] Ejemplo: repositorio en memoria para pruebas.
 - [x] Ejemplo: unidad de trabajo para confirmar varios cambios.
-- [ ] Ejemplo: transacción simulada con rollback.
+- [x] Ejemplo: transacción simulada con rollback.
 
 ### 40. Service Layer
 

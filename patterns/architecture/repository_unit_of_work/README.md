@@ -54,7 +54,7 @@ La unidad de trabajo puede mantener repositorios pendientes y aplicar cambios al
 
 - [x] Repositorio en memoria para pruebas.
 - [x] Unidad de trabajo para confirmar varios cambios.
-- [ ] Transacción simulada con rollback.
+- [x] Transacción simulada con rollback.
 
 ### Repositorio en memoria para pruebas
 
@@ -67,6 +67,12 @@ Este ejemplo muestra cómo un repositorio en memoria permite pruebas rápidas, d
 El módulo `commit_changes` mantiene repositorios pendientes para clientes y órdenes. El `UnitOfWork` permite preparar varios cambios y publicarlos juntos con `commit`.
 
 Antes del commit, el almacenamiento real no ve los cambios. Si se llama `rollback`, los cambios pendientes se descartan.
+
+### Transacción simulada con rollback
+
+El módulo `transaction_rollback` simula una frontera transaccional. La unidad de trabajo toma un snapshot del almacenamiento antes de ejecutar la operación.
+
+Si todas las operaciones pasan, los cambios quedan aplicados. Si una operación falla, el store vuelve al snapshot original y no quedan cambios parciales.
 
 ## Comandos
 
