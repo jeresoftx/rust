@@ -29,7 +29,7 @@ Evítalo si la operación no publica efectos externos, o si ya usas una infraest
 ## Ejemplos
 
 - [x] Guardar entidad y evento en la misma unidad de trabajo.
-- [ ] Publicador que marca mensajes como enviados.
+- [x] Publicador que marca mensajes como enviados.
 - [ ] Reintento de mensajes pendientes.
 
 ### Guardar entidad y evento en la misma unidad de trabajo
@@ -41,6 +41,8 @@ El módulo `unit_of_work` simula una transacción en memoria: una orden y su men
 ### Publicador que marca mensajes como enviados
 
 El segundo ejemplo toma mensajes pendientes, los publica y actualiza su estado.
+
+El módulo `publisher_marks_sent` publica solo mensajes pendientes y marca cada uno como enviado para evitar publicaciones duplicadas en ejecuciones posteriores.
 
 ### Reintento de mensajes pendientes
 

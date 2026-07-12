@@ -3,4 +3,5 @@
 //! Los ejemplos usan almacenamiento en memoria para modelar unidad de trabajo,
 //! publicación marcada y reintentos de mensajes no enviados.
 
+pub mod publisher_marks_sent;
 pub mod unit_of_work;
