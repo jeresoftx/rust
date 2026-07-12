@@ -53,7 +53,7 @@ El handler de comando puede devolver un resultado pequeño, mientras que el hand
 ## Ejemplos
 
 - [x] Comandos separados de consultas para inventario.
-- [ ] Modelo de lectura optimizado para dashboard.
+- [x] Modelo de lectura optimizado para dashboard.
 - [ ] Sincronización simple entre escritura y lectura.
 
 ### Comandos separados de consultas para inventario
@@ -61,6 +61,12 @@ El handler de comando puede devolver un resultado pequeño, mientras que el hand
 El módulo `inventory_commands_queries` separa el lado de escritura y lectura para inventario. `ReceiveStockCommand` y `ReserveStockCommand` pasan por `InventoryCommandHandler`; `GetInventoryQuery` pasa por `InventoryQueryHandler`.
 
 Las consultas no cambian el estado y los comandos no devuelven una vista de dashboard. Esa separación mantiene clara la intención de cada operación.
+
+### Modelo de lectura optimizado para dashboard
+
+El módulo `dashboard_read_model` usa snapshots de inventario para construir tarjetas listas para UI. La consulta puede pedir todos los productos o solo los que necesitan atención.
+
+La read model ordena primero productos sin stock, luego stock bajo y al final productos saludables. Esta vista está diseñada para leer y presentar, no para proteger invariantes de escritura.
 
 ## Comandos
 
