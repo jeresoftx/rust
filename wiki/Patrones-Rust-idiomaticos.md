@@ -2,7 +2,7 @@
 
 La Fase 2 explica patrones que aparecen naturalmente en Rust real.
 
-- Newtype
+- [Newtype](Newtype.md)
 - Typestate
 - RAII
 - Extension Trait
