@@ -14,7 +14,7 @@ Outbox Pattern guarda cambios de dominio y mensajes pendientes en la misma unida
 
 - [x] Guardar entidad y evento en la misma unidad de trabajo.
 - [x] Publicador que marca mensajes como enviados.
-- [ ] Reintento de mensajes pendientes.
+- [x] Reintento de mensajes pendientes.
 
 ## Código
 
@@ -22,3 +22,4 @@ Outbox Pattern guarda cambios de dominio y mensajes pendientes en la misma unida
 - Módulo Rust: `src/patterns/distributed_systems/outbox_pattern.rs`
 - Ejemplo de unidad de trabajo: `src/patterns/distributed_systems/outbox_pattern/unit_of_work.rs`
 - Ejemplo de publicador: `src/patterns/distributed_systems/outbox_pattern/publisher_marks_sent.rs`
+- Ejemplo de reintento de pendientes: `src/patterns/distributed_systems/outbox_pattern/retry_pending.rs`

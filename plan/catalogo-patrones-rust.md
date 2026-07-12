@@ -474,7 +474,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Documentación del patrón.
 - [x] Ejemplo: guardar entidad y evento en la misma unidad de trabajo.
 - [x] Ejemplo: publicador que marca mensajes como enviados.
-- [ ] Ejemplo: reintento de mensajes pendientes.
+- [x] Ejemplo: reintento de mensajes pendientes.
 
 ### 49. Saga / Process Manager
 
@@ -512,7 +512,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Commit individual por cada ejemplo de Bulkhead.
 - [x] Commit individual por cada ejemplo de Rate Limiting.
 - [x] Commit individual por cada ejemplo de Idempotency Key.
-- [ ] Commit individual por cada ejemplo de Outbox Pattern.
+- [x] Commit individual por cada ejemplo de Outbox Pattern.
 - [ ] Commit individual por cada ejemplo de Saga / Process Manager.
 - [ ] Commit individual por cada ejemplo de Health Checks y Readiness.
 - [ ] Commit individual por cada ejemplo de Cache Aside.

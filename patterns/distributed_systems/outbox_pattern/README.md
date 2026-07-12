@@ -30,7 +30,7 @@ Evítalo si la operación no publica efectos externos, o si ya usas una infraest
 
 - [x] Guardar entidad y evento en la misma unidad de trabajo.
 - [x] Publicador que marca mensajes como enviados.
-- [ ] Reintento de mensajes pendientes.
+- [x] Reintento de mensajes pendientes.
 
 ### Guardar entidad y evento en la misma unidad de trabajo
 
@@ -47,6 +47,8 @@ El módulo `publisher_marks_sent` publica solo mensajes pendientes y marca cada 
 ### Reintento de mensajes pendientes
 
 El tercer ejemplo muestra que un fallo de publicación deja el mensaje pendiente para un siguiente intento.
+
+El módulo `retry_pending` usa un broker que falla temporalmente. Si publicar falla, el mensaje queda pendiente; si después funciona, se marca como enviado y no se vuelve a intentar.
 
 ## Cómo ejecutar
 

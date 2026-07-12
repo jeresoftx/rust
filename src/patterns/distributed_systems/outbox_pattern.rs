@@ -4,4 +4,5 @@
 //! publicación marcada y reintentos de mensajes no enviados.
 
 pub mod publisher_marks_sent;
+pub mod retry_pending;
 pub mod unit_of_work;
