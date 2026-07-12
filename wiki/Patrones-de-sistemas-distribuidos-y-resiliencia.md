@@ -9,7 +9,7 @@ Los ejemplos del repositorio son deterministas y se ejecutan con pruebas unitari
 - [Retry with Backoff](Retry-with-Backoff.md)
 - [Circuit Breaker](Circuit-Breaker.md)
 - [Bulkhead](Bulkhead.md)
-- Rate Limiting
+- [Rate Limiting](Rate-Limiting.md)
 - Idempotency Key
 - Outbox Pattern
 - Saga / Process Manager
