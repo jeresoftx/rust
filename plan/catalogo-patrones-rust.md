@@ -281,7 +281,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 - [x] Documentación del patrón.
 - [x] Ejemplo: errores de dominio para checkout.
 - [x] Ejemplo: conversión de errores de infraestructura a errores de aplicación.
-- [ ] Ejemplo: validación acumulada y validación fail-fast.
+- [x] Ejemplo: validación acumulada y validación fail-fast.
 
 ### 30. Interior Mutability
 

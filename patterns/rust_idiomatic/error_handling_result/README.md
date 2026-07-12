@@ -57,7 +57,7 @@ Ok(payment)
 
 - [x] Errores de dominio para checkout.
 - [x] Conversión de errores de infraestructura a errores de aplicación.
-- [ ] Validación acumulada y validación fail-fast.
+- [x] Validación acumulada y validación fail-fast.
 
 ### Errores de dominio para checkout
 
@@ -76,6 +76,15 @@ La función principal devuelve `Result<Receipt, CheckoutError>`. Así, el caso e
 El módulo `infrastructure_conversion` simula un repositorio que puede fallar por conexión o por una fila inexistente. La capa de aplicación no expone esos errores técnicos directamente; los traduce a `AppError`.
 
 Esta frontera permite que el dominio hable en términos útiles para el producto, mientras la infraestructura conserva sus propios detalles internos.
+
+### Validación acumulada y fail-fast
+
+El módulo `validation_modes` muestra dos decisiones comunes:
+
+- `validate_registration_fail_fast` devuelve el primer error con `?`, útil cuando el flujo no puede continuar.
+- `validate_registration_accumulated` junta todos los errores, útil para formularios donde conviene responder todo lo que debe corregirse.
+
+Ambos modos comparten las mismas reglas, pero devuelven errores con distinta granularidad según la necesidad del caso de uso.
 
 ## Comandos
 
