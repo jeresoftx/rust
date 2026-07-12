@@ -2,6 +2,7 @@
 
 pub mod bulkhead;
 pub mod circuit_breaker;
+pub mod health_checks_readiness;
 pub mod idempotency_key;
 pub mod outbox_pattern;
 pub mod rate_limiting;

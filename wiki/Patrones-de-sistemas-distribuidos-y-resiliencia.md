@@ -13,7 +13,7 @@ Los ejemplos del repositorio son deterministas y se ejecutan con pruebas unitari
 - [Idempotency Key](Idempotency-Key.md)
 - [Outbox Pattern](Outbox-Pattern.md)
 - [Saga / Process Manager](Saga-Process-Manager.md)
-- Health Checks y readiness
+- [Health Checks y Readiness](Health-Checks-y-Readiness.md)
 - Cache Aside
 - Leader Election simulado
 

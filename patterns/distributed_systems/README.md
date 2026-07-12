@@ -13,6 +13,6 @@ Los ejemplos son simulados y deterministas para que puedan ejecutarse con `cargo
 - [Idempotency Key](idempotency_key/README.md)
 - [Outbox Pattern](outbox_pattern/README.md)
 - [Saga / Process Manager](saga_process_manager/README.md)
-- [ ] Health Checks y readiness.
+- [Health Checks y Readiness](health_checks_readiness/README.md)
 - [ ] Cache Aside.
 - [ ] Leader Election simulado.
