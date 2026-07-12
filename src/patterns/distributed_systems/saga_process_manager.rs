@@ -2,3 +2,5 @@
 //!
 //! Los ejemplos modelan reserva, pago, envío, compensaciones y estado
 //! persistente de forma determinista.
+
+pub mod checkout_flow;
