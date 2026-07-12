@@ -44,7 +44,7 @@ El tipo puede exponer constructores, validaciones, métodos de acceso y traits c
 
 - [x] IDs tipados para usuario, orden y producto.
 - [x] Dinero y moneda sin mezclar unidades.
-- [ ] Tipos seguros para email y token.
+- [x] Tipos seguros para email y token.
 
 ### IDs tipados
 
@@ -57,6 +57,12 @@ El ejemplo muestra cómo validar prefijos de dominio y evitar que IDs con la mis
 El módulo `money_currency` modela `CurrencyCode` y `Money` como newtypes de dominio.
 
 El ejemplo muestra cómo formatear dinero y rechazar operaciones entre monedas distintas antes de producir totales incorrectos.
+
+### Email y token seguros
+
+El módulo `safe_email_token` modela `EmailAddress`, `AuthToken` y `LoginSession`.
+
+El ejemplo muestra cómo normalizar email, validar tokens y construir sesiones solo con datos ya revisados.
 
 ## Comandos
 

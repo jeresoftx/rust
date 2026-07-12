@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 
 - IDs tipados para usuario, orden y producto: `src/patterns/rust_idiomatic/newtype/typed_ids.rs`
 - Dinero y moneda sin mezclar unidades: `src/patterns/rust_idiomatic/newtype/money_currency.rs`
-- Tipos seguros para email y token: pendiente.
+- Tipos seguros para email y token: `src/patterns/rust_idiomatic/newtype/safe_email_token.rs`
 
 ## Guía técnica
 

@@ -246,7 +246,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 - [x] Documentación del patrón.
 - [x] Ejemplo: IDs tipados para usuario, orden y producto.
 - [x] Ejemplo: dinero y moneda sin mezclar unidades.
-- [ ] Ejemplo: tipos seguros para email y token.
+- [x] Ejemplo: tipos seguros para email y token.
 
 ### 25. Typestate
 
