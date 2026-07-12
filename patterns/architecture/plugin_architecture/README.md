@@ -32,9 +32,15 @@ Evítalo si solo tienes dos ramas fijas que no van a crecer. Un registro de plug
 
 ## Ejemplos
 
-- [ ] Plugins de exportación JSON, CSV y texto.
+- [x] Plugins de exportación JSON, CSV y texto.
 - [ ] Registro de estrategias cargadas por configuración.
 - [ ] Extensiones internas mediante traits y trait objects.
+
+### Plugins de exportación JSON, CSV y texto
+
+El módulo `export_plugins` define un contrato `ExportPlugin` y un `ExportRegistry` que resuelve exportadores por clave. El núcleo solo pide `export("json", records)` o `export("csv", records)`; no conoce los detalles de cada formato.
+
+Este estilo evita que un servicio principal acumule ramas por cada nuevo formato de salida.
 
 ## Cómo ejecutar
 
