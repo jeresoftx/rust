@@ -500,7 +500,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 ### 52. Leader Election simulado
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: elegir líder por prioridad.
+- [x] Ejemplo: elegir líder por prioridad.
 - [ ] Ejemplo: failover cuando el líder deja de responder.
 - [ ] Ejemplo: evitar dos líderes activos en la misma ronda.
 

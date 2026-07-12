@@ -26,13 +26,15 @@ Evítalo si puedes delegar coordinación a infraestructura ya probada, como una 
 
 ## Ejemplos
 
-- [ ] Elegir líder por prioridad.
+- [x] Elegir líder por prioridad.
 - [ ] Failover cuando el líder deja de responder.
 - [ ] Evitar dos líderes activos en la misma ronda.
 
 ### Elegir líder por prioridad
 
 El primer ejemplo selecciona el nodo vivo con mayor prioridad.
+
+El módulo `priority_election` elige el nodo vivo con mayor prioridad y no elige nada si todos están caídos.
 
 ### Failover cuando el líder deja de responder
 
