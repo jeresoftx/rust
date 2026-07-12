@@ -54,7 +54,7 @@ El agregado puede reconstruirse con `fold` o aplicando cada evento a un estado i
 
 - [x] Cuenta bancaria reconstruida desde eventos.
 - [x] Auditoría de cambios de orden.
-- [ ] Snapshots para acelerar reconstrucción.
+- [x] Snapshots para acelerar reconstrucción.
 
 ### Cuenta bancaria reconstruida desde eventos
 
@@ -67,6 +67,12 @@ Cuando se ejecuta un comando nuevo, como retirar dinero, el agregado valida la r
 El módulo `order_audit` construye un timeline humano desde eventos de orden: creación, cambios de estado y notas. La auditoría no depende de una tabla especial de logs, sino del mismo stream de eventos.
 
 El ejemplo también reconstruye el estado actual de la orden y permite filtrar entradas por actor, mostrando cómo el historial puede responder preguntas operativas.
+
+### Snapshots para acelerar reconstrucción
+
+El módulo `snapshots` reconstruye un contador desde un `CounterSnapshot` y solo reproduce eventos posteriores a la versión del snapshot. Esto evita procesar eventos que ya están incluidos en el estado guardado.
+
+El ejemplo valida continuidad de versiones para detectar huecos en el stream y reporta cuántos eventos fueron reproducidos.
 
 ## Comandos
 

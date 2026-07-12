@@ -2,3 +2,4 @@
 
 pub mod bank_account;
 pub mod order_audit;
+pub mod snapshots;

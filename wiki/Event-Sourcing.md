@@ -18,7 +18,7 @@ En Rust suele aparecer como:
 
 - Cuenta bancaria reconstruida desde eventos: `bank_account`.
 - Auditoría de cambios de orden: `order_audit`.
-- Snapshots para acelerar reconstrucción: pendiente.
+- Snapshots para acelerar reconstrucción: `snapshots`.
 
 ## Guía técnica
 
