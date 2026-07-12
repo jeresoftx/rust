@@ -26,13 +26,15 @@ Evítalo cuando la consistencia fuerte es obligatoria en cada lectura o cuando e
 
 ## Ejemplos
 
-- [ ] Leer de caché o cargar del repositorio.
+- [x] Leer de caché o cargar del repositorio.
 - [ ] Invalidación al actualizar datos.
 - [ ] TTL simulado con reloj determinista.
 
 ### Leer de caché o cargar del repositorio
 
 El primer ejemplo carga un producto desde repositorio solo en miss y luego lo atiende desde cache.
+
+El módulo `read_through` consulta el cache antes del repositorio. En miss carga el producto, lo guarda en cache y evita lecturas repetidas.
 
 ### Invalidación al actualizar datos
 

@@ -493,7 +493,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 ### 51. Cache Aside
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: leer de caché o cargar del repositorio.
+- [x] Ejemplo: leer de caché o cargar del repositorio.
 - [ ] Ejemplo: invalidación al actualizar datos.
 - [ ] Ejemplo: TTL simulado con reloj determinista.
 
