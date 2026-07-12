@@ -452,7 +452,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: pools separados para proveedores externos.
-- [ ] Ejemplo: límite de concurrencia simulado por recurso.
+- [x] Ejemplo: límite de concurrencia simulado por recurso.
 - [ ] Ejemplo: aislamiento de fallas entre operaciones críticas y no críticas.
 
 ### 46. Rate Limiting

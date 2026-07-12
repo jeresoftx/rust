@@ -34,7 +34,7 @@ Evítalo cuando el sistema es pequeño y un único límite global basta, o cuand
 ## Ejemplos
 
 - [x] Pools separados para proveedores externos.
-- [ ] Límite de concurrencia simulado por recurso.
+- [x] Límite de concurrencia simulado por recurso.
 - [ ] Aislamiento de fallas entre operaciones críticas y no críticas.
 
 ### Pools separados para proveedores externos
@@ -46,6 +46,8 @@ El módulo `provider_pools` separa capacidad para proveedores de pagos y envíos
 ### Límite de concurrencia simulado por recurso
 
 El segundo ejemplo modela adquisición y liberación de slots sin threads reales. Así se puede probar el límite de concurrencia de forma determinista.
+
+El módulo `resource_concurrency_limit` representa recursos como base de datos e índice de búsqueda. Cada recurso tiene su propio límite, su propio contador de actividad y su propio contador de rechazos.
 
 ### Aislamiento de fallas entre operaciones críticas y no críticas
 

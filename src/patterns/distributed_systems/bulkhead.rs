@@ -4,3 +4,4 @@
 //! límites de concurrencia simulados y aislamiento entre operaciones críticas.
 
 pub mod provider_pools;
+pub mod resource_concurrency_limit;
