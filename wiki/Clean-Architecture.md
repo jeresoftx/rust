@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 
 - Entidades, casos de uso, gateways y controladores: `registration_flow`.
 - Reglas de negocio independientes de framework: `framework_independent_rules`.
-- Presenter para respuesta HTTP y respuesta CLI: pendiente.
+- Presenter para respuesta HTTP y respuesta CLI: `presenters`.
 
 ## Guía técnica
 

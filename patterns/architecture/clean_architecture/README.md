@@ -53,7 +53,7 @@ El caso de uso depende del trait, no de una base de datos concreta. El controlad
 
 - [x] Entidades, casos de uso, gateways y controladores.
 - [x] Reglas de negocio independientes de framework.
-- [ ] Presenter para respuesta HTTP y respuesta CLI.
+- [x] Presenter para respuesta HTTP y respuesta CLI.
 
 ### Entidades, casos de uso, gateways y controladores
 
@@ -66,6 +66,12 @@ La dependencia apunta hacia el núcleo: el controlador conoce al caso de uso, el
 El módulo `framework_independent_rules` calcula descuentos de carrito usando entidades y casos de uso propios del núcleo. La regla de descuento recibe un `Cart`, una `DiscountPolicy` y devuelve un resultado sin usar tipos HTTP.
 
 El controlador HTTP del ejemplo solo transforma DTOs externos en tipos del caso de uso y formatea la respuesta. Si mañana el mismo caso de uso se expone por CLI, job o cola de mensajes, la regla no cambia.
+
+### Presenter para respuesta HTTP y respuesta CLI
+
+El módulo `presenters` muestra un caso de uso que genera una vista neutral de factura. El caso de uso depende del trait `InvoicePresenter`, no de un formato concreto.
+
+`HttpPresenter` convierte la vista en una respuesta con código HTTP y cuerpo JSON; `CliPresenter` convierte la misma vista en texto para consola. El núcleo no cambia cuando cambia la interfaz de salida.
 
 ## Comandos
 
