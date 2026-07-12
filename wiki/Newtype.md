@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- IDs tipados para usuario, orden y producto: pendiente.
+- IDs tipados para usuario, orden y producto: `src/patterns/rust_idiomatic/newtype/typed_ids.rs`
 - Dinero y moneda sin mezclar unidades: pendiente.
 - Tipos seguros para email y token: pendiente.
 

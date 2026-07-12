@@ -42,9 +42,15 @@ El tipo puede exponer constructores, validaciones, métodos de acceso y traits c
 
 ## Ejemplos
 
-- [ ] IDs tipados para usuario, orden y producto.
+- [x] IDs tipados para usuario, orden y producto.
 - [ ] Dinero y moneda sin mezclar unidades.
 - [ ] Tipos seguros para email y token.
+
+### IDs tipados
+
+El módulo `typed_ids` modela `UserId`, `OrderId` y `ProductId` como tipos distintos.
+
+El ejemplo muestra cómo validar prefijos de dominio y evitar que IDs con la misma representación se mezclen accidentalmente.
 
 ## Comandos
 

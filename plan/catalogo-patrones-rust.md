@@ -244,7 +244,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 ### 24. Newtype
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: IDs tipados para usuario, orden y producto.
+- [x] Ejemplo: IDs tipados para usuario, orden y producto.
 - [ ] Ejemplo: dinero y moneda sin mezclar unidades.
 - [ ] Ejemplo: tipos seguros para email y token.
 
