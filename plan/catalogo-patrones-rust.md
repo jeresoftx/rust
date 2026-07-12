@@ -274,7 +274,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 - [x] Documentación del patrón.
 - [x] Ejemplo: pipeline de filtrado y transformación de órdenes.
 - [x] Ejemplo: procesamiento por lotes de registros.
-- [ ] Ejemplo: agregaciones de reportes sin estructuras intermedias.
+- [x] Ejemplo: agregaciones de reportes sin estructuras intermedias.
 
 ### 29. Error Handling con Result
 

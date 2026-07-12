@@ -50,7 +50,7 @@ Iterator clásico define cómo recorrer una estructura. Iterator Adapters compon
 
 - [x] Pipeline de filtrado y transformación de órdenes.
 - [x] Procesamiento por lotes de registros.
-- [ ] Agregaciones de reportes sin estructuras intermedias.
+- [x] Agregaciones de reportes sin estructuras intermedias.
 
 ### Pipeline de órdenes facturables
 
@@ -63,6 +63,12 @@ El ejemplo muestra cómo `iter`, `filter`, `map` y `collect` expresan una transf
 El módulo `batch_records` divide registros crudos en lotes, descarta líneas inválidas y produce resúmenes.
 
 El ejemplo muestra cómo `chunks`, `filter_map`, `filter` y `collect` ayudan a expresar procesamiento por lotes sin mutación explícita.
+
+### Agregaciones de reportes
+
+El módulo `report_aggregations` resume eventos de venta con un solo `fold`.
+
+El ejemplo muestra cómo calcular ventas completadas, reembolsos, ingreso neto, ticket promedio y venta más grande sin construir listas intermedias.
 
 ## Comandos
 
