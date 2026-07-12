@@ -453,7 +453,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Documentación del patrón.
 - [x] Ejemplo: pools separados para proveedores externos.
 - [x] Ejemplo: límite de concurrencia simulado por recurso.
-- [ ] Ejemplo: aislamiento de fallas entre operaciones críticas y no críticas.
+- [x] Ejemplo: aislamiento de fallas entre operaciones críticas y no críticas.
 
 ### 46. Rate Limiting
 
@@ -509,7 +509,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Commit: base documental de sistemas distribuidos y resiliencia.
 - [x] Commit individual por cada ejemplo de Retry with Backoff.
 - [x] Commit individual por cada ejemplo de Circuit Breaker.
-- [ ] Commit individual por cada ejemplo de Bulkhead.
+- [x] Commit individual por cada ejemplo de Bulkhead.
 - [ ] Commit individual por cada ejemplo de Rate Limiting.
 - [ ] Commit individual por cada ejemplo de Idempotency Key.
 - [ ] Commit individual por cada ejemplo de Outbox Pattern.

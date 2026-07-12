@@ -35,7 +35,7 @@ Evítalo cuando el sistema es pequeño y un único límite global basta, o cuand
 
 - [x] Pools separados para proveedores externos.
 - [x] Límite de concurrencia simulado por recurso.
-- [ ] Aislamiento de fallas entre operaciones críticas y no críticas.
+- [x] Aislamiento de fallas entre operaciones críticas y no críticas.
 
 ### Pools separados para proveedores externos
 
@@ -52,6 +52,8 @@ El módulo `resource_concurrency_limit` representa recursos como base de datos e
 ### Aislamiento de fallas entre operaciones críticas y no críticas
 
 El tercer ejemplo separa operaciones críticas de operaciones no críticas para mostrar que la saturación de tareas secundarias no debe bloquear el flujo principal.
+
+El módulo `critical_isolation` separa capacidad y métricas de fallas por clase de operación. Así el trabajo de reportes, sincronizaciones o tareas secundarias puede fallar sin consumir la capacidad reservada para pagos, login u otros flujos principales.
 
 ## Cómo ejecutar
 
