@@ -437,7 +437,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 ### 43. Retry with Backoff
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: cliente HTTP simulado con backoff exponencial.
+- [x] Ejemplo: cliente HTTP simulado con backoff exponencial.
 - [ ] Ejemplo: reintentos solo para errores transitorios.
 - [ ] Ejemplo: jitter determinista para evitar reintentos sincronizados.
 

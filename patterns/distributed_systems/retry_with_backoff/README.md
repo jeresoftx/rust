@@ -33,9 +33,15 @@ Evítalo cuando la operación no es idempotente, cuando el error es permanente, 
 
 ## Ejemplos
 
-- [ ] Cliente HTTP simulado con backoff exponencial.
+- [x] Cliente HTTP simulado con backoff exponencial.
 - [ ] Reintentos solo para errores transitorios.
 - [ ] Jitter determinista para evitar reintentos sincronizados.
+
+### Cliente HTTP simulado con backoff exponencial
+
+El módulo `http_client` usa un cliente HTTP simulado para mostrar la mecánica central: intentar una operación, registrar una espera creciente y detenerse al obtener éxito o agotar intentos.
+
+Las esperas se guardan como números en vez de dormir realmente; así el ejemplo es rápido, determinista y fácil de probar.
 
 ## Cómo ejecutar
 

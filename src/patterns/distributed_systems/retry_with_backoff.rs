@@ -2,3 +2,5 @@
 //!
 //! El patrón reintenta operaciones fallidas esperando cada vez más entre
 //! intentos, para reducir presión sobre una dependencia que puede recuperarse.
+
+pub mod http_client;
