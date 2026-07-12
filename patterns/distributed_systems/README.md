@@ -11,7 +11,7 @@ Los ejemplos son simulados y deterministas para que puedan ejecutarse con `cargo
 - [Bulkhead](bulkhead/README.md)
 - [Rate Limiting](rate_limiting/README.md)
 - [Idempotency Key](idempotency_key/README.md)
-- [ ] Outbox Pattern.
+- [Outbox Pattern](outbox_pattern/README.md)
 - [ ] Saga / Process Manager.
 - [ ] Health Checks y readiness.
 - [ ] Cache Aside.

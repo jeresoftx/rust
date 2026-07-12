@@ -11,7 +11,7 @@ Los ejemplos del repositorio son deterministas y se ejecutan con pruebas unitari
 - [Bulkhead](Bulkhead.md)
 - [Rate Limiting](Rate-Limiting.md)
 - [Idempotency Key](Idempotency-Key.md)
-- Outbox Pattern
+- [Outbox Pattern](Outbox-Pattern.md)
 - Saga / Process Manager
 - Health Checks y readiness
 - Cache Aside

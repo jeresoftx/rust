@@ -471,7 +471,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 ### 48. Outbox Pattern
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: guardar entidad y evento en la misma unidad de trabajo.
 - [ ] Ejemplo: publicador que marca mensajes como enviados.
 - [ ] Ejemplo: reintento de mensajes pendientes.
