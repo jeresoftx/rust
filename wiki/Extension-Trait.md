@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Helpers de strings para normalizar entradas: pendiente.
+- Helpers de strings para normalizar entradas: `src/patterns/rust_idiomatic/extension_trait/string_normalization.rs`
 - Helpers de `Result` para mapear errores de dominio: pendiente.
 - Helpers de colecciones para paginar resultados: pendiente.
 

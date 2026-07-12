@@ -57,9 +57,15 @@ Newtype crea un tipo nuevo para reforzar significado e invariantes. Extension Tr
 
 ## Ejemplos
 
-- [ ] Helpers de strings para normalizar entradas.
+- [x] Helpers de strings para normalizar entradas.
 - [ ] Helpers de `Result` para mapear errores de dominio.
 - [ ] Helpers de colecciones para paginar resultados.
+
+### Normalización de strings
+
+El módulo `string_normalization` define `StringNormalizationExt` para agregar métodos de limpieza a `str`.
+
+El ejemplo muestra cómo normalizar espacios, emails y llaves tipo slug sin crear un wrapper nuevo para cada entrada.
 
 ## Comandos
 
