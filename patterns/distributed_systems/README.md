@@ -6,7 +6,7 @@ Los ejemplos son simulados y deterministas para que puedan ejecutarse con `cargo
 
 ## Patrones incluidos en la fase
 
-- [ ] Retry with Backoff.
+- [Retry with Backoff](retry_with_backoff/README.md)
 - [ ] Circuit Breaker.
 - [ ] Bulkhead.
 - [ ] Rate Limiting.
