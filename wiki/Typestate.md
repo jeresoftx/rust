@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Request builder que no permite enviar sin URL: pendiente.
+- Request builder que no permite enviar sin URL: `src/patterns/rust_idiomatic/typestate/request_builder.rs`
 - Orden que solo puede enviarse después de pagarse: pendiente.
 - Conexión que solo ejecuta consultas después de autenticarse: pendiente.
 
