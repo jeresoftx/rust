@@ -320,7 +320,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Documentación del patrón.
 - [x] Ejemplo: caso de uso de checkout con puertos y adaptadores.
 - [x] Ejemplo: repositorio en memoria y repositorio simulado externo.
-- [ ] Ejemplo: adaptador de notificaciones intercambiable.
+- [x] Ejemplo: adaptador de notificaciones intercambiable.
 
 ### 35. Clean Architecture
 

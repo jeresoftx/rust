@@ -53,7 +53,7 @@ Los casos de uso reciben implementaciones genéricas o trait objects. Así se pu
 
 - [x] Caso de uso de checkout con puertos y adaptadores.
 - [x] Repositorio en memoria y repositorio simulado externo.
-- [ ] Adaptador de notificaciones intercambiable.
+- [x] Adaptador de notificaciones intercambiable.
 
 ### Checkout con puertos y adaptadores
 
@@ -66,6 +66,12 @@ Esto permite cambiar el inventario o el gateway de pagos sin modificar el caso d
 El módulo `repository_adapters` define el puerto `CustomerRepository`. El caso de uso puede trabajar con un repositorio en memoria o con un repositorio externo simulado sin cambiar su código.
 
 El ejemplo muestra que los errores técnicos del adaptador externo se traducen a errores esperados del puerto.
+
+### Adaptador de notificaciones intercambiable
+
+El módulo `notification_adapters` define el puerto `NotificationPort`. El caso de uso confirma un envío y delega la notificación a un adaptador.
+
+Los adaptadores de email y SMS tienen salidas distintas, pero el resultado del núcleo se mantiene estable.
 
 ## Comandos
 

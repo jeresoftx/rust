@@ -18,7 +18,7 @@ En Rust suele aparecer como:
 
 - Caso de uso de checkout con puertos y adaptadores: `checkout_ports_adapters`.
 - Repositorio en memoria y repositorio simulado externo: `repository_adapters`.
-- Adaptador de notificaciones intercambiable: pendiente.
+- Adaptador de notificaciones intercambiable: `notification_adapters`.
 
 ## Guía técnica
 
