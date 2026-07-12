@@ -52,7 +52,7 @@ En algunos lenguajes se usa `defer` para programar limpieza al final de una func
 ## Ejemplos
 
 - [x] Lock guard para secciones críticas.
-- [ ] Transacción que hace rollback si no se confirma.
+- [x] Transacción que hace rollback si no se confirma.
 - [ ] Archivo temporal que se limpia al salir de scope.
 
 ### Lock guard para secciones críticas
@@ -60,6 +60,12 @@ En algunos lenguajes se usa `defer` para programar limpieza al final de una func
 El módulo `lock_guard` modela una sección crítica que se bloquea al crear un guard y se libera automáticamente cuando el guard sale de scope.
 
 El ejemplo muestra cómo RAII evita olvidar la liberación del lock, incluso con retornos tempranos.
+
+### Transacción con rollback automático
+
+El módulo `transaction_rollback` modela un ledger con transacciones que acumulan cambios pendientes.
+
+El ejemplo muestra cómo `commit` aplica los cambios y cómo `Drop` registra rollback si la transacción sale de scope sin confirmarse.
 
 ## Comandos
 
