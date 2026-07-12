@@ -33,13 +33,15 @@ Evítalo cuando el tráfico es interno y ya está controlado por otro mecanismo,
 
 ## Ejemplos
 
-- [ ] Token bucket determinista.
+- [x] Token bucket determinista.
 - [ ] Límite por usuario o API key.
 - [ ] Respuesta con tiempo sugerido para reintento.
 
 ### Token bucket determinista
 
 El primer ejemplo modela un bucket con capacidad máxima y recarga por ticks lógicos. No usa tiempo real; las pruebas controlan exactamente cuándo aparecen nuevos tokens.
+
+El módulo `token_bucket` muestra una política simple: cada request consume un token, el bucket se recarga por ticks lógicos y nunca supera su capacidad máxima. Cuando no hay tokens, devuelve rechazo con un tiempo de reintento determinista.
 
 ### Límite por usuario o API key
 

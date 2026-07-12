@@ -458,7 +458,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 ### 46. Rate Limiting
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: token bucket determinista.
+- [x] Ejemplo: token bucket determinista.
 - [ ] Ejemplo: límite por usuario o API key.
 - [ ] Ejemplo: respuesta con tiempo sugerido para reintento.
 

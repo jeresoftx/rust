@@ -12,7 +12,7 @@ Rate Limiting controla cuántas solicitudes u operaciones puede realizar un cons
 
 ## Ejemplos del repositorio
 
-- [ ] Token bucket determinista.
+- [x] Token bucket determinista.
 - [ ] Límite por usuario o API key.
 - [ ] Respuesta con tiempo sugerido para reintento.
 
@@ -20,3 +20,4 @@ Rate Limiting controla cuántas solicitudes u operaciones puede realizar un cons
 
 - Documentación local: `patterns/distributed_systems/rate_limiting/README.md`
 - Módulo Rust: `src/patterns/distributed_systems/rate_limiting.rs`
+- Ejemplo de token bucket: `src/patterns/distributed_systems/rate_limiting/token_bucket.rs`
