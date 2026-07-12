@@ -18,7 +18,7 @@ En Rust suele aparecer como:
 
 - Agregados y value objects para órdenes: `order_aggregate`.
 - Servicios de dominio para políticas de descuento: `discount_service`.
-- Eventos de dominio para integración interna: pendiente.
+- Eventos de dominio para integración interna: `domain_events`.
 
 ## Guía técnica
 

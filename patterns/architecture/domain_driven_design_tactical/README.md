@@ -54,7 +54,7 @@ Un agregado puede exponer métodos de intención, como `add_item`, `confirm` o `
 
 - [x] Agregados y value objects para órdenes.
 - [x] Servicios de dominio para políticas de descuento.
-- [ ] Eventos de dominio para integración interna.
+- [x] Eventos de dominio para integración interna.
 
 ### Agregados y value objects para órdenes
 
@@ -67,6 +67,12 @@ El agregado `Order` protege invariantes: no permite líneas con cantidad cero, n
 El módulo `discount_service` coloca una regla que cruza varios conceptos en un servicio de dominio. La decisión de descuento usa el segmento del cliente, el subtotal del carrito y un cupón opcional.
 
 El servicio elige la mejor política sin acumular descuentos accidentalmente. `Coupon` valida porcentajes inválidos y `DiscountBreakdown` explica el resultado con subtotal, descuento y motivo.
+
+### Eventos de dominio para integración interna
+
+El módulo `domain_events` registra eventos cuando el agregado cambia de estado. Al confirmar una orden, el agregado agrega un `OrderConfirmed` a su buffer interno de eventos.
+
+El método `pull_events` entrega y limpia esos eventos para que un handler interno pueda reservar inventario o notificar facturación sin acoplar esas integraciones al agregado.
 
 ## Comandos
 
