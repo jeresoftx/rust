@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Pipeline de filtrado y transformación de órdenes: pendiente.
+- Pipeline de filtrado y transformación de órdenes: `src/patterns/rust_idiomatic/iterator_adapters/order_pipeline.rs`
 - Procesamiento por lotes de registros: pendiente.
 - Agregaciones de reportes sin estructuras intermedias: pendiente.
 

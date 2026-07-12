@@ -48,9 +48,15 @@ Iterator clásico define cómo recorrer una estructura. Iterator Adapters compon
 
 ## Ejemplos
 
-- [ ] Pipeline de filtrado y transformación de órdenes.
+- [x] Pipeline de filtrado y transformación de órdenes.
 - [ ] Procesamiento por lotes de registros.
 - [ ] Agregaciones de reportes sin estructuras intermedias.
+
+### Pipeline de órdenes facturables
+
+El módulo `order_pipeline` filtra órdenes pagadas con total positivo y las transforma en líneas de factura.
+
+El ejemplo muestra cómo `iter`, `filter`, `map` y `collect` expresan una transformación de negocio sin ciclos manuales.
 
 ## Comandos
 
