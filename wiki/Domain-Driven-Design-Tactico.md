@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Agregados y value objects para órdenes: `order_aggregate`.
-- Servicios de dominio para políticas de descuento: pendiente.
+- Servicios de dominio para políticas de descuento: `discount_service`.
 - Eventos de dominio para integración interna: pendiente.
 
 ## Guía técnica

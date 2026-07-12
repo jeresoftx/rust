@@ -53,7 +53,7 @@ Un agregado puede exponer métodos de intención, como `add_item`, `confirm` o `
 ## Ejemplos
 
 - [x] Agregados y value objects para órdenes.
-- [ ] Servicios de dominio para políticas de descuento.
+- [x] Servicios de dominio para políticas de descuento.
 - [ ] Eventos de dominio para integración interna.
 
 ### Agregados y value objects para órdenes
@@ -61,6 +61,12 @@ Un agregado puede exponer métodos de intención, como `add_item`, `confirm` o `
 El módulo `order_aggregate` modela una orden como agregado. `OrderId`, `Sku` y `Money` son value objects que evitan usar strings y enteros sin significado.
 
 El agregado `Order` protege invariantes: no permite líneas con cantidad cero, no permite confirmar órdenes vacías y bloquea cambios después de confirmar. La intención del dominio aparece en métodos como `add_item` y `confirm`.
+
+### Servicios de dominio para políticas de descuento
+
+El módulo `discount_service` coloca una regla que cruza varios conceptos en un servicio de dominio. La decisión de descuento usa el segmento del cliente, el subtotal del carrito y un cupón opcional.
+
+El servicio elige la mejor política sin acumular descuentos accidentalmente. `Coupon` valida porcentajes inválidos y `DiscountBreakdown` explica el resultado con subtotal, descuento y motivo.
 
 ## Comandos
 

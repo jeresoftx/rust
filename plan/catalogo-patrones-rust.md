@@ -333,7 +333,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: agregados y value objects para órdenes.
-- [ ] Ejemplo: servicios de dominio para políticas de descuento.
+- [x] Ejemplo: servicios de dominio para políticas de descuento.
 - [ ] Ejemplo: eventos de dominio para integración interna.
 
 ### 37. CQRS
