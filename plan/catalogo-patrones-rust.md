@@ -425,7 +425,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Repository and Unit of Work.
 - [x] Commit individual por cada ejemplo de Service Layer.
 - [x] Commit individual por cada ejemplo de Pipeline Architecture.
-- [ ] Commit individual por cada ejemplo de Plugin Architecture.
+- [x] Commit individual por cada ejemplo de Plugin Architecture.
 
 ## Siguiente paso inmediato
 
