@@ -2,7 +2,7 @@
 
 Esta wiki acompaña al repositorio como guía de estudio. Su objetivo es explicar el porqué de cada patrón, cuándo conviene usarlo en Rust y cómo se conecta con ejemplos reales del código.
 
-## Páginas iniciales
+## Páginas principales
 
 - [Ruta de aprendizaje](Ruta-de-aprendizaje.md)
 - [Cómo ejecutar los ejemplos](Como-ejecutar-los-ejemplos.md)
@@ -18,4 +18,4 @@ Esta wiki acompaña al repositorio como guía de estudio. Su objetivo es explica
 - La wiki contiene la explicación didáctica, comparaciones, rutas de lectura y enlaces al código.
 - El archivo `plan/catalogo-patrones-rust.md` registra el avance y los commits esperados.
 
-Estas páginas se mantienen junto con el código para que el repositorio y la wiki cuenten la misma historia de aprendizaje.
+Estas páginas se mantienen junto con el código para que el repositorio y la wiki cuenten la misma historia de aprendizaje. El catálogo de cuatro fases ya está completo y listo para auditorías de calidad o nuevas fases.

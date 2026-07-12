@@ -17,4 +17,4 @@ Los ejemplos del repositorio son deterministas y se ejecutan con pruebas unitari
 - [Cache Aside](Cache-Aside.md)
 - [Leader Election simulado](Leader-Election-simulado.md)
 
-Cada patrón debe explicar qué problema operativo resuelve, cómo simularlo en Rust y qué riesgos aparecen en sistemas reales.
+Cada patrón explica qué problema operativo resuelve, cómo simularlo en Rust y qué riesgos aparecen en sistemas reales.

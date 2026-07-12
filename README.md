@@ -9,7 +9,7 @@ Catálogo didáctico de patrones de diseño implementados en Rust. El proyecto a
 
 Cada ejemplo busca resolver un caso cotidiano de sistemas: configuración, pagos, notificaciones, caché, logs, APIs, colas, reportes, permisos o procesamiento de datos.
 
-Estado actual: el catálogo inicial de tres fases está completo. La Fase 4 agrega patrones de resiliencia y sistemas distribuidos con el mismo ritmo de documentación, pruebas y commits individuales.
+Estado actual: el catálogo de cuatro fases está completo. La Fase 4 cerró los patrones de resiliencia y sistemas distribuidos con el mismo ritmo de documentación, pruebas y commits individuales.
 
 ## Ruta rápida
 
@@ -25,6 +25,11 @@ Estado actual: el catálogo inicial de tres fases está completo. La Fase 4 agre
 ├── Cargo.toml
 ├── README.md
 ├── plan/
+├── patterns/
+│   ├── gof/
+│   ├── rust_idiomatic/
+│   ├── architecture/
+│   └── distributed_systems/
 ├── src/
 ├── tests/
 └── wiki/
@@ -66,4 +71,4 @@ Layered Architecture, Hexagonal Architecture, Clean Architecture, DDD táctico, 
 
 ### Fase 4: Sistemas distribuidos y resiliencia
 
-Retry with Backoff, Circuit Breaker, Bulkhead, Rate Limiting, Idempotency Key, Outbox Pattern, Saga / Process Manager, Health Checks, Cache Aside y Leader Election simulado.
+Retry with Backoff, Circuit Breaker, Bulkhead, Rate Limiting, Idempotency Key, Outbox Pattern, Saga / Process Manager, Health Checks y Readiness, Cache Aside y Leader Election simulado.

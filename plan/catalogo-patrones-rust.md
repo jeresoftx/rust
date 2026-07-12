@@ -428,7 +428,15 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-La Fase 4 de sistemas distribuidos y resiliencia quedó completa. El siguiente paso será auditar documentación, revisar consistencia del catálogo completo y definir si abrimos una Fase 5.
+La Fase 4 de sistemas distribuidos y resiliencia quedó completa. La auditoría de documentación revisa consistencia entre README, plan, documentación local y wiki. Después de esta pasada, el siguiente paso será definir si abrimos una Fase 5.
+
+## Auditoría de documentación
+
+- [x] Revisar que no existan checkboxes pendientes en el plan, README, documentación local ni wiki.
+- [x] Verificar enlaces Markdown locales entre README, plan, patterns y wiki.
+- [x] Alinear el estado del README principal con la Fase 4 completa.
+- [x] Alinear nombres de patrones entre README, plan, documentación local y wiki.
+- [x] Agregar índices locales de familia para GoF, Rust idiomático y arquitectura.
 
 ## Fase 4: Sistemas distribuidos y resiliencia
 
