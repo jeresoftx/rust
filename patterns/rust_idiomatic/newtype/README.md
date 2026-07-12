@@ -43,7 +43,7 @@ El tipo puede exponer constructores, validaciones, métodos de acceso y traits c
 ## Ejemplos
 
 - [x] IDs tipados para usuario, orden y producto.
-- [ ] Dinero y moneda sin mezclar unidades.
+- [x] Dinero y moneda sin mezclar unidades.
 - [ ] Tipos seguros para email y token.
 
 ### IDs tipados
@@ -51,6 +51,12 @@ El tipo puede exponer constructores, validaciones, métodos de acceso y traits c
 El módulo `typed_ids` modela `UserId`, `OrderId` y `ProductId` como tipos distintos.
 
 El ejemplo muestra cómo validar prefijos de dominio y evitar que IDs con la misma representación se mezclen accidentalmente.
+
+### Dinero y moneda
+
+El módulo `money_currency` modela `CurrencyCode` y `Money` como newtypes de dominio.
+
+El ejemplo muestra cómo formatear dinero y rechazar operaciones entre monedas distintas antes de producir totales incorrectos.
 
 ## Comandos
 
