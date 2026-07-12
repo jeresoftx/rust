@@ -225,7 +225,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 #### 22. Template Method
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: flujo común para importar archivos con pasos variables.
 - [ ] Ejemplo: generación de reportes con secciones personalizadas.
 - [ ] Ejemplo: proceso de onboarding con hooks por tipo de cuenta.
