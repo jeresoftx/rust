@@ -362,7 +362,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Documentación del patrón.
 - [x] Ejemplo: servicio de aplicación para registrar usuario.
 - [x] Ejemplo: servicio de checkout que coordina repositorios y políticas.
-- [ ] Ejemplo: servicio de reportes para consultas complejas.
+- [x] Ejemplo: servicio de reportes para consultas complejas.
 
 ### 41. Pipeline Architecture
 

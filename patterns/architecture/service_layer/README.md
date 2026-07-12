@@ -35,7 +35,7 @@ Evítalo si solo estás envolviendo un CRUD trivial sin agregar intención. Un s
 
 - [x] Servicio de aplicación para registrar usuario.
 - [x] Servicio de checkout que coordina repositorios y políticas.
-- [ ] Servicio de reportes para consultas complejas.
+- [x] Servicio de reportes para consultas complejas.
 
 ### Servicio de aplicación para registrar usuario
 
@@ -48,6 +48,12 @@ Este ejemplo deja los controladores fuera de la ecuación: cualquier interfaz pu
 El módulo `checkout_service` modela un checkout con inventario, repositorio de órdenes, gateway de pago y política de descuento. El servicio calcula el subtotal, aplica descuentos, cobra y solo después reserva inventario y guarda la orden.
 
 La prueba de pago rechazado muestra una regla importante de aplicación: si el pago falla, no se debe modificar inventario ni persistir la orden.
+
+### Servicio de reportes para consultas complejas
+
+El módulo `reporting_service` muestra un caso de uso de lectura. El servicio recibe una consulta, combina clientes y órdenes desde un repositorio de reportes, filtra ventas pagadas o todas las órdenes y produce un `SalesReport`.
+
+Este estilo es útil cuando el endpoint necesita un DTO específico para tablero, auditoría o análisis, pero no queremos que la capa HTTP conozca los detalles de agregación.
 
 ## Cómo ejecutar
 
