@@ -25,13 +25,15 @@ Evítalo como reemplazo de métricas profundas. Un health check debe ser rápido
 
 ## Ejemplos
 
-- [ ] Chequeos de dependencias críticas.
+- [x] Chequeos de dependencias críticas.
 - [ ] Readiness separado de liveness.
 - [ ] Reporte agregado para orquestadores.
 
 ### Chequeos de dependencias críticas
 
 El primer ejemplo evalúa base de datos y broker como dependencias críticas.
+
+El módulo `critical_dependencies` distingue dependencias críticas y opcionales. Solo una dependencia crítica caída vuelve `Unhealthy` el reporte.
 
 ### Readiness separado de liveness
 

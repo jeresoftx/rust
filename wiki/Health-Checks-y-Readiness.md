@@ -12,7 +12,7 @@ Health Checks y Readiness reportan si un servicio está vivo, listo para recibir
 
 ## Ejemplos del repositorio
 
-- [ ] Chequeos de dependencias críticas.
+- [x] Chequeos de dependencias críticas.
 - [ ] Readiness separado de liveness.
 - [ ] Reporte agregado para orquestadores.
 
@@ -20,3 +20,4 @@ Health Checks y Readiness reportan si un servicio está vivo, listo para recibir
 
 - Documentación local: `patterns/distributed_systems/health_checks_readiness/README.md`
 - Módulo Rust: `src/patterns/distributed_systems/health_checks_readiness.rs`
+- Ejemplo de dependencias críticas: `src/patterns/distributed_systems/health_checks_readiness/critical_dependencies.rs`

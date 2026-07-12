@@ -486,7 +486,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 ### 50. Health Checks y Readiness
 
 - [x] Documentación del patrón.
-- [ ] Ejemplo: chequeos de dependencias críticas.
+- [x] Ejemplo: chequeos de dependencias críticas.
 - [ ] Ejemplo: readiness separado de liveness.
 - [ ] Ejemplo: reporte agregado para orquestadores.
 

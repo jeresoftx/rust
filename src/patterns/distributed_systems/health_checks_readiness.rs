@@ -2,3 +2,5 @@
 //!
 //! Los ejemplos separan dependencias críticas, liveness/readiness y reportes
 //! agregados para orquestadores.
+
+pub mod critical_dependencies;
