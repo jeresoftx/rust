@@ -6,3 +6,4 @@ pub mod domain_driven_design_tactical;
 pub mod event_sourcing;
 pub mod hexagonal_architecture;
 pub mod layered_architecture;
+pub mod repository_unit_of_work;
