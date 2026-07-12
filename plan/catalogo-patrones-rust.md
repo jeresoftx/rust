@@ -260,7 +260,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 - [x] Documentación del patrón.
 - [x] Ejemplo: lock guard para secciones críticas.
 - [x] Ejemplo: transacción que hace rollback si no se confirma.
-- [ ] Ejemplo: archivo temporal que se limpia al salir de scope.
+- [x] Ejemplo: archivo temporal que se limpia al salir de scope.
 
 ### 27. Extension Trait
 

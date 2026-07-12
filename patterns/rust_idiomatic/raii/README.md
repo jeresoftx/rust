@@ -53,7 +53,7 @@ En algunos lenguajes se usa `defer` para programar limpieza al final de una func
 
 - [x] Lock guard para secciones críticas.
 - [x] Transacción que hace rollback si no se confirma.
-- [ ] Archivo temporal que se limpia al salir de scope.
+- [x] Archivo temporal que se limpia al salir de scope.
 
 ### Lock guard para secciones críticas
 
@@ -66,6 +66,12 @@ El ejemplo muestra cómo RAII evita olvidar la liberación del lock, incluso con
 El módulo `transaction_rollback` modela un ledger con transacciones que acumulan cambios pendientes.
 
 El ejemplo muestra cómo `commit` aplica los cambios y cómo `Drop` registra rollback si la transacción sale de scope sin confirmarse.
+
+### Archivo temporal con limpieza automática
+
+El módulo `temporary_file_cleanup` modela un archivo temporal que existe mientras vive el valor `TemporaryFile`.
+
+El ejemplo muestra cómo el archivo se elimina al salir de scope y cómo la limpieza se mantiene segura incluso si el archivo ya fue removido manualmente.
 
 ## Comandos
 

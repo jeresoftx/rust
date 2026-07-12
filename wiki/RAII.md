@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 
 - Lock guard para secciones críticas: `src/patterns/rust_idiomatic/raii/lock_guard.rs`
 - Transacción que hace rollback si no se confirma: `src/patterns/rust_idiomatic/raii/transaction_rollback.rs`
-- Archivo temporal que se limpia al salir de scope: pendiente.
+- Archivo temporal que se limpia al salir de scope: `src/patterns/rust_idiomatic/raii/temporary_file_cleanup.rs`
 
 ## Guía técnica
 
