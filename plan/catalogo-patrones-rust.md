@@ -478,7 +478,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 ### 49. Saga / Process Manager
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: reserva, pago y envío coordinados por pasos.
 - [ ] Ejemplo: compensación cuando falla un paso intermedio.
 - [ ] Ejemplo: estado persistente del proceso.

@@ -12,7 +12,7 @@ Los ejemplos del repositorio son deterministas y se ejecutan con pruebas unitari
 - [Rate Limiting](Rate-Limiting.md)
 - [Idempotency Key](Idempotency-Key.md)
 - [Outbox Pattern](Outbox-Pattern.md)
-- Saga / Process Manager
+- [Saga / Process Manager](Saga-Process-Manager.md)
 - Health Checks y readiness
 - Cache Aside
 - Leader Election simulado

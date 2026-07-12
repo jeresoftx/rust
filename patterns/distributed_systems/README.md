@@ -12,7 +12,7 @@ Los ejemplos son simulados y deterministas para que puedan ejecutarse con `cargo
 - [Rate Limiting](rate_limiting/README.md)
 - [Idempotency Key](idempotency_key/README.md)
 - [Outbox Pattern](outbox_pattern/README.md)
-- [ ] Saga / Process Manager.
+- [Saga / Process Manager](saga_process_manager/README.md)
 - [ ] Health Checks y readiness.
 - [ ] Cache Aside.
 - [ ] Leader Election simulado.
