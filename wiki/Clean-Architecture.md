@@ -15,7 +15,7 @@ En Rust suele aparecer como:
 
 ## Ejemplos del repositorio
 
-- Entidades, casos de uso, gateways y controladores: pendiente.
+- Entidades, casos de uso, gateways y controladores: `registration_flow`.
 - Reglas de negocio independientes de framework: pendiente.
 - Presenter para respuesta HTTP y respuesta CLI: pendiente.
 
