@@ -428,7 +428,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-Continuar con la Fase 4 de sistemas distribuidos y resiliencia, siguiendo con Rate Limiting y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
+Continuar con la Fase 4 de sistemas distribuidos y resiliencia, siguiendo con Idempotency Key y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
 
 ## Fase 4: Sistemas distribuidos y resiliencia
 
