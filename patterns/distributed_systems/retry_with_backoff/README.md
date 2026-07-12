@@ -35,7 +35,7 @@ Evítalo cuando la operación no es idempotente, cuando el error es permanente, 
 
 - [x] Cliente HTTP simulado con backoff exponencial.
 - [x] Reintentos solo para errores transitorios.
-- [ ] Jitter determinista para evitar reintentos sincronizados.
+- [x] Jitter determinista para evitar reintentos sincronizados.
 
 ### Cliente HTTP simulado con backoff exponencial
 
@@ -48,6 +48,12 @@ Las esperas se guardan como números en vez de dormir realmente; así el ejemplo
 El módulo `transient_errors` separa errores transitorios de errores permanentes. El executor reintenta timeouts o saturación temporal, pero falla rápido cuando el problema es un payload inválido o una regla de negocio permanente.
 
 Esta distinción evita gastar presupuesto de reintentos en errores que no se van a corregir esperando.
+
+### Jitter determinista para evitar reintentos sincronizados
+
+El módulo `deterministic_jitter` calcula offsets reproducibles a partir del identificador de un nodo o worker. Así varias instancias pueden usar la misma política base sin reintentar exactamente al mismo tiempo.
+
+El ejemplo evita aleatoriedad real para que las pruebas sean estables.
 
 ## Cómo ejecutar
 

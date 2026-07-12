@@ -439,7 +439,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Documentación del patrón.
 - [x] Ejemplo: cliente HTTP simulado con backoff exponencial.
 - [x] Ejemplo: reintentos solo para errores transitorios.
-- [ ] Ejemplo: jitter determinista para evitar reintentos sincronizados.
+- [x] Ejemplo: jitter determinista para evitar reintentos sincronizados.
 
 ### 44. Circuit Breaker
 
@@ -507,7 +507,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 ## Checklist de commits de Fase 4
 
 - [ ] Commit: base documental de sistemas distribuidos y resiliencia.
-- [ ] Commit individual por cada ejemplo de Retry with Backoff.
+- [x] Commit individual por cada ejemplo de Retry with Backoff.
 - [ ] Commit individual por cada ejemplo de Circuit Breaker.
 - [ ] Commit individual por cada ejemplo de Bulkhead.
 - [ ] Commit individual por cada ejemplo de Rate Limiting.
