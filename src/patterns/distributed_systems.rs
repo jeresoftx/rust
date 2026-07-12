@@ -5,6 +5,7 @@ pub mod cache_aside;
 pub mod circuit_breaker;
 pub mod health_checks_readiness;
 pub mod idempotency_key;
+pub mod leader_election;
 pub mod outbox_pattern;
 pub mod rate_limiting;
 pub mod retry_with_backoff;

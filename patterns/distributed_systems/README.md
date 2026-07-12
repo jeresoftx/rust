@@ -15,4 +15,4 @@ Los ejemplos son simulados y deterministas para que puedan ejecutarse con `cargo
 - [Saga / Process Manager](saga_process_manager/README.md)
 - [Health Checks y Readiness](health_checks_readiness/README.md)
 - [Cache Aside](cache_aside/README.md)
-- [ ] Leader Election simulado.
+- [Leader Election simulado](leader_election/README.md)

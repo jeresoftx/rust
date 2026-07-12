@@ -1,0 +1,4 @@
+//! Leader Election simulado elige un nodo coordinador de forma determinista.
+//!
+//! Los ejemplos cubren prioridad, failover y prevención de dos líderes activos
+//! por ronda.

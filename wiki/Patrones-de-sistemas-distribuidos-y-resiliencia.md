@@ -15,6 +15,6 @@ Los ejemplos del repositorio son deterministas y se ejecutan con pruebas unitari
 - [Saga / Process Manager](Saga-Process-Manager.md)
 - [Health Checks y Readiness](Health-Checks-y-Readiness.md)
 - [Cache Aside](Cache-Aside.md)
-- Leader Election simulado
+- [Leader Election simulado](Leader-Election-simulado.md)
 
 Cada patrón debe explicar qué problema operativo resuelve, cómo simularlo en Rust y qué riesgos aparecen en sistemas reales.
