@@ -7,7 +7,7 @@ La Fase 2 explica patrones que aparecen naturalmente en Rust real.
 - [RAII](RAII.md)
 - [Extension Trait](Extension-Trait.md)
 - [Iterator Adapters](Iterator-Adapters.md)
-- Error Handling con `Result`
+- [Error Handling con `Result`](Error-Handling-con-Result.md)
 - Interior Mutability
 - Message Passing
 - Actor-like Workers
