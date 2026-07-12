@@ -428,7 +428,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-Continuar con la Fase 4 de sistemas distribuidos y resiliencia, empezando con Retry with Backoff y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
+Continuar con la Fase 4 de sistemas distribuidos y resiliencia, siguiendo con Circuit Breaker y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
 
 ## Fase 4: Sistemas distribuidos y resiliencia
 
@@ -506,7 +506,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 ## Checklist de commits de Fase 4
 
-- [ ] Commit: base documental de sistemas distribuidos y resiliencia.
+- [x] Commit: base documental de sistemas distribuidos y resiliencia.
 - [x] Commit individual por cada ejemplo de Retry with Backoff.
 - [ ] Commit individual por cada ejemplo de Circuit Breaker.
 - [ ] Commit individual por cada ejemplo de Bulkhead.
