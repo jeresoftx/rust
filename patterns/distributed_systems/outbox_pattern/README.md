@@ -28,13 +28,15 @@ Evítalo si la operación no publica efectos externos, o si ya usas una infraest
 
 ## Ejemplos
 
-- [ ] Guardar entidad y evento en la misma unidad de trabajo.
+- [x] Guardar entidad y evento en la misma unidad de trabajo.
 - [ ] Publicador que marca mensajes como enviados.
 - [ ] Reintento de mensajes pendientes.
 
 ### Guardar entidad y evento en la misma unidad de trabajo
 
 El primer ejemplo guarda una orden y su evento outbox de forma conjunta para que no queden separados.
+
+El módulo `unit_of_work` simula una transacción en memoria: una orden y su mensaje outbox se registran juntos, y un fallo aborta ambos cambios.
 
 ### Publicador que marca mensajes como enviados
 
