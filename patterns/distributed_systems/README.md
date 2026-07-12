@@ -8,7 +8,7 @@ Los ejemplos son simulados y deterministas para que puedan ejecutarse con `cargo
 
 - [Retry with Backoff](retry_with_backoff/README.md)
 - [Circuit Breaker](circuit_breaker/README.md)
-- [ ] Bulkhead.
+- [Bulkhead](bulkhead/README.md)
 - [ ] Rate Limiting.
 - [ ] Idempotency Key.
 - [ ] Outbox Pattern.
