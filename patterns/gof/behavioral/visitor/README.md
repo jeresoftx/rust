@@ -38,9 +38,15 @@ Iterator define cómo recorrer elementos. Visitor define qué operación ejecuta
 
 ## Ejemplos
 
-- [ ] Exportar un árbol de expresiones a texto y JSON.
+- [x] Exportar un árbol de expresiones a texto y JSON.
 - [ ] Calcular totales recorriendo elementos de factura.
 - [ ] Validar nodos de un workflow.
+
+### Exportar un árbol de expresiones
+
+El módulo `expression_export` modela nodos de expresión y dos visitantes: uno exporta texto legible y otro exporta JSON.
+
+El ejemplo muestra cómo agregar una nueva operación de exportación sin cambiar los nodos del árbol.
 
 ## Comandos
 
