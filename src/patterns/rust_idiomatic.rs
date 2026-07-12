@@ -4,6 +4,7 @@ pub mod error_handling_result;
 pub mod extension_trait;
 pub mod interior_mutability;
 pub mod iterator_adapters;
+pub mod message_passing;
 pub mod newtype;
 pub mod raii;
 pub mod typestate;

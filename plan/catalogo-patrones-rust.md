@@ -292,7 +292,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 
 ### 31. Message Passing
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: worker que procesa jobs desde un canal.
 - [ ] Ejemplo: fan-out de eventos a consumidores.
 - [ ] Ejemplo: pipeline de etapas con canales.
