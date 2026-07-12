@@ -35,7 +35,7 @@ Evítalo para lecturas simples o cuando no puedes almacenar de forma confiable e
 
 - [x] Pagos protegidos contra doble envío.
 - [x] Caché de respuestas por llave de idempotencia.
-- [ ] Conflicto cuando la misma llave trae payload distinto.
+- [x] Conflicto cuando la misma llave trae payload distinto.
 
 ### Pagos protegidos contra doble envío
 
@@ -52,6 +52,8 @@ El módulo `cached_responses` simula la creación de órdenes. La primera solici
 ### Conflicto cuando la misma llave trae payload distinto
 
 El tercer ejemplo detecta el caso peligroso: una misma llave usada con datos diferentes. En vez de devolver una respuesta incorrecta, responde con conflicto.
+
+El módulo `payload_conflict` separa el replay válido del uso peligroso de la misma llave con otro payload. Un conflicto no reemplaza la respuesta original ni vuelve a ejecutar la operación.
 
 ## Cómo ejecutar
 

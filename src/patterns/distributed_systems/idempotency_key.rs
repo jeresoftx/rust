@@ -4,4 +4,5 @@
 //! con almacenamiento en memoria determinista.
 
 pub mod cached_responses;
+pub mod payload_conflict;
 pub mod payment_deduplication;

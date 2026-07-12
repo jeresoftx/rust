@@ -467,7 +467,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Documentación del patrón.
 - [x] Ejemplo: pagos protegidos contra doble envío.
 - [x] Ejemplo: caché de respuestas por llave de idempotencia.
-- [ ] Ejemplo: conflicto cuando la misma llave trae payload distinto.
+- [x] Ejemplo: conflicto cuando la misma llave trae payload distinto.
 
 ### 48. Outbox Pattern
 
@@ -511,7 +511,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Commit individual por cada ejemplo de Circuit Breaker.
 - [x] Commit individual por cada ejemplo de Bulkhead.
 - [x] Commit individual por cada ejemplo de Rate Limiting.
-- [ ] Commit individual por cada ejemplo de Idempotency Key.
+- [x] Commit individual por cada ejemplo de Idempotency Key.
 - [ ] Commit individual por cada ejemplo de Outbox Pattern.
 - [ ] Commit individual por cada ejemplo de Saga / Process Manager.
 - [ ] Commit individual por cada ejemplo de Health Checks y Readiness.

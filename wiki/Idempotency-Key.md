@@ -14,7 +14,7 @@ Idempotency Key evita duplicar efectos cuando una petición se repite. El client
 
 - [x] Pagos protegidos contra doble envío.
 - [x] Caché de respuestas por llave de idempotencia.
-- [ ] Conflicto cuando la misma llave trae payload distinto.
+- [x] Conflicto cuando la misma llave trae payload distinto.
 
 ## Código
 
@@ -22,3 +22,4 @@ Idempotency Key evita duplicar efectos cuando una petición se repite. El client
 - Módulo Rust: `src/patterns/distributed_systems/idempotency_key.rs`
 - Ejemplo de pagos idempotentes: `src/patterns/distributed_systems/idempotency_key/payment_deduplication.rs`
 - Ejemplo de caché de respuestas: `src/patterns/distributed_systems/idempotency_key/cached_responses.rs`
+- Ejemplo de conflicto por payload distinto: `src/patterns/distributed_systems/idempotency_key/payload_conflict.rs`
