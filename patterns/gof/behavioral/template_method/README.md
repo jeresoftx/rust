@@ -40,7 +40,7 @@ Strategy intercambia algoritmos completos. Template Method fija el algoritmo pri
 
 - [x] Flujo común para importar archivos con pasos variables.
 - [x] Generación de reportes con secciones personalizadas.
-- [ ] Proceso de onboarding con hooks por tipo de cuenta.
+- [x] Proceso de onboarding con hooks por tipo de cuenta.
 
 ### Flujo común para importar archivos
 
@@ -53,6 +53,12 @@ El ejemplo muestra cómo cada importador cambia el parser y el destino, mientras
 El módulo `report_generation` modela reportes con portada, resumen, secciones y pie.
 
 El ejemplo muestra cómo cada reporte personaliza sus secciones y puede usar un hook para cambiar el pie sin duplicar el flujo de generación.
+
+### Proceso de onboarding
+
+El módulo `onboarding` modela un flujo común para validar email, crear cuenta, aprovisionar servicios base, ejecutar hooks y cerrar el alta.
+
+El ejemplo muestra cómo cuentas starter y enterprise comparten el flujo principal, pero cambian hooks como correo de bienvenida, asignación de success manager o SSO.
 
 ## Comandos
 
