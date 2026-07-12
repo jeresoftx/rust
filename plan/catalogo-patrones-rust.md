@@ -250,7 +250,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 
 ### 25. Typestate
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: request builder que no permite enviar sin URL.
 - [ ] Ejemplo: orden que solo puede enviarse después de pagarse.
 - [ ] Ejemplo: conexión que solo ejecuta consultas después de autenticarse.
