@@ -14,5 +14,5 @@ Los ejemplos son simulados y deterministas para que puedan ejecutarse con `cargo
 - [Outbox Pattern](outbox_pattern/README.md)
 - [Saga / Process Manager](saga_process_manager/README.md)
 - [Health Checks y Readiness](health_checks_readiness/README.md)
-- [ ] Cache Aside.
+- [Cache Aside](cache_aside/README.md)
 - [ ] Leader Election simulado.

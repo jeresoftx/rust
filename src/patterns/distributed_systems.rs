@@ -1,6 +1,7 @@
 //! Patrones de sistemas distribuidos y resiliencia aplicados con Rust.
 
 pub mod bulkhead;
+pub mod cache_aside;
 pub mod circuit_breaker;
 pub mod health_checks_readiness;
 pub mod idempotency_key;
