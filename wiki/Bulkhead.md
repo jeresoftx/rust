@@ -12,7 +12,7 @@ Bulkhead divide recursos en compartimentos aislados. Si una integración o flujo
 
 ## Ejemplos del repositorio
 
-- [ ] Pools separados para proveedores externos.
+- [x] Pools separados para proveedores externos.
 - [ ] Límite de concurrencia simulado por recurso.
 - [ ] Aislamiento de fallas entre operaciones críticas y no críticas.
 
@@ -20,3 +20,4 @@ Bulkhead divide recursos en compartimentos aislados. Si una integración o flujo
 
 - Documentación local: `patterns/distributed_systems/bulkhead/README.md`
 - Módulo Rust: `src/patterns/distributed_systems/bulkhead.rs`
+- Ejemplo de pools por proveedor: `src/patterns/distributed_systems/bulkhead/provider_pools.rs`

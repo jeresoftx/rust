@@ -33,13 +33,15 @@ Evítalo cuando el sistema es pequeño y un único límite global basta, o cuand
 
 ## Ejemplos
 
-- [ ] Pools separados para proveedores externos.
+- [x] Pools separados para proveedores externos.
 - [ ] Límite de concurrencia simulado por recurso.
 - [ ] Aislamiento de fallas entre operaciones críticas y no críticas.
 
 ### Pools separados para proveedores externos
 
 El primer ejemplo asigna capacidad independiente a dos proveedores. Si un proveedor agota su pool, el otro puede seguir aceptando trabajo.
+
+El módulo `provider_pools` separa capacidad para proveedores de pagos y envíos. Las pruebas validan que saturar un proveedor no bloquea al otro, que liberar un slot afecta solo a su proveedor y que el sistema reporta capacidad restante por compartimento.
 
 ### Límite de concurrencia simulado por recurso
 
