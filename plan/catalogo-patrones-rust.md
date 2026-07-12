@@ -438,7 +438,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: cliente HTTP simulado con backoff exponencial.
-- [ ] Ejemplo: reintentos solo para errores transitorios.
+- [x] Ejemplo: reintentos solo para errores transitorios.
 - [ ] Ejemplo: jitter determinista para evitar reintentos sincronizados.
 
 ### 44. Circuit Breaker

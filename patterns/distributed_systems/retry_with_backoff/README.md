@@ -34,7 +34,7 @@ Evítalo cuando la operación no es idempotente, cuando el error es permanente, 
 ## Ejemplos
 
 - [x] Cliente HTTP simulado con backoff exponencial.
-- [ ] Reintentos solo para errores transitorios.
+- [x] Reintentos solo para errores transitorios.
 - [ ] Jitter determinista para evitar reintentos sincronizados.
 
 ### Cliente HTTP simulado con backoff exponencial
@@ -42,6 +42,12 @@ Evítalo cuando la operación no es idempotente, cuando el error es permanente, 
 El módulo `http_client` usa un cliente HTTP simulado para mostrar la mecánica central: intentar una operación, registrar una espera creciente y detenerse al obtener éxito o agotar intentos.
 
 Las esperas se guardan como números en vez de dormir realmente; así el ejemplo es rápido, determinista y fácil de probar.
+
+### Reintentos solo para errores transitorios
+
+El módulo `transient_errors` separa errores transitorios de errores permanentes. El executor reintenta timeouts o saturación temporal, pero falla rápido cuando el problema es un payload inválido o una regla de negocio permanente.
+
+Esta distinción evita gastar presupuesto de reintentos en errores que no se van a corregir esperando.
 
 ## Cómo ejecutar
 

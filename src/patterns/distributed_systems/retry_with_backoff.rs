@@ -4,3 +4,4 @@
 //! intentos, para reducir presión sobre una dependencia que puede recuperarse.
 
 pub mod http_client;
+pub mod transient_errors;
