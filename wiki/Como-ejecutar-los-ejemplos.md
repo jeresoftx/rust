@@ -7,7 +7,7 @@ Todos los ejemplos deben compilar con Cargo y tener pruebas o asserts ejecutable
 ```bash
 cargo fmt --check
 cargo check
-cargo test
+cargo test --quiet
 ```
 
 ## Ejecutar una prueba específica
@@ -16,9 +16,9 @@ cargo test
 cargo test exposes_the_three_learning_families
 ```
 
-## Convención para futuros ejemplos
+## Convención de los ejemplos
 
-Cada patrón agregará una documentación local con:
+Cada patrón mantiene una documentación local con:
 
 - Intención del patrón.
 - Problema cotidiano que resuelve.

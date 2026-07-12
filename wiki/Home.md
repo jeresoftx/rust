@@ -17,4 +17,4 @@ Esta wiki acompaña al repositorio como guía de estudio. Su objetivo es explica
 - La wiki contiene la explicación didáctica, comparaciones, rutas de lectura y enlaces al código.
 - El archivo `plan/catalogo-patrones-rust.md` registra el avance y los commits esperados.
 
-Estas páginas se irán ampliando conforme agreguemos nuevos patrones, ejemplos y commits individuales.
+Estas páginas se mantienen junto con el código para que el repositorio y la wiki cuenten la misma historia de aprendizaje.

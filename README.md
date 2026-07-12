@@ -8,6 +8,8 @@ Catálogo didáctico de patrones de diseño implementados en Rust. El proyecto a
 
 Cada ejemplo busca resolver un caso cotidiano de sistemas: configuración, pagos, notificaciones, caché, logs, APIs, colas, reportes, permisos o procesamiento de datos.
 
+Estado actual: el catálogo inicial de tres fases está completo, con documentación, ejemplos ejecutables y pruebas por patrón.
+
 ## Ruta rápida
 
 - Plan vivo del proyecto: [plan/catalogo-patrones-rust.md](plan/catalogo-patrones-rust.md)
@@ -27,14 +29,14 @@ Cada ejemplo busca resolver un caso cotidiano de sistemas: configuración, pagos
 └── wiki/
 ```
 
-La documentación didáctica vive en `wiki/`. La documentación técnica cercana al código vivirá junto a cada patrón conforme se agreguen ejemplos.
+La documentación didáctica vive en `wiki/`. La documentación técnica cercana al código vive junto a cada patrón dentro de `patterns/`.
 
 ## Comandos
 
 ```bash
 cargo fmt --check
 cargo check
-cargo test
+cargo test --quiet
 ```
 
 ## Convenciones

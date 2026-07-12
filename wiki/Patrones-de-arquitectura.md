@@ -13,4 +13,4 @@ La Fase 3 conecta los ejemplos pequeños con diseño de sistemas.
 - [Pipeline Architecture](Pipeline-Architecture.md)
 - [Plugin Architecture](Plugin-Architecture.md)
 
-Cada patrón de arquitectura debe mostrar una estructura de aplicación entendible, con dependencias claras y pruebas enfocadas.
+Cada patrón de arquitectura muestra una estructura de aplicación entendible, con dependencias claras y pruebas enfocadas.

@@ -23,4 +23,4 @@ Después de GoF, estudiamos soluciones que aparecen mucho en Rust real: Newtype,
 
 ## 4. Patrones de arquitectura
 
-Finalmente conectamos los patrones con diseño de aplicaciones completas: capas, puertos y adaptadores, CQRS, Event Sourcing y pipelines.
+Finalmente conectamos los patrones con diseño de aplicaciones completas: capas, puertos y adaptadores, Clean Architecture, DDD táctico, CQRS, Event Sourcing, Repository and Unit of Work, Service Layer, Pipeline Architecture y Plugin Architecture.

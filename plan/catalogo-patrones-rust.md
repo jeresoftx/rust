@@ -4,17 +4,17 @@ Este documento es el tablero de progreso del proyecto. La meta es construir un c
 
 ## Reglas de trabajo
 
-- [ ] Mantener este archivo actualizado en cada avance.
-- [ ] Crear un README principal con índice, categorías y guía de ejecución.
-- [ ] Usar Rust idiomático antes que traducciones literales de OOP.
-- [ ] Incluir ejemplos cercanos al día a día de sistemas: configuración, pagos, notificaciones, caché, logs, APIs, colas, reportes, permisos y procesamiento de datos.
-- [ ] Cada patrón debe tener su propia documentación.
-- [ ] Cada ejemplo debe compilar y tener pruebas o asserts ejecutables.
-- [ ] Cada ejemplo práctico debe ir en un commit individual.
-- [ ] Cuando un patrón tenga varios ejemplos, cada ejemplo se commitea por separado.
-- [ ] Los commits deben ser descriptivos, por ejemplo: `feat: add factory method payment example`.
+- [x] Mantener este archivo actualizado en cada avance.
+- [x] Crear un README principal con índice, categorías y guía de ejecución.
+- [x] Usar Rust idiomático antes que traducciones literales de OOP.
+- [x] Incluir ejemplos cercanos al día a día de sistemas: configuración, pagos, notificaciones, caché, logs, APIs, colas, reportes, permisos y procesamiento de datos.
+- [x] Cada patrón debe tener su propia documentación.
+- [x] Cada ejemplo debe compilar y tener pruebas o asserts ejecutables.
+- [x] Cada ejemplo práctico debe ir en un commit individual.
+- [x] Cuando un patrón tenga varios ejemplos, cada ejemplo se commitea por separado.
+- [x] Los commits deben ser descriptivos, por ejemplo: `feat: add factory method payment example`.
 
-## Estructura propuesta
+## Estructura del proyecto
 
 ```text
 .
@@ -22,38 +22,37 @@ Este documento es el tablero de progreso del proyecto. La meta es construir un c
 ├── README.md
 ├── plan/
 │   └── catalogo-patrones-rust.md
-└── patterns/
-    ├── gof/
-    │   ├── creational/
-    │   ├── structural/
-    │   └── behavioral/
-    ├── rust_idiomatic/
-    └── architecture/
+├── patterns/
+│   ├── gof/
+│   ├── rust_idiomatic/
+│   └── architecture/
+├── src/
+│   └── patterns/
+├── tests/
+└── wiki/
 ```
 
 Cada patrón seguirá esta forma:
 
 ```text
-patterns/<familia>/<categoria>/<patron>/
-├── README.md
-├── mod.rs
-└── examples/
-    ├── <ejemplo_1>.rs
-    └── <ejemplo_2>.rs
+patterns/<familia>/<categoria-opcional>/<patron>/README.md
+src/patterns/<familia>/<categoria-opcional>/<patron>.rs
+src/patterns/<familia>/<categoria-opcional>/<patron>/<ejemplo>.rs
+tests/<patron>_<ejemplo>_test.rs
 ```
 
-La estructura exacta puede ajustarse cuando creemos el crate, pero el objetivo se mantiene: cada patrón queda aislado, documentado y fácil de ejecutar.
+El objetivo se mantiene: cada patrón queda aislado, documentado y fácil de ejecutar.
 
 ## Formato de documentación por patrón
 
-- [ ] Intención del patrón.
-- [ ] Problema cotidiano que resuelve.
-- [ ] Cuándo usarlo en Rust.
-- [ ] Cuándo evitarlo en Rust.
-- [ ] Diferencias entre el patrón clásico y una versión rústica.
-- [ ] Diagrama simple si ayuda a entender la relación entre piezas.
-- [ ] Lista de ejemplos incluidos.
-- [ ] Comando para ejecutar pruebas o ejemplo.
+- [x] Intención del patrón.
+- [x] Problema cotidiano que resuelve.
+- [x] Cuándo usarlo en Rust.
+- [x] Cuándo evitarlo en Rust.
+- [x] Lista de ejemplos incluidos.
+- [x] Comando para ejecutar pruebas o ejemplo.
+- [x] Diferencias o notas idiomáticas cuando el patrón clásico cambia al llevarlo a Rust.
+- [x] Diagrama simple o explicación estructural cuando ayuda a entender la relación entre piezas.
 
 ## Fase 0: Base del proyecto
 
@@ -239,7 +238,7 @@ Primero construiremos los 23 patrones clásicos GoF, explicando cómo traducirlo
 
 ## Fase 2: Patrones idiomáticos de Rust
 
-Esta fase se trabajará después de completar la base GoF. No reemplaza los patrones clásicos; sirve para explicar soluciones que aparecen mucho en Rust real y que muchas veces son mejores que portar un patrón OOP de forma literal.
+Esta fase complementa la base GoF. No reemplaza los patrones clásicos; sirve para explicar soluciones que aparecen mucho en Rust real y que muchas veces son mejores que portar un patrón OOP de forma literal.
 
 ### 24. Newtype
 
