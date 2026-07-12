@@ -423,7 +423,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de CQRS.
 - [x] Commit individual por cada ejemplo de Event Sourcing.
 - [x] Commit individual por cada ejemplo de Repository and Unit of Work.
-- [ ] Commit individual por cada ejemplo de Service Layer.
+- [x] Commit individual por cada ejemplo de Service Layer.
 - [ ] Commit individual por cada ejemplo de Pipeline Architecture.
 - [ ] Commit individual por cada ejemplo de Plugin Architecture.
 
