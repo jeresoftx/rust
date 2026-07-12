@@ -46,7 +46,7 @@ El actor procesa comandos en orden y conserva ownership de su estado interno.
 
 - [x] Actor de email que recibe comandos.
 - [x] Actor de inventario que serializa cambios.
-- [ ] Actor de métricas que agrega eventos.
+- [x] Actor de métricas que agrega eventos.
 
 ### Actor de email que recibe comandos
 
@@ -59,6 +59,12 @@ Cada comando que necesita respuesta incluye un canal de retorno. Así el actor c
 El módulo `inventory_actor` guarda el stock dentro de un worker. Reservas, liberaciones y consultas se procesan como comandos en orden.
 
 Esto evita que distintas partes del sistema modifiquen el inventario de forma concurrente. La serialización ocurre naturalmente porque el actor procesa un comando a la vez.
+
+### Actor de métricas que agrega eventos
+
+El módulo `metrics_actor` permite que varios productores clonen un cliente y registren eventos. El actor agrega los totales en un solo hilo.
+
+Este patrón es útil cuando muchos puntos del sistema producen datos pequeños y el consumidor necesita mantener una vista agregada consistente.
 
 ## Comandos
 

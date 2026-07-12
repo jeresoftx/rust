@@ -17,7 +17,7 @@ En Rust suele aparecer como:
 
 - Actor de email que recibe comandos: `email_actor`.
 - Actor de inventario que serializa cambios: `inventory_actor`.
-- Actor de métricas que agrega eventos: pendiente.
+- Actor de métricas que agrega eventos: `metrics_actor`.
 
 ## Guía técnica
 
