@@ -13,7 +13,7 @@ Saga / Process Manager coordina procesos largos con varios pasos y compensacione
 ## Ejemplos del repositorio
 
 - [x] Reserva, pago y envío coordinados por pasos.
-- [ ] Compensación cuando falla un paso intermedio.
+- [x] Compensación cuando falla un paso intermedio.
 - [ ] Estado persistente del proceso.
 
 ## Código
@@ -21,3 +21,4 @@ Saga / Process Manager coordina procesos largos con varios pasos y compensacione
 - Documentación local: `patterns/distributed_systems/saga_process_manager/README.md`
 - Módulo Rust: `src/patterns/distributed_systems/saga_process_manager.rs`
 - Ejemplo de checkout coordinado: `src/patterns/distributed_systems/saga_process_manager/checkout_flow.rs`
+- Ejemplo de compensación: `src/patterns/distributed_systems/saga_process_manager/compensation.rs`

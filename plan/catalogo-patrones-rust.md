@@ -480,7 +480,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: reserva, pago y envío coordinados por pasos.
-- [ ] Ejemplo: compensación cuando falla un paso intermedio.
+- [x] Ejemplo: compensación cuando falla un paso intermedio.
 - [ ] Ejemplo: estado persistente del proceso.
 
 ### 50. Health Checks y Readiness

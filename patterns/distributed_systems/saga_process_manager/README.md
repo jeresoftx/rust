@@ -29,7 +29,7 @@ Evítalo si todo ocurre en una transacción local simple, o si no existe una com
 ## Ejemplos
 
 - [x] Reserva, pago y envío coordinados por pasos.
-- [ ] Compensación cuando falla un paso intermedio.
+- [x] Compensación cuando falla un paso intermedio.
 - [ ] Estado persistente del proceso.
 
 ### Reserva, pago y envío coordinados por pasos
@@ -41,6 +41,8 @@ El módulo `checkout_flow` coordina los pasos de un checkout y evita repetirlos 
 ### Compensación cuando falla un paso intermedio
 
 El segundo ejemplo falla durante pago y libera la reserva previa.
+
+El módulo `compensation` registra la reserva de inventario, detecta falla de pago y ejecuta la compensación para liberar la reserva.
 
 ### Estado persistente del proceso
 

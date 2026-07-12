@@ -4,3 +4,4 @@
 //! persistente de forma determinista.
 
 pub mod checkout_flow;
+pub mod compensation;
