@@ -33,7 +33,7 @@ Evítalo si solo tienes dos ramas fijas que no van a crecer. Un registro de plug
 ## Ejemplos
 
 - [x] Plugins de exportación JSON, CSV y texto.
-- [ ] Registro de estrategias cargadas por configuración.
+- [x] Registro de estrategias cargadas por configuración.
 - [ ] Extensiones internas mediante traits y trait objects.
 
 ### Plugins de exportación JSON, CSV y texto
@@ -41,6 +41,12 @@ Evítalo si solo tienes dos ramas fijas que no van a crecer. Un registro de plug
 El módulo `export_plugins` define un contrato `ExportPlugin` y un `ExportRegistry` que resuelve exportadores por clave. El núcleo solo pide `export("json", records)` o `export("csv", records)`; no conoce los detalles de cada formato.
 
 Este estilo evita que un servicio principal acumule ramas por cada nuevo formato de salida.
+
+### Registro de estrategias cargadas por configuración
+
+El módulo `configured_strategies` muestra un motor de precios que selecciona una estrategia a partir de `PricingConfig`. El registro conoce las estrategias disponibles y el núcleo solo pide el cálculo.
+
+Este enfoque aparece mucho en sistemas con reglas por cliente, ambiente, país o campaña.
 
 ## Cómo ejecutar
 
