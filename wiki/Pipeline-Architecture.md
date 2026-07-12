@@ -20,7 +20,7 @@ Pipeline Architecture divide un flujo de trabajo en etapas pequeñas y ordenadas
 ## Ejemplos del repositorio
 
 - [x] ETL CSV.
-- [ ] Validación y enriquecimiento de eventos.
+- [x] Validación y enriquecimiento de eventos.
 - [ ] Procesamiento de imágenes simulado.
 
 ## Código
@@ -28,3 +28,4 @@ Pipeline Architecture divide un flujo de trabajo en etapas pequeñas y ordenadas
 - Documentación local: `patterns/architecture/pipeline_architecture/README.md`
 - Módulo Rust: `src/patterns/architecture/pipeline_architecture.rs`
 - Ejemplo ETL CSV: `src/patterns/architecture/pipeline_architecture/csv_etl.rs`
+- Ejemplo de eventos: `src/patterns/architecture/pipeline_architecture/event_enrichment.rs`

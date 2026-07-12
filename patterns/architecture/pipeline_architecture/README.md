@@ -33,7 +33,7 @@ Evítalo cuando el flujo necesita decisiones altamente ramificadas o interacció
 ## Ejemplos
 
 - [x] Pipeline ETL para importar CSV.
-- [ ] Pipeline de validación y enriquecimiento de eventos.
+- [x] Pipeline de validación y enriquecimiento de eventos.
 - [ ] Pipeline de procesamiento de imágenes simulado.
 
 ### Pipeline ETL para importar CSV
@@ -41,6 +41,12 @@ Evítalo cuando el flujo necesita decisiones altamente ramificadas o interacció
 El módulo `csv_etl` divide una importación en pasos pequeños: validar encabezado, parsear filas, normalizar campos y validar datos requeridos.
 
 El resultado es un `ImportReport` con clientes importados y errores por fila. En un sistema real este estilo ayuda a mostrar al usuario qué filas debe corregir sin detener toda la importación.
+
+### Pipeline de validación y enriquecimiento de eventos
+
+El módulo `event_enrichment` procesa eventos crudos en varias etapas: valida actores permitidos, filtra ruido de baja prioridad, normaliza el tipo del evento y agrega una categoría.
+
+Este ejemplo es común en integraciones, auditoría, analítica o consumidores de colas donde cada evento debe pasar por reglas pequeñas antes de ser publicado a otro sistema.
 
 ## Cómo ejecutar
 

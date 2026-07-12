@@ -5,3 +5,4 @@
 //! siguiente etapa.
 
 pub mod csv_etl;
+pub mod event_enrichment;

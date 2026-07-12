@@ -368,7 +368,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: pipeline ETL para importar CSV.
-- [ ] Ejemplo: pipeline de validación y enriquecimiento de eventos.
+- [x] Ejemplo: pipeline de validación y enriquecimiento de eventos.
 - [ ] Ejemplo: pipeline de procesamiento de imágenes simulado.
 
 ### 42. Plugin Architecture
