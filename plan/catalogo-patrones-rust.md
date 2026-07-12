@@ -459,7 +459,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: token bucket determinista.
-- [ ] Ejemplo: límite por usuario o API key.
+- [x] Ejemplo: límite por usuario o API key.
 - [ ] Ejemplo: respuesta con tiempo sugerido para reintento.
 
 ### 47. Idempotency Key

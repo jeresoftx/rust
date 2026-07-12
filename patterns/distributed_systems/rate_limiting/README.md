@@ -34,7 +34,7 @@ Evítalo cuando el tráfico es interno y ya está controlado por otro mecanismo,
 ## Ejemplos
 
 - [x] Token bucket determinista.
-- [ ] Límite por usuario o API key.
+- [x] Límite por usuario o API key.
 - [ ] Respuesta con tiempo sugerido para reintento.
 
 ### Token bucket determinista
@@ -46,6 +46,8 @@ El módulo `token_bucket` muestra una política simple: cada request consume un 
 ### Límite por usuario o API key
 
 El segundo ejemplo mantiene estado separado por consumidor para que una API key saturada no consuma la cuota de otra.
+
+El módulo `api_key_limit` guarda un bucket por API key. Las pruebas muestran que una llave agotada no afecta a otra, que la recarga se aplica al consumidor consultado y que se puede reportar cuota restante por llave.
 
 ### Respuesta con tiempo sugerido para reintento
 
