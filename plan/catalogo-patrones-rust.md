@@ -501,7 +501,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: elegir líder por prioridad.
-- [ ] Ejemplo: failover cuando el líder deja de responder.
+- [x] Ejemplo: failover cuando el líder deja de responder.
 - [ ] Ejemplo: evitar dos líderes activos en la misma ronda.
 
 ## Checklist de commits de Fase 4

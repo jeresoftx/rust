@@ -3,4 +3,5 @@
 //! Los ejemplos cubren prioridad, failover y prevención de dos líderes activos
 //! por ronda.
 
+pub mod failover;
 pub mod priority_election;
