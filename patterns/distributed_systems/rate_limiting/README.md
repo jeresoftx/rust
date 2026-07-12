@@ -35,7 +35,7 @@ Evítalo cuando el tráfico es interno y ya está controlado por otro mecanismo,
 
 - [x] Token bucket determinista.
 - [x] Límite por usuario o API key.
-- [ ] Respuesta con tiempo sugerido para reintento.
+- [x] Respuesta con tiempo sugerido para reintento.
 
 ### Token bucket determinista
 
@@ -52,6 +52,8 @@ El módulo `api_key_limit` guarda un bucket por API key. Las pruebas muestran qu
 ### Respuesta con tiempo sugerido para reintento
 
 El tercer ejemplo muestra cómo devolver una respuesta útil cuando se excede el límite, incluyendo cuántos ticks faltan para volver a intentar.
+
+El módulo `retry_after_response` usa intervalos de recarga controlados por ticks. Cuando no hay capacidad, devuelve `retry_after_ticks` para que el cliente sepa cuándo conviene reintentar.
 
 ## Cómo ejecutar
 

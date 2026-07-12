@@ -460,7 +460,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Documentación del patrón.
 - [x] Ejemplo: token bucket determinista.
 - [x] Ejemplo: límite por usuario o API key.
-- [ ] Ejemplo: respuesta con tiempo sugerido para reintento.
+- [x] Ejemplo: respuesta con tiempo sugerido para reintento.
 
 ### 47. Idempotency Key
 
@@ -510,7 +510,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Commit individual por cada ejemplo de Retry with Backoff.
 - [x] Commit individual por cada ejemplo de Circuit Breaker.
 - [x] Commit individual por cada ejemplo de Bulkhead.
-- [ ] Commit individual por cada ejemplo de Rate Limiting.
+- [x] Commit individual por cada ejemplo de Rate Limiting.
 - [ ] Commit individual por cada ejemplo de Idempotency Key.
 - [ ] Commit individual por cada ejemplo de Outbox Pattern.
 - [ ] Commit individual por cada ejemplo de Saga / Process Manager.
