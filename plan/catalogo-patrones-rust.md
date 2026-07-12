@@ -488,7 +488,7 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Documentación del patrón.
 - [x] Ejemplo: chequeos de dependencias críticas.
 - [x] Ejemplo: readiness separado de liveness.
-- [ ] Ejemplo: reporte agregado para orquestadores.
+- [x] Ejemplo: reporte agregado para orquestadores.
 
 ### 51. Cache Aside
 
@@ -514,6 +514,6 @@ Esta fase agrega patrones operativos para servicios reales. El objetivo es mostr
 - [x] Commit individual por cada ejemplo de Idempotency Key.
 - [x] Commit individual por cada ejemplo de Outbox Pattern.
 - [x] Commit individual por cada ejemplo de Saga / Process Manager.
-- [ ] Commit individual por cada ejemplo de Health Checks y Readiness.
+- [x] Commit individual por cada ejemplo de Health Checks y Readiness.
 - [ ] Commit individual por cada ejemplo de Cache Aside.
 - [ ] Commit individual por cada ejemplo de Leader Election simulado.

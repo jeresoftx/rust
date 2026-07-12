@@ -27,7 +27,7 @@ Evítalo como reemplazo de métricas profundas. Un health check debe ser rápido
 
 - [x] Chequeos de dependencias críticas.
 - [x] Readiness separado de liveness.
-- [ ] Reporte agregado para orquestadores.
+- [x] Reporte agregado para orquestadores.
 
 ### Chequeos de dependencias críticas
 
@@ -44,6 +44,8 @@ El módulo `readiness_liveness` separa liveness del estado de preparación: un p
 ### Reporte agregado para orquestadores
 
 El tercer ejemplo produce un resumen con estado general y detalles por componente.
+
+El módulo `orchestrator_report` agrega componentes requeridos y opcionales para producir un estado `Ready` o `NotReady` junto con detalles accionables.
 
 ## Cómo ejecutar
 
