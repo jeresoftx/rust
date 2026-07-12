@@ -418,7 +418,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 - [x] Commit individual por cada ejemplo de Actor-like Workers.
 - [x] Commit individual por cada ejemplo de Layered Architecture.
 - [x] Commit individual por cada ejemplo de Hexagonal Architecture.
-- [ ] Commit individual por cada ejemplo de Clean Architecture.
+- [x] Commit individual por cada ejemplo de Clean Architecture.
 - [ ] Commit individual por cada ejemplo de Domain-Driven Design Táctico.
 - [ ] Commit individual por cada ejemplo de CQRS.
 - [ ] Commit individual por cada ejemplo de Event Sourcing.
