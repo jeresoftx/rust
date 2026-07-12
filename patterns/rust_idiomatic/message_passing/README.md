@@ -47,7 +47,7 @@ Los mensajes se mueven entre hilos. Eso reduce la necesidad de locks cuando el d
 ## Ejemplos
 
 - [x] Worker que procesa jobs desde un canal.
-- [ ] Fan-out de eventos a consumidores.
+- [x] Fan-out de eventos a consumidores.
 - [ ] Pipeline de etapas con canales.
 
 ### Worker que procesa jobs desde un canal
@@ -55,6 +55,12 @@ Los mensajes se mueven entre hilos. Eso reduce la necesidad de locks cuando el d
 El módulo `job_worker` usa `std::sync::mpsc` para separar productores de un worker consumidor.
 
 Los productores envían `Job` por el canal. El worker vive en otro hilo, consume hasta que todos los `Sender` se cierran y devuelve un `JobReport` con los jobs procesados. Es un patrón común para colas internas pequeñas, trabajos en segundo plano y coordinación sin memoria mutable compartida.
+
+### Fan-out de eventos a consumidores
+
+El módulo `event_fanout` muestra que `mpsc` no es broadcast automático: para entregar un evento a varios consumidores, el publicador conserva un `Sender` por consumidor y clona el evento.
+
+Este estilo funciona bien para eventos pequeños de dominio, auditoría, métricas o notificaciones internas donde cada consumidor procesa su propia copia.
 
 ## Comandos
 

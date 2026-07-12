@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Worker que procesa jobs desde un canal: `job_worker`.
-- Fan-out de eventos a consumidores: pendiente.
+- Fan-out de eventos a consumidores: `event_fanout`.
 - Pipeline de etapas con canales: pendiente.
 
 ## Guía técnica
