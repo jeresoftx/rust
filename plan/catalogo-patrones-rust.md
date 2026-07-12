@@ -428,7 +428,7 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-Continuar con la Fase 4 de sistemas distribuidos y resiliencia, siguiendo con Outbox Pattern y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
+La Fase 4 de sistemas distribuidos y resiliencia quedó completa. El siguiente paso será auditar documentación, revisar consistencia del catálogo completo y definir si abrimos una Fase 5.
 
 ## Fase 4: Sistemas distribuidos y resiliencia
 
