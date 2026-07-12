@@ -7,7 +7,7 @@ La Fase 3 conecta los ejemplos pequeños con diseño de sistemas.
 - [Clean Architecture](Clean-Architecture.md)
 - [Domain-Driven Design Táctico](Domain-Driven-Design-Tactico.md)
 - [CQRS](CQRS.md)
-- Event Sourcing
+- [Event Sourcing](Event-Sourcing.md)
 - Repository and Unit of Work
 - Service Layer
 - Pipeline Architecture
