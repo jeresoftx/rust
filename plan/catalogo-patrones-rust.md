@@ -428,4 +428,92 @@ Esta fase conectará los patrones anteriores con diseño de sistemas. El objetiv
 
 ## Siguiente paso inmediato
 
-Revisar el catálogo completo, decidir si agregamos una nueva fase y mantener el ritmo de documentación, pruebas y commits individuales por ejemplo.
+Continuar con la Fase 4 de sistemas distribuidos y resiliencia, empezando con Retry with Backoff y manteniendo el ritmo de documentación, pruebas y commits individuales por ejemplo.
+
+## Fase 4: Sistemas distribuidos y resiliencia
+
+Esta fase agrega patrones operativos para servicios reales. El objetivo es mostrar cómo responder a fallas parciales, latencia, duplicados, límites de capacidad y coordinación entre procesos con ejemplos deterministas en Rust.
+
+### 43. Retry with Backoff
+
+- [ ] Documentación del patrón.
+- [ ] Ejemplo: cliente HTTP simulado con backoff exponencial.
+- [ ] Ejemplo: reintentos solo para errores transitorios.
+- [ ] Ejemplo: jitter determinista para evitar reintentos sincronizados.
+
+### 44. Circuit Breaker
+
+- [ ] Documentación del patrón.
+- [ ] Ejemplo: abrir circuito después de fallas consecutivas.
+- [ ] Ejemplo: estado half-open para probar recuperación.
+- [ ] Ejemplo: métricas de rechazos por circuito abierto.
+
+### 45. Bulkhead
+
+- [ ] Documentación del patrón.
+- [ ] Ejemplo: pools separados para proveedores externos.
+- [ ] Ejemplo: límite de concurrencia simulado por recurso.
+- [ ] Ejemplo: aislamiento de fallas entre operaciones críticas y no críticas.
+
+### 46. Rate Limiting
+
+- [ ] Documentación del patrón.
+- [ ] Ejemplo: token bucket determinista.
+- [ ] Ejemplo: límite por usuario o API key.
+- [ ] Ejemplo: respuesta con tiempo sugerido para reintento.
+
+### 47. Idempotency Key
+
+- [ ] Documentación del patrón.
+- [ ] Ejemplo: pagos protegidos contra doble envío.
+- [ ] Ejemplo: caché de respuestas por llave de idempotencia.
+- [ ] Ejemplo: conflicto cuando la misma llave trae payload distinto.
+
+### 48. Outbox Pattern
+
+- [ ] Documentación del patrón.
+- [ ] Ejemplo: guardar entidad y evento en la misma unidad de trabajo.
+- [ ] Ejemplo: publicador que marca mensajes como enviados.
+- [ ] Ejemplo: reintento de mensajes pendientes.
+
+### 49. Saga / Process Manager
+
+- [ ] Documentación del patrón.
+- [ ] Ejemplo: reserva, pago y envío coordinados por pasos.
+- [ ] Ejemplo: compensación cuando falla un paso intermedio.
+- [ ] Ejemplo: estado persistente del proceso.
+
+### 50. Health Checks y Readiness
+
+- [ ] Documentación del patrón.
+- [ ] Ejemplo: chequeos de dependencias críticas.
+- [ ] Ejemplo: readiness separado de liveness.
+- [ ] Ejemplo: reporte agregado para orquestadores.
+
+### 51. Cache Aside
+
+- [ ] Documentación del patrón.
+- [ ] Ejemplo: leer de caché o cargar del repositorio.
+- [ ] Ejemplo: invalidación al actualizar datos.
+- [ ] Ejemplo: TTL simulado con reloj determinista.
+
+### 52. Leader Election simulado
+
+- [ ] Documentación del patrón.
+- [ ] Ejemplo: elegir líder por prioridad.
+- [ ] Ejemplo: failover cuando el líder deja de responder.
+- [ ] Ejemplo: evitar dos líderes activos en la misma ronda.
+
+## Checklist de commits de Fase 4
+
+- [ ] Commit: base documental de sistemas distribuidos y resiliencia.
+- [ ] Commit individual por cada ejemplo de Retry with Backoff.
+- [ ] Commit individual por cada ejemplo de Circuit Breaker.
+- [ ] Commit individual por cada ejemplo de Bulkhead.
+- [ ] Commit individual por cada ejemplo de Rate Limiting.
+- [ ] Commit individual por cada ejemplo de Idempotency Key.
+- [ ] Commit individual por cada ejemplo de Outbox Pattern.
+- [ ] Commit individual por cada ejemplo de Saga / Process Manager.
+- [ ] Commit individual por cada ejemplo de Health Checks y Readiness.
+- [ ] Commit individual por cada ejemplo de Cache Aside.
+- [ ] Commit individual por cada ejemplo de Leader Election simulado.

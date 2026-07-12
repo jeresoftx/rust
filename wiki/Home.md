@@ -10,6 +10,7 @@ Esta wiki acompaña al repositorio como guía de estudio. Su objetivo es explica
 - [Patrones GoF](Patrones-GoF.md)
 - [Patrones Rust idiomáticos](Patrones-Rust-idiomaticos.md)
 - [Patrones de arquitectura](Patrones-de-arquitectura.md)
+- [Patrones de sistemas distribuidos y resiliencia](Patrones-de-sistemas-distribuidos-y-resiliencia.md)
 
 ## Relación entre repo y wiki
 

@@ -1,14 +1,15 @@
 # Design Patterns Rust
 
-Catálogo didáctico de patrones de diseño implementados en Rust. El proyecto avanza en tres niveles:
+Catálogo didáctico de patrones de diseño implementados en Rust. El proyecto avanza en cuatro niveles:
 
 1. Patrones GoF traducidos a Rust de forma idiomática.
 2. Patrones propios del día a día en Rust.
 3. Patrones de arquitectura para sistemas reales.
+4. Patrones de sistemas distribuidos y resiliencia.
 
 Cada ejemplo busca resolver un caso cotidiano de sistemas: configuración, pagos, notificaciones, caché, logs, APIs, colas, reportes, permisos o procesamiento de datos.
 
-Estado actual: el catálogo inicial de tres fases está completo, con documentación, ejemplos ejecutables y pruebas por patrón.
+Estado actual: el catálogo inicial de tres fases está completo. La Fase 4 agrega patrones de resiliencia y sistemas distribuidos con el mismo ritmo de documentación, pruebas y commits individuales.
 
 ## Ruta rápida
 
@@ -62,3 +63,7 @@ Newtype, Typestate, RAII, Extension Trait, Iterator Adapters, manejo de errores 
 ### Fase 3: Patrones de arquitectura
 
 Layered Architecture, Hexagonal Architecture, Clean Architecture, DDD táctico, CQRS, Event Sourcing, Repository and Unit of Work, Service Layer, Pipeline Architecture y Plugin Architecture.
+
+### Fase 4: Sistemas distribuidos y resiliencia
+
+Retry with Backoff, Circuit Breaker, Bulkhead, Rate Limiting, Idempotency Key, Outbox Pattern, Saga / Process Manager, Health Checks, Cache Aside y Leader Election simulado.

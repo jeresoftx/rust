@@ -24,3 +24,7 @@ Después de GoF, estudiamos soluciones que aparecen mucho en Rust real: Newtype,
 ## 4. Patrones de arquitectura
 
 Finalmente conectamos los patrones con diseño de aplicaciones completas: capas, puertos y adaptadores, Clean Architecture, DDD táctico, CQRS, Event Sourcing, Repository and Unit of Work, Service Layer, Pipeline Architecture y Plugin Architecture.
+
+## 5. Sistemas distribuidos y resiliencia
+
+Después del diseño de aplicaciones, estudiamos patrones operativos para servicios reales: reintentos con backoff, circuit breakers, límites de capacidad, idempotencia, outbox, sagas, health checks, caché y elección de líder.
