@@ -46,9 +46,15 @@ Los mensajes se mueven entre hilos. Eso reduce la necesidad de locks cuando el d
 
 ## Ejemplos
 
-- [ ] Worker que procesa jobs desde un canal.
+- [x] Worker que procesa jobs desde un canal.
 - [ ] Fan-out de eventos a consumidores.
 - [ ] Pipeline de etapas con canales.
+
+### Worker que procesa jobs desde un canal
+
+El módulo `job_worker` usa `std::sync::mpsc` para separar productores de un worker consumidor.
+
+Los productores envían `Job` por el canal. El worker vive en otro hilo, consume hasta que todos los `Sender` se cierran y devuelve un `JobReport` con los jobs procesados. Es un patrón común para colas internas pequeñas, trabajos en segundo plano y coordinación sin memoria mutable compartida.
 
 ## Comandos
 
