@@ -266,7 +266,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: helpers de strings para normalizar entradas.
-- [ ] Ejemplo: helpers de `Result` para mapear errores de dominio.
+- [x] Ejemplo: helpers de `Result` para mapear errores de dominio.
 - [ ] Ejemplo: helpers de colecciones para paginar resultados.
 
 ### 28. Iterator Adapters
