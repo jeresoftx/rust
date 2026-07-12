@@ -1,5 +1,6 @@
 //! Patrones idiomáticos de Rust.
 
+pub mod actor_like_workers;
 pub mod error_handling_result;
 pub mod extension_trait;
 pub mod interior_mutability;

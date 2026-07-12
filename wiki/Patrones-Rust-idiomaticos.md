@@ -10,6 +10,6 @@ La Fase 2 explica patrones que aparecen naturalmente en Rust real.
 - [Error Handling con `Result`](Error-Handling-con-Result.md)
 - [Interior Mutability](Interior-Mutability.md)
 - [Message Passing](Message-Passing.md)
-- Actor-like Workers
+- [Actor-like Workers](Actor-like-Workers.md)
 
 Estos patrones ayudan a aprovechar el sistema de tipos, ownership, borrowing y concurrencia segura.

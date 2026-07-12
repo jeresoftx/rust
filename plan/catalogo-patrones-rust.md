@@ -299,7 +299,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 
 ### 32. Actor-like Workers
 
-- [ ] Documentación del patrón.
+- [x] Documentación del patrón.
 - [ ] Ejemplo: actor de email que recibe comandos.
 - [ ] Ejemplo: actor de inventario que serializa cambios.
 - [ ] Ejemplo: actor de métricas que agrega eventos.
