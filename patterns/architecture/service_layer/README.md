@@ -34,7 +34,7 @@ Evítalo si solo estás envolviendo un CRUD trivial sin agregar intención. Un s
 ## Ejemplos
 
 - [x] Servicio de aplicación para registrar usuario.
-- [ ] Servicio de checkout que coordina repositorios y políticas.
+- [x] Servicio de checkout que coordina repositorios y políticas.
 - [ ] Servicio de reportes para consultas complejas.
 
 ### Servicio de aplicación para registrar usuario
@@ -42,6 +42,12 @@ Evítalo si solo estás envolviendo un CRUD trivial sin agregar intención. Un s
 El módulo `user_registration` muestra un servicio que recibe un `RegistrationRequest`, valida reglas de aplicación, consulta un repositorio en memoria, persiste el usuario y coordina el envío de un correo de bienvenida mediante un gateway falso.
 
 Este ejemplo deja los controladores fuera de la ecuación: cualquier interfaz puede invocar `RegistrationService::register` y reutilizar la misma orquestación.
+
+### Servicio de checkout que coordina repositorios y políticas
+
+El módulo `checkout_service` modela un checkout con inventario, repositorio de órdenes, gateway de pago y política de descuento. El servicio calcula el subtotal, aplica descuentos, cobra y solo después reserva inventario y guarda la orden.
+
+La prueba de pago rechazado muestra una regla importante de aplicación: si el pago falla, no se debe modificar inventario ni persistir la orden.
 
 ## Cómo ejecutar
 

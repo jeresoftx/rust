@@ -20,7 +20,7 @@ Service Layer concentra los casos de uso de aplicación en servicios explícitos
 ## Ejemplos del repositorio
 
 - [x] Registro de usuario.
-- [ ] Checkout coordinado.
+- [x] Checkout coordinado.
 - [ ] Reportes complejos.
 
 ## Código
@@ -28,3 +28,4 @@ Service Layer concentra los casos de uso de aplicación en servicios explícitos
 - Documentación local: `patterns/architecture/service_layer/README.md`
 - Módulo Rust: `src/patterns/architecture/service_layer.rs`
 - Ejemplo de registro: `src/patterns/architecture/service_layer/user_registration.rs`
+- Ejemplo de checkout: `src/patterns/architecture/service_layer/checkout_service.rs`
