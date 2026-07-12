@@ -45,7 +45,7 @@ El actor procesa comandos en orden y conserva ownership de su estado interno.
 ## Ejemplos
 
 - [x] Actor de email que recibe comandos.
-- [ ] Actor de inventario que serializa cambios.
+- [x] Actor de inventario que serializa cambios.
 - [ ] Actor de métricas que agrega eventos.
 
 ### Actor de email que recibe comandos
@@ -53,6 +53,12 @@ El actor procesa comandos en orden y conserva ownership de su estado interno.
 El módulo `email_actor` encapsula el historial de envíos dentro de un worker. Los llamadores envían comandos de envío, consulta o apagado por un canal.
 
 Cada comando que necesita respuesta incluye un canal de retorno. Así el actor conserva ownership de su estado interno y el resto del sistema interactúa con una API pequeña y tipada.
+
+### Actor de inventario que serializa cambios
+
+El módulo `inventory_actor` guarda el stock dentro de un worker. Reservas, liberaciones y consultas se procesan como comandos en orden.
+
+Esto evita que distintas partes del sistema modifiquen el inventario de forma concurrente. La serialización ocurre naturalmente porque el actor procesa un comando a la vez.
 
 ## Comandos
 

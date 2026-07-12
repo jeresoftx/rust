@@ -301,7 +301,7 @@ Esta fase se trabajará después de completar la base GoF. No reemplaza los patr
 
 - [x] Documentación del patrón.
 - [x] Ejemplo: actor de email que recibe comandos.
-- [ ] Ejemplo: actor de inventario que serializa cambios.
+- [x] Ejemplo: actor de inventario que serializa cambios.
 - [ ] Ejemplo: actor de métricas que agrega eventos.
 
 ## Fase 3: Patrones de arquitectura

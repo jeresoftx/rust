@@ -16,7 +16,7 @@ En Rust suele aparecer como:
 ## Ejemplos del repositorio
 
 - Actor de email que recibe comandos: `email_actor`.
-- Actor de inventario que serializa cambios: pendiente.
+- Actor de inventario que serializa cambios: `inventory_actor`.
 - Actor de métricas que agrega eventos: pendiente.
 
 ## Guía técnica
