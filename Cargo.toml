@@ -1,8 +1,8 @@
 [package]
-name = "design-patterns-rust"
+name = "rust-design-patterns"
 version = "0.1.0"
 edition = "2024"
-description = "Catalogo didactico de patrones de diseno, patrones Rust idiomaticos y patrones de arquitectura."
+description = "Catálogo didáctico de patrones de diseño, patrones Rust idiomáticos y patrones de arquitectura."
 license = "MIT"
 
 [lib]

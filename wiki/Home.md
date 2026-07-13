@@ -1,4 +1,4 @@
-# Wiki: Design Patterns Rust
+# Wiki: Rust Design Patterns
 
 Esta wiki acompaña al repositorio como guía de estudio. Su objetivo es explicar el porqué de cada patrón, cuándo conviene usarlo en Rust y cómo se conecta con ejemplos reales del código.
 

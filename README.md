@@ -1,4 +1,4 @@
-# Design Patterns Rust
+# Rust Design Patterns
 
 Catálogo didáctico de patrones de diseño implementados en Rust. El proyecto avanza en cuatro niveles:
 

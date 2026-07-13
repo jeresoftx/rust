@@ -54,5 +54,5 @@ fn unique_path(label: &str) -> PathBuf {
         .expect("system clock should be after epoch")
         .as_nanos();
 
-    std::env::temp_dir().join(format!("design-patterns-rust-raii-{label}-{nanos}.txt"))
+    std::env::temp_dir().join(format!("rust-design-patterns-raii-{label}-{nanos}.txt"))
 }
