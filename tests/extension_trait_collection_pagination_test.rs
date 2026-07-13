@@ -2,7 +2,7 @@ use design_patterns_rust::patterns::rust_idiomatic::extension_trait::collection_
 
 #[test]
 fn extension_trait_paginates_collection_results() {
-    let orders = vec!["ORD-1", "ORD-2", "ORD-3", "ORD-4", "ORD-5"];
+    let orders = ["ORD-1", "ORD-2", "ORD-3", "ORD-4", "ORD-5"];
 
     let page = orders.paginate(2, 2);
 
@@ -16,7 +16,7 @@ fn extension_trait_paginates_collection_results() {
 
 #[test]
 fn extension_trait_returns_empty_page_when_requested_page_is_out_of_range() {
-    let users = vec!["Ana", "Luis", "Marta"];
+    let users = ["Ana", "Luis", "Marta"];
 
     let page = users.paginate(4, 2);
 
@@ -27,7 +27,7 @@ fn extension_trait_returns_empty_page_when_requested_page_is_out_of_range() {
 
 #[test]
 fn extension_trait_treats_zero_page_size_as_empty_page() {
-    let products = vec!["SKU-1", "SKU-2"];
+    let products = ["SKU-1", "SKU-2"];
 
     let page = products.paginate(1, 0);
 

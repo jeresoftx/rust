@@ -20,12 +20,15 @@ fn raii_releases_lock_when_guard_leaves_scope() {
 }
 
 #[test]
+#[allow(clippy::needless_return)] // El ejemplo verifica que Drop libera el recurso durante una salida temprana.
 fn raii_releases_lock_on_early_return() {
     fn process(section: &CriticalSection) {
         let mut guard = section.enter().expect("lock should be available");
         guard.record("validate invoice");
 
-        return;
+        if section.is_locked() {
+            return;
+        }
     }
 
     let section = CriticalSection::new("invoices");

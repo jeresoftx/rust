@@ -1,3 +1,5 @@
+type RequestValidator = fn(&Request) -> Result<(), String>;
+
 pub struct Request {
     token: Option<String>,
     role: String,
@@ -15,7 +17,7 @@ impl Request {
 }
 
 pub struct RequestValidationChain {
-    validators: Vec<fn(&Request) -> Result<(), String>>,
+    validators: Vec<RequestValidator>,
 }
 
 impl RequestValidationChain {

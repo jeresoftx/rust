@@ -33,12 +33,15 @@ fn raii_committed_transaction_applies_changes_without_rollback() {
 }
 
 #[test]
+#[allow(clippy::needless_return)] // El ejemplo verifica rollback RAII durante una salida temprana.
 fn raii_rolls_back_transaction_on_early_return() {
     fn import_payment(ledger: &Ledger) {
         let mut transaction = ledger.begin_transaction("tx-300");
         transaction.credit("cash", 75);
 
-        return;
+        if ledger.balance("cash") == 0 {
+            return;
+        }
     }
 
     let ledger = Ledger::new();

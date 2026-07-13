@@ -40,11 +40,11 @@ impl InventorySubject {
     }
 
     pub fn change_stock(&mut self, change: StockChange) {
-        if let Some(threshold) = self.restock_threshold {
-            if change.quantity <= threshold {
-                self.restock_alerts
-                    .push(format!("restock-needed:{}:{}", change.sku, change.quantity));
-            }
+        if let Some(threshold) = self.restock_threshold
+            && change.quantity <= threshold
+        {
+            self.restock_alerts
+                .push(format!("restock-needed:{}:{}", change.sku, change.quantity));
         }
 
         if self.sales_updates_enabled {

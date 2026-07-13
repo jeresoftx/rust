@@ -4,7 +4,7 @@ use design_patterns_rust::patterns::architecture::domain_driven_design_tactical:
 
 #[test]
 fn ddd_domain_service_applies_customer_segment_policy() {
-    let service = DiscountPolicyService::default();
+    let service = DiscountPolicyService;
     let cart = Cart::new(Money::usd(20_000));
 
     let discount = service.calculate_discount(CustomerSegment::Premium, &cart, None);
@@ -17,7 +17,7 @@ fn ddd_domain_service_applies_customer_segment_policy() {
 
 #[test]
 fn ddd_domain_service_chooses_best_discount_without_stacking() {
-    let service = DiscountPolicyService::default();
+    let service = DiscountPolicyService;
     let cart = Cart::new(Money::usd(20_000));
     let coupon = Coupon::percent("SUMMER20", 20).unwrap();
 
@@ -35,7 +35,7 @@ fn ddd_domain_service_rejects_invalid_coupon_percentages() {
 
 #[test]
 fn ddd_domain_service_keeps_regular_customers_without_discount_when_no_coupon_exists() {
-    let service = DiscountPolicyService::default();
+    let service = DiscountPolicyService;
     let cart = Cart::new(Money::usd(8_000));
 
     let discount = service.calculate_discount(CustomerSegment::Regular, &cart, None);

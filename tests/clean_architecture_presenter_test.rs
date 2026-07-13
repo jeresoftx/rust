@@ -6,7 +6,7 @@ use design_patterns_rust::patterns::architecture::clean_architecture::presenters
 
 #[test]
 fn clean_architecture_http_presenter_formats_invoice_response() {
-    let presenter = HttpPresenter::default();
+    let presenter = HttpPresenter;
     let mut use_case = GenerateInvoice::new(presenter);
 
     let response = use_case.execute(Invoice::new("INV-1", 15_000));
@@ -20,7 +20,7 @@ fn clean_architecture_http_presenter_formats_invoice_response() {
 
 #[test]
 fn clean_architecture_cli_presenter_formats_invoice_response() {
-    let presenter = CliPresenter::default();
+    let presenter = CliPresenter;
     let mut use_case = GenerateInvoice::new(presenter);
 
     let output = use_case.execute(Invoice::new("INV-2", 2_500));

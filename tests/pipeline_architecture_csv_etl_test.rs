@@ -9,7 +9,7 @@ id,name,email
 CUS-1,Ana, ANA@EXAMPLE.COM 
 CUS-2,Luis,luis@example.com
 ";
-    let pipeline = CsvImportPipeline::default();
+    let pipeline = CsvImportPipeline;
 
     let report = pipeline.import(input);
 
@@ -31,7 +31,7 @@ CUS-1,Ana,ana@example.com
 ,Sin Id,no-id@example.com
 CUS-3,Correo Malo,correo-invalido
 ";
-    let pipeline = CsvImportPipeline::default();
+    let pipeline = CsvImportPipeline;
 
     let report = pipeline.import(input);
 
@@ -54,7 +54,7 @@ fn pipeline_etl_rejects_input_without_required_header() {
 identifier,full_name,email
 CUS-1,Ana,ana@example.com
 ";
-    let pipeline = CsvImportPipeline::default();
+    let pipeline = CsvImportPipeline;
 
     let report = pipeline.import(input);
 

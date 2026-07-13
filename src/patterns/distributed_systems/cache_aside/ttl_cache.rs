@@ -43,10 +43,10 @@ impl TtlCacheAsideService {
     }
 
     pub fn get_at(&mut self, sku: &str, now_tick: u64) -> Option<Product> {
-        if let Some(entry) = self.cache.get(sku) {
-            if now_tick < entry.expires_at {
-                return Some(entry.product.clone());
-            }
+        if let Some(entry) = self.cache.get(sku)
+            && now_tick < entry.expires_at
+        {
+            return Some(entry.product.clone());
         }
 
         self.repository_reads += 1;

@@ -19,12 +19,15 @@ fn raii_removes_temporary_file_when_value_drops() {
 }
 
 #[test]
+#[allow(clippy::needless_return)] // El ejemplo verifica limpieza RAII cuando la función sale antes del final natural.
 fn raii_cleans_temporary_file_on_early_return() {
     fn export_preview(path: &PathBuf) {
         let file = TemporaryFile::create(path, "preview").expect("file should be created");
         file.append_line("confirmed").unwrap();
 
-        return;
+        if file.path().exists() {
+            return;
+        }
     }
 
     let path = unique_path("early-return");

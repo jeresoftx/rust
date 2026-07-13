@@ -1,3 +1,5 @@
+type ModerationFilter = fn(&UserMessage) -> Result<(), String>;
+
 pub struct UserMessage {
     body: String,
 }
@@ -9,7 +11,7 @@ impl UserMessage {
 }
 
 pub struct ModerationChain {
-    filters: Vec<fn(&UserMessage) -> Result<(), String>>,
+    filters: Vec<ModerationFilter>,
 }
 
 impl ModerationChain {

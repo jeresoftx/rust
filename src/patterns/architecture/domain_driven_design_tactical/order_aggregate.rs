@@ -46,8 +46,12 @@ impl Money {
             currency: self.currency,
         }
     }
+}
 
-    pub fn add(self, other: Self) -> Self {
+impl Add for Money {
+    type Output = Self;
+
+    fn add(self, other: Self) -> Self::Output {
         assert_eq!(self.currency, other.currency, "currency must match");
         Self {
             cents: self.cents + other.cents,
@@ -143,7 +147,7 @@ impl Order {
         self.lines
             .iter()
             .map(OrderLine::subtotal)
-            .fold(Money::usd(0), Money::add)
+            .fold(Money::usd(0), Add::add)
     }
 
     pub fn line_count(&self) -> usize {
@@ -158,3 +162,4 @@ pub enum OrderError {
     CannotConfirmEmptyOrder,
     CannotChangeConfirmedOrder,
 }
+use std::ops::Add;

@@ -33,7 +33,12 @@ sprint.
 
 ## 2. Código (§13 — estándares)
 
-- [ ] Limpiar las 28 advertencias actuales de `cargo clippy --all-targets`
+- Registro §2: primero se limpia lo verificable por herramientas porque un
+  catálogo que enseña Rust debe mostrar código sin ruido de linter; la
+  alternativa era justificar advertencias globalmente, pero solo se conserva la
+  excepción local de RAII donde el `return` temprano es parte de la lección.
+
+- [x] Limpiar las 28 advertencias actuales de `cargo clippy --all-targets`
       (`needless_return`, `default_constructed_unit_structs`,
       `should_implement_trait`, `type_complexity`, `useless_vec`,
       `collapsible_if`) o justificar por escrito cada excepción que se
