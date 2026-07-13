@@ -13,17 +13,25 @@ Estado actual: el catálogo de cuatro fases está completo. La Fase 4 cerró los
 
 ## Ruta rápida
 
+- Guía de arranque para agentes: [AGENTS.md](AGENTS.md)
+- Estado y rumbo del repositorio: [ROADMAP.md](ROADMAP.md)
 - Plan vivo del proyecto: [plan/catalogo-patrones-rust.md](plan/catalogo-patrones-rust.md)
+- Checklist de alineación RFC-0001: [plan/estandar-rfc-0001.md](plan/estandar-rfc-0001.md)
 - Wiki local: [wiki/Home.md](wiki/Home.md)
 - Cómo ejecutar los ejemplos: [wiki/Como-ejecutar-los-ejemplos.md](wiki/Como-ejecutar-los-ejemplos.md)
 - Ruta de aprendizaje: [wiki/Ruta-de-aprendizaje.md](wiki/Ruta-de-aprendizaje.md)
+- Licencias del código y contenido: [LICENSE.md](LICENSE.md)
 
 ## Estructura
 
 ```text
 .
 ├── Cargo.toml
+├── AGENTS.md
+├── ROADMAP.md
 ├── README.md
+├── benches/
+├── diagrams/
 ├── plan/
 ├── patterns/
 │   ├── gof/
@@ -41,17 +49,25 @@ La documentación didáctica vive en `wiki/`. La documentación técnica cercana
 
 ```bash
 cargo fmt --check
-cargo check
-cargo test --quiet
+cargo clippy --all-targets
+cargo test
+cargo bench --no-run
 ```
 
 ## Convenciones
 
 - Cada patrón tiene documentación propia.
 - Cada ejemplo tiene una prueba o assert ejecutable.
-- Cada ejemplo práctico se agrega en un commit individual.
+- Cada patrón declara si benchmarks y property testing aplican.
+- Cada ejemplo práctico se agrega en un commit pequeño y descriptivo.
 - El README funciona como portada; la wiki funciona como guía de estudio.
 - El plan marca el avance real del proyecto.
+
+## Licencias
+
+El código Rust se publica como `MIT OR Apache-2.0`. El contenido educativo de
+`wiki/`, `patterns/`, `diagrams/`, `assets/` y Markdown se publica como
+CC BY-SA 4.0. El índice canónico está en [LICENSE.md](LICENSE.md).
 
 ## Fases
 

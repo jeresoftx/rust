@@ -66,11 +66,16 @@ sprint.
 
 ## 3. Consistencia con lo ya construido
 
-- [ ] Una vez agregado `AGENTS.md`/`ROADMAP.md`, revisar que el README
+- Registro §2: el README es la portada del repositorio, no una segunda fuente de
+  verdad; la alternativa era dejar los archivos nuevos descubiertos solo por
+  exploración, pero RFC-0001 §15 pide rutas explícitas para orientar lectura y
+  revisión.
+
+- [x] Una vez agregado `AGENTS.md`/`ROADMAP.md`, revisar que el README
       principal siga apuntando a las mismas fuentes de verdad sin quedar
       desactualizado (mismo hábito de auditoría que ya usa
       `plan/catalogo-patrones-rust.md`).
-- [ ] Confirmar que `Cargo.toml` (`license`) y el nuevo `LICENSE.md` no se
+- [x] Confirmar que `Cargo.toml` (`license`) y el nuevo `LICENSE.md` no se
       contradigan.
 
 ## Fuera de este checklist
