@@ -1,0 +1,19 @@
+flowchart TD
+    A["Patrones de arquitectura"] --> B["Separacion por capas"]
+    A --> C["Reglas de negocio"]
+    A --> D["Flujos y consistencia"]
+    A --> E["Extensibilidad"]
+
+    B --> B1["Layered Architecture"]
+    B --> B2["Hexagonal Architecture"]
+    B --> B3["Clean Architecture"]
+
+    C --> C1["DDD tactico"]
+    C --> C2["Service Layer"]
+    C --> C3["Repository and Unit of Work"]
+
+    D --> D1["CQRS"]
+    D --> D2["Event Sourcing"]
+    D --> D3["Pipeline Architecture"]
+
+    E --> E1["Plugin Architecture"]

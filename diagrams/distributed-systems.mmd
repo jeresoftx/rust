@@ -1,0 +1,19 @@
+flowchart TD
+    A["Sistemas distribuidos y resiliencia"] --> B["Tolerancia a fallos"]
+    A --> C["Control de carga"]
+    A --> D["Consistencia operacional"]
+    A --> E["Coordinacion"]
+
+    B --> B1["Retry with Backoff"]
+    B --> B2["Circuit Breaker"]
+    B --> B3["Bulkhead"]
+    B --> B4["Health Checks y Readiness"]
+
+    C --> C1["Rate Limiting"]
+    C --> C2["Cache Aside"]
+
+    D --> D1["Idempotency Key"]
+    D --> D2["Outbox Pattern"]
+    D --> D3["Saga / Process Manager"]
+
+    E --> E1["Leader Election simulado"]

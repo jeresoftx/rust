@@ -3,7 +3,7 @@ name = "rust-design-patterns"
 version = "0.1.0"
 edition = "2024"
 description = "Catálogo didáctico de patrones de diseño, patrones Rust idiomáticos y patrones de arquitectura."
-license = "MIT"
+license = "MIT OR Apache-2.0"
 
 [lib]
 name = "design_patterns_rust"

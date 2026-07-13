@@ -1,0 +1,18 @@
+flowchart TD
+    A["Patrones Rust idiomaticos"] --> B["Tipos que expresan invariantes"]
+    A --> C["Control de recursos"]
+    A --> D["Composicion funcional"]
+    A --> E["Concurrencia segura"]
+
+    B --> B1["Newtype"]
+    B --> B2["Typestate"]
+    B --> B3["Error Handling con Result"]
+
+    C --> C1["RAII"]
+    C --> C2["Interior Mutability"]
+
+    D --> D1["Extension Trait"]
+    D --> D2["Iterator Adapters"]
+
+    E --> E1["Message Passing"]
+    E --> E2["Actor-like Workers"]
