@@ -65,3 +65,8 @@ El ejemplo muestra cómo adquirir, liberar y reutilizar recursos sin crear un po
 ```bash
 cargo test singleton
 ```
+
+## Medición y property testing
+
+- Benchmarks: aplica solo al ejemplo `resource_pool`. `benches/singleton_resource_pool.rs` mide adquirir/liberar una conexión del pool compartido; `app_config` y `metrics_registry` no se miden porque el punto didáctico es inicialización única, no throughput.
+- Property testing: no aplica por ahora. El estado global intencional del patrón hace más valioso mantener pruebas deterministas y aisladas que generación aleatoria sobre el mismo singleton.

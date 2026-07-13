@@ -42,6 +42,11 @@ sprint.
   los README, pero RFC-0001 §13 pide que el contrato visible del código explique
   intención, uso y límites sin obligar a leer la implementación.
 
+- Registro §2: medición y generación aleatoria solo entran donde el patrón gana
+  claridad con ellas; la alternativa era no agregar dependencias, pero Criterion
+  y Proptest se justifican como dependencias de desarrollo para costos
+  observables e invariantes generativas.
+
 - [x] Limpiar las 28 advertencias actuales de `cargo clippy --all-targets`
       (`needless_return`, `default_constructed_unit_structs`,
       `should_implement_trait`, `type_complexity`, `useless_vec`,
@@ -50,12 +55,12 @@ sprint.
 - [x] Agregar doc-comments (`///`) a la API pública de cada patrón: qué hace,
       un ejemplo ejecutable (doctest) y notas de complejidad cuando aplique.
       Hoy prácticamente ningún `pub fn`/`pub struct` los tiene.
-- [ ] Decidir y documentar, patrón por patrón (o por familia), si los
+- [x] Decidir y documentar, patrón por patrón (o por familia), si los
       benchmarks aplican. Donde no apliquen, declararlo explícitamente en el
       README del patrón en vez de omitirlo en silencio (§14). Donde sí
       apliquen (p. ej. Cache Aside, Flyweight, Object Pool-like en Singleton),
       agregar `criterion` y una carpeta `benches/`.
-- [ ] Misma decisión y documentación para property testing (`proptest`): dónde
+- [x] Misma decisión y documentación para property testing (`proptest`): dónde
       aporta (p. ej. Newtype, Interpreter, Rate Limiting) y dónde se declara
       que no aplica.
 

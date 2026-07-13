@@ -53,3 +53,8 @@ El módulo `ttl_cache` asocia cada entrada con un tick de expiración. Antes del
 ```bash
 cargo test cache_aside
 ```
+
+## Medición y property testing
+
+- Benchmarks: aplica. El patrón compara una ruta caliente de cache hit contra el costo conceptual de evitar lecturas al repositorio; se mide en `benches/cache_aside.rs` con Criterion.
+- Property testing: no aplica por ahora. Las invariantes relevantes dependen de políticas concretas de expiración e invalidación y ya están cubiertas por tests deterministas de ejemplo.

@@ -69,3 +69,8 @@ El ejemplo muestra cómo normalizar email, validar tokens y construir sesiones s
 ```bash
 cargo test newtype
 ```
+
+## Medición y property testing
+
+- Benchmarks: no aplica por ahora. Newtype enseña claridad semántica y validación de dominio; medir wrappers pequeños no aporta una decisión de diseño útil.
+- Property testing: aplica. `tests/property_newtype_test.rs` genera monedas, montos y códigos para verificar que las invariantes de validación y suma se mantengan en rangos amplios.

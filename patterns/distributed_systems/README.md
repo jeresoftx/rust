@@ -16,3 +16,8 @@ Los ejemplos son simulados y deterministas para que puedan ejecutarse con `cargo
 - [Health Checks y Readiness](health_checks_readiness/README.md)
 - [Cache Aside](cache_aside/README.md)
 - [Leader Election simulado](leader_election/README.md)
+
+## Medición y property testing
+
+- Benchmarks: no aplica por ahora. Este patrón enseña estructura, límites de responsabilidad o semántica de dominio; no hay una ruta de costo representativa que justifique Criterion todavía.
+- Property testing: no aplica por ahora. Las invariantes relevantes están acotadas por los ejemplos unitarios actuales; se agregará generación aleatoria cuando aparezcan reglas algebraicas o combinatorias más amplias.

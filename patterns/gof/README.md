@@ -33,3 +33,8 @@ Esta familia reúne los 23 patrones clásicos del libro Gang of Four, adaptados 
 - [Strategy](behavioral/strategy/README.md)
 - [Template Method](behavioral/template_method/README.md)
 - [Visitor](behavioral/visitor/README.md)
+
+## Medición y property testing
+
+- Benchmarks: no aplica por ahora. Este patrón enseña estructura, límites de responsabilidad o semántica de dominio; no hay una ruta de costo representativa que justifique Criterion todavía.
+- Property testing: no aplica por ahora. Las invariantes relevantes están acotadas por los ejemplos unitarios actuales; se agregará generación aleatoria cuando aparezcan reglas algebraicas o combinatorias más amplias.

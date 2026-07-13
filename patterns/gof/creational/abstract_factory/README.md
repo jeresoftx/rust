@@ -69,3 +69,8 @@ El módulo `payment_providers` crea una familia completa de piezas para checkout
 ```bash
 cargo test abstract_factory
 ```
+
+## Medición y property testing
+
+- Benchmarks: no aplica por ahora. Este patrón enseña estructura, límites de responsabilidad o semántica de dominio; no hay una ruta de costo representativa que justifique Criterion todavía.
+- Property testing: no aplica por ahora. Las invariantes relevantes están acotadas por los ejemplos unitarios actuales; se agregará generación aleatoria cuando aparezcan reglas algebraicas o combinatorias más amplias.

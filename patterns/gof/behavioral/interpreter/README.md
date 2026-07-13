@@ -63,3 +63,8 @@ El ejemplo muestra cómo convertir una regla de autorización compacta en una ex
 ```bash
 cargo test interpreter
 ```
+
+## Medición y property testing
+
+- Benchmarks: no aplica por ahora. Los ejemplos son árboles pequeños de reglas; medirlos antes de tener un lenguaje más grande sería optimización prematura.
+- Property testing: aplica. `tests/property_interpreter_test.rs` genera umbrales, descuentos y filtros para comprobar que el árbol interpretado coincide con la semántica esperada.

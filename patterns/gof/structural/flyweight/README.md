@@ -63,3 +63,8 @@ El ejemplo muestra cómo mantener el texto como estado propio de cada `TextRun` 
 ```bash
 cargo test flyweight
 ```
+
+## Medición y property testing
+
+- Benchmarks: aplica. Flyweight enseña explícitamente reuso de estado compartido; `benches/flyweight.rs` mide lookup de catálogo y formateo con `Arc` compartido.
+- Property testing: no aplica por ahora. Las invariantes son de identidad compartida y separación de estado, cubiertas mejor con tests de ejemplo que con generación aleatoria.

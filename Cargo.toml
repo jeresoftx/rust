@@ -10,3 +10,19 @@ name = "design_patterns_rust"
 path = "src/lib.rs"
 
 [dependencies]
+
+[dev-dependencies]
+criterion = "0.5"
+proptest = "1"
+
+[[bench]]
+name = "cache_aside"
+harness = false
+
+[[bench]]
+name = "flyweight"
+harness = false
+
+[[bench]]
+name = "singleton_resource_pool"
+harness = false

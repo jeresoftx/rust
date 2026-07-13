@@ -60,3 +60,8 @@ El módulo `retry_after_response` usa intervalos de recarga controlados por tick
 ```bash
 cargo test rate_limiting
 ```
+
+## Medición y property testing
+
+- Benchmarks: no aplica por ahora. Los ejemplos usan relojes lógicos y estructuras pequeñas; lo importante aquí es la corrección de cuotas, no latencia de producción.
+- Property testing: aplica. `tests/property_rate_limiting_test.rs` genera capacidades, ticks y requests para verificar que los buckets no excedan capacidad y que las claves se mantengan independientes.
