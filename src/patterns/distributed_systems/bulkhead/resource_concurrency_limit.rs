@@ -1,20 +1,27 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+/// Conjunto de estados o errores publicos de `Resource` dentro del ejemplo.
 pub enum Resource {
+    /// Variante `Database` del estado o error del ejemplo.
     Database,
+    /// Variante `SearchIndex` del estado o error del ejemplo.
     SearchIndex,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+/// Conjunto de estados o errores publicos de `BulkheadError` dentro del ejemplo.
 pub enum BulkheadError {
+    /// Variante `ResourceFull` del estado o error del ejemplo.
     ResourceFull(Resource),
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+/// Tipo publico `Permit` usado por el ejemplo para expresar el dominio del patron.
 pub struct Permit {
     resource: Resource,
 }
 
 #[derive(Debug)]
+/// Tipo publico `ResourceBulkhead` usado por el ejemplo para expresar el dominio del patron.
 pub struct ResourceBulkhead {
     database_limit: usize,
     search_index_limit: usize,
@@ -25,6 +32,7 @@ pub struct ResourceBulkhead {
 }
 
 impl ResourceBulkhead {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(database_limit: usize, search_index_limit: usize) -> Self {
         Self {
             database_limit,
@@ -36,6 +44,7 @@ impl ResourceBulkhead {
         }
     }
 
+    /// Modela la operacion `acquire` dentro del ejemplo del patron.
     pub fn acquire(&mut self, resource: Resource) -> Result<Permit, BulkheadError> {
         match resource {
             Resource::Database if self.active_database < self.database_limit => {
@@ -57,6 +66,7 @@ impl ResourceBulkhead {
         }
     }
 
+    /// Modela la operacion `release` dentro del ejemplo del patron.
     pub fn release(&mut self, permit: Permit) {
         match permit.resource {
             Resource::Database => {
@@ -68,6 +78,7 @@ impl ResourceBulkhead {
         }
     }
 
+    /// Modela la operacion `active` dentro del ejemplo del patron.
     pub fn active(&self, resource: Resource) -> usize {
         match resource {
             Resource::Database => self.active_database,
@@ -75,6 +86,7 @@ impl ResourceBulkhead {
         }
     }
 
+    /// Modela la operacion `rejected` dentro del ejemplo del patron.
     pub fn rejected(&self, resource: Resource) -> usize {
         match resource {
             Resource::Database => self.rejected_database,

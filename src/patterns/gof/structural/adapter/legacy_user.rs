@@ -1,3 +1,4 @@
+/// Tipo publico `LegacyUserRecord` usado por el ejemplo para expresar el dominio del patron.
 pub struct LegacyUserRecord {
     id: String,
     full_name: String,
@@ -6,6 +7,7 @@ pub struct LegacyUserRecord {
 }
 
 impl LegacyUserRecord {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(
         id: impl Into<String>,
         full_name: impl Into<String>,
@@ -22,6 +24,7 @@ impl LegacyUserRecord {
 }
 
 #[derive(Debug, PartialEq, Eq)]
+/// Tipo publico `UserProfile` usado por el ejemplo para expresar el dominio del patron.
 pub struct UserProfile {
     id: String,
     display_name: String,
@@ -30,6 +33,7 @@ pub struct UserProfile {
 }
 
 impl UserProfile {
+    /// Devuelve un resumen legible del estado actual.
     pub fn summary(&self) -> String {
         format!(
             "id={} name={} email={} active={}",
@@ -38,6 +42,7 @@ impl UserProfile {
     }
 }
 
+/// Modela la operacion `adapt legacy user` dentro del ejemplo del patron.
 pub fn adapt_legacy_user(legacy: LegacyUserRecord) -> Result<UserProfile, String> {
     if !legacy.email_address.contains('@') {
         return Err("legacy user email must contain @".to_string());

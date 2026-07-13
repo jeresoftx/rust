@@ -1,4 +1,5 @@
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `Registration` usado por el ejemplo para expresar el dominio del patron.
 pub struct Registration {
     name: String,
     email: String,
@@ -6,6 +7,7 @@ pub struct Registration {
 }
 
 impl Registration {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(
         name: impl Into<String>,
         email: impl Into<String>,
@@ -20,13 +22,18 @@ impl Registration {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Conjunto de estados o errores publicos de `RegistrationError` dentro del ejemplo.
 pub enum RegistrationError {
+    /// Variante `NameRequired` del estado o error del ejemplo.
     NameRequired,
+    /// Variante `InvalidEmail` del estado o error del ejemplo.
     InvalidEmail,
+    /// Variante `WeakPassword` del estado o error del ejemplo.
     WeakPassword,
 }
 
 impl RegistrationError {
+    /// Modela la operacion `message` dentro del ejemplo del patron.
     pub fn message(&self) -> &'static str {
         match self {
             Self::NameRequired => "name is required",
@@ -37,20 +44,24 @@ impl RegistrationError {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `ValidationErrors` usado por el ejemplo para expresar el dominio del patron.
 pub struct ValidationErrors {
     errors: Vec<RegistrationError>,
 }
 
 impl ValidationErrors {
+    /// Operacion `new` definida por la abstraccion del ejemplo.
     fn new(errors: Vec<RegistrationError>) -> Self {
         Self { errors }
     }
 
+    /// Modela la operacion `messages` dentro del ejemplo del patron.
     pub fn messages(&self) -> Vec<&'static str> {
         self.errors.iter().map(RegistrationError::message).collect()
     }
 }
 
+/// Modela la operacion `validate registration fail fast` dentro del ejemplo del patron.
 pub fn validate_registration_fail_fast(
     registration: &Registration,
 ) -> Result<(), RegistrationError> {
@@ -61,6 +72,7 @@ pub fn validate_registration_fail_fast(
     Ok(())
 }
 
+/// Modela la operacion `validate registration accumulated` dentro del ejemplo del patron.
 pub fn validate_registration_accumulated(
     registration: &Registration,
 ) -> Result<(), ValidationErrors> {
@@ -80,6 +92,7 @@ pub fn validate_registration_accumulated(
     }
 }
 
+/// Operacion `validate name` definida por la abstraccion del ejemplo.
 fn validate_name(registration: &Registration) -> Result<(), RegistrationError> {
     if registration.name.trim().is_empty() {
         Err(RegistrationError::NameRequired)
@@ -88,6 +101,7 @@ fn validate_name(registration: &Registration) -> Result<(), RegistrationError> {
     }
 }
 
+/// Operacion `validate email` definida por la abstraccion del ejemplo.
 fn validate_email(registration: &Registration) -> Result<(), RegistrationError> {
     if registration.email.contains('@') {
         Ok(())
@@ -96,6 +110,7 @@ fn validate_email(registration: &Registration) -> Result<(), RegistrationError> 
     }
 }
 
+/// Operacion `validate password` definida por la abstraccion del ejemplo.
 fn validate_password(registration: &Registration) -> Result<(), RegistrationError> {
     if registration.password.chars().count() >= 8 {
         Ok(())

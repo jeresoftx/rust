@@ -1,4 +1,5 @@
 #[derive(Clone, Debug, PartialEq, Eq)]
+/// Tipo publico `ReportTemplate` usado por el ejemplo para expresar el dominio del patron.
 pub struct ReportTemplate {
     title: String,
     customer: String,
@@ -7,6 +8,7 @@ pub struct ReportTemplate {
 }
 
 impl ReportTemplate {
+    /// Modela la operacion `standard financial` dentro del ejemplo del patron.
     pub fn standard_financial() -> Self {
         Self {
             title: "Financial Summary".to_string(),
@@ -20,6 +22,7 @@ impl ReportTemplate {
         }
     }
 
+    /// Devuelve un resumen legible del estado actual.
     pub fn summary(&self) -> String {
         format!(
             "{} for {} [{}] sections={}",
@@ -31,6 +34,7 @@ impl ReportTemplate {
     }
 }
 
+/// Modela la operacion `monthly report for customer` dentro del ejemplo del patron.
 pub fn monthly_report_for_customer(
     template: &ReportTemplate,
     customer: &str,

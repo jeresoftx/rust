@@ -1,12 +1,14 @@
 use std::collections::HashMap;
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `Product` usado por el ejemplo para expresar el dominio del patron.
 pub struct Product {
     sku: String,
     name: String,
 }
 
 impl Product {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(sku: impl Into<String>, name: impl Into<String>) -> Self {
         Self {
             sku: sku.into(),
@@ -22,6 +24,7 @@ struct CacheEntry {
 }
 
 #[derive(Debug)]
+/// Tipo publico `TtlCacheAsideService` usado por el ejemplo para expresar el dominio del patron.
 pub struct TtlCacheAsideService {
     repository: HashMap<String, Product>,
     cache: HashMap<String, CacheEntry>,
@@ -30,6 +33,7 @@ pub struct TtlCacheAsideService {
 }
 
 impl TtlCacheAsideService {
+    /// Modela la operacion `with products` dentro del ejemplo del patron.
     pub fn with_products<const N: usize>(products: [Product; N], ttl_ticks: u64) -> Self {
         Self {
             repository: products
@@ -42,6 +46,7 @@ impl TtlCacheAsideService {
         }
     }
 
+    /// Modela la operacion `get at` dentro del ejemplo del patron.
     pub fn get_at(&mut self, sku: &str, now_tick: u64) -> Option<Product> {
         if let Some(entry) = self.cache.get(sku)
             && now_tick < entry.expires_at
@@ -61,10 +66,12 @@ impl TtlCacheAsideService {
         Some(product)
     }
 
+    /// Modela la operacion `repository reads` dentro del ejemplo del patron.
     pub fn repository_reads(&self) -> usize {
         self.repository_reads
     }
 
+    /// Modela la operacion `expires at` dentro del ejemplo del patron.
     pub fn expires_at(&self, sku: &str) -> Option<u64> {
         self.cache.get(sku).map(|entry| entry.expires_at)
     }

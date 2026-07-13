@@ -1,20 +1,27 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+/// Conjunto de estados o errores publicos de `OperationClass` dentro del ejemplo.
 pub enum OperationClass {
+    /// Variante `Critical` del estado o error del ejemplo.
     Critical,
+    /// Variante `NonCritical` del estado o error del ejemplo.
     NonCritical,
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+/// Conjunto de estados o errores publicos de `BulkheadError` dentro del ejemplo.
 pub enum BulkheadError {
+    /// Variante `ClassFull` del estado o error del ejemplo.
     ClassFull(OperationClass),
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+/// Tipo publico `Permit` usado por el ejemplo para expresar el dominio del patron.
 pub struct Permit {
     class: OperationClass,
 }
 
 #[derive(Debug)]
+/// Tipo publico `WorkflowBulkhead` usado por el ejemplo para expresar el dominio del patron.
 pub struct WorkflowBulkhead {
     critical_limit: usize,
     non_critical_limit: usize,
@@ -25,6 +32,7 @@ pub struct WorkflowBulkhead {
 }
 
 impl WorkflowBulkhead {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(critical_limit: usize, non_critical_limit: usize) -> Self {
         Self {
             critical_limit,
@@ -36,6 +44,7 @@ impl WorkflowBulkhead {
         }
     }
 
+    /// Modela la operacion `acquire` dentro del ejemplo del patron.
     pub fn acquire(&mut self, class: OperationClass) -> Result<Permit, BulkheadError> {
         match class {
             OperationClass::Critical if self.active_critical < self.critical_limit => {
@@ -50,6 +59,7 @@ impl WorkflowBulkhead {
         }
     }
 
+    /// Modela la operacion `release` dentro del ejemplo del patron.
     pub fn release(&mut self, permit: Permit) {
         match permit.class {
             OperationClass::Critical => {
@@ -61,6 +71,7 @@ impl WorkflowBulkhead {
         }
     }
 
+    /// Modela la operacion `record failure` dentro del ejemplo del patron.
     pub fn record_failure(&mut self, class: OperationClass) {
         match class {
             OperationClass::Critical => self.critical_failures += 1,
@@ -68,6 +79,7 @@ impl WorkflowBulkhead {
         }
     }
 
+    /// Modela la operacion `active` dentro del ejemplo del patron.
     pub fn active(&self, class: OperationClass) -> usize {
         match class {
             OperationClass::Critical => self.active_critical,
@@ -75,6 +87,7 @@ impl WorkflowBulkhead {
         }
     }
 
+    /// Modela la operacion `failures` dentro del ejemplo del patron.
     pub fn failures(&self, class: OperationClass) -> usize {
         match class {
             OperationClass::Critical => self.critical_failures,

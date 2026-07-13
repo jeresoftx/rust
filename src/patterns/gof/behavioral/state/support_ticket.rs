@@ -1,12 +1,18 @@
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+/// Conjunto de estados o errores publicos de `TicketState` dentro del ejemplo.
 pub enum TicketState {
+    /// Variante `Open` del estado o error del ejemplo.
     Open,
+    /// Variante `Assigned` del estado o error del ejemplo.
     Assigned,
+    /// Variante `Resolved` del estado o error del ejemplo.
     Resolved,
+    /// Variante `Closed` del estado o error del ejemplo.
     Closed,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `SupportTicket` usado por el ejemplo para expresar el dominio del patron.
 pub struct SupportTicket {
     id: String,
     title: String,
@@ -16,6 +22,7 @@ pub struct SupportTicket {
 }
 
 impl SupportTicket {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(id: impl Into<String>, title: impl Into<String>) -> Self {
         let id = id.into();
         let title = title.into();
@@ -28,6 +35,7 @@ impl SupportTicket {
         }
     }
 
+    /// Modela la operacion `assign` dentro del ejemplo del patron.
     pub fn assign(&mut self, assignee: impl Into<String>) -> Result<(), String> {
         match self.state {
             TicketState::Open => {
@@ -43,6 +51,7 @@ impl SupportTicket {
         }
     }
 
+    /// Modela la operacion `resolve` dentro del ejemplo del patron.
     pub fn resolve(&mut self, resolution: impl Into<String>) -> Result<(), String> {
         match self.state {
             TicketState::Assigned => {
@@ -56,6 +65,7 @@ impl SupportTicket {
         }
     }
 
+    /// Modela la operacion `reopen` dentro del ejemplo del patron.
     pub fn reopen(&mut self, reason: impl Into<String>) -> Result<(), String> {
         match self.state {
             TicketState::Resolved => {
@@ -68,6 +78,7 @@ impl SupportTicket {
         }
     }
 
+    /// Modela la operacion `close` dentro del ejemplo del patron.
     pub fn close(&mut self) -> Result<(), String> {
         match self.state {
             TicketState::Resolved => {
@@ -79,14 +90,17 @@ impl SupportTicket {
         }
     }
 
+    /// Modela la operacion `state` dentro del ejemplo del patron.
     pub fn state(&self) -> TicketState {
         self.state
     }
 
+    /// Modela la operacion `history` dentro del ejemplo del patron.
     pub fn history(&self) -> Vec<String> {
         self.history.clone()
     }
 
+    /// Modela la operacion `title` dentro del ejemplo del patron.
     pub fn title(&self) -> &str {
         &self.title
     }

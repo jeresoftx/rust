@@ -1,16 +1,22 @@
 #[derive(Clone, Copy, PartialEq, Eq)]
+/// Conjunto de estados o errores publicos de `TicketKind` dentro del ejemplo.
 pub enum TicketKind {
+    /// Variante `PasswordReset` del estado o error del ejemplo.
     PasswordReset,
+    /// Variante `SoftwareBug` del estado o error del ejemplo.
     SoftwareBug,
+    /// Variante `InfrastructureIncident` del estado o error del ejemplo.
     InfrastructureIncident,
 }
 
+/// Tipo publico `SupportTicket` usado por el ejemplo para expresar el dominio del patron.
 pub struct SupportTicket {
     id: String,
     kind: TicketKind,
 }
 
 impl SupportTicket {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(id: impl Into<String>, kind: TicketKind) -> Self {
         Self {
             id: id.into(),
@@ -19,11 +25,13 @@ impl SupportTicket {
     }
 }
 
+/// Tipo publico `SupportChain` usado por el ejemplo para expresar el dominio del patron.
 pub struct SupportChain {
     handlers: Vec<SupportHandler>,
 }
 
 impl SupportChain {
+    /// Modela la operacion `resolve` dentro del ejemplo del patron.
     pub fn resolve(&self, ticket: &SupportTicket) -> String {
         self.handlers
             .iter()
@@ -33,6 +41,7 @@ impl SupportChain {
 }
 
 impl Default for SupportChain {
+    /// Operacion `default` definida por la abstraccion del ejemplo.
     fn default() -> Self {
         Self {
             handlers: vec![
@@ -55,6 +64,7 @@ struct SupportHandler {
 }
 
 impl SupportHandler {
+    /// Operacion `new` definida por la abstraccion del ejemplo.
     fn new(level: u8, handles: TicketKind, label: &'static str) -> Self {
         Self {
             level,
@@ -63,6 +73,7 @@ impl SupportHandler {
         }
     }
 
+    /// Operacion `try resolve` definida por la abstraccion del ejemplo.
     fn try_resolve(&self, ticket: &SupportTicket) -> Option<String> {
         if ticket.kind == self.handles {
             Some(format!(

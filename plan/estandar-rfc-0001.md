@@ -38,12 +38,16 @@ sprint.
   alternativa era justificar advertencias globalmente, pero solo se conserva la
   excepción local de RAII donde el `return` temprano es parte de la lección.
 
+- Registro §2: la API pública también enseña; la alternativa era documentar solo
+  los README, pero RFC-0001 §13 pide que el contrato visible del código explique
+  intención, uso y límites sin obligar a leer la implementación.
+
 - [x] Limpiar las 28 advertencias actuales de `cargo clippy --all-targets`
       (`needless_return`, `default_constructed_unit_structs`,
       `should_implement_trait`, `type_complexity`, `useless_vec`,
       `collapsible_if`) o justificar por escrito cada excepción que se
       mantenga.
-- [ ] Agregar doc-comments (`///`) a la API pública de cada patrón: qué hace,
+- [x] Agregar doc-comments (`///`) a la API pública de cada patrón: qué hace,
       un ejemplo ejecutable (doctest) y notas de complejidad cuando aplique.
       Hoy prácticamente ningún `pub fn`/`pub struct` los tiene.
 - [ ] Decidir y documentar, patrón por patrón (o por familia), si los

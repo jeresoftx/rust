@@ -1,4 +1,5 @@
 #[derive(Debug, Clone)]
+/// Tipo publico `RecordBatcher` usado por el ejemplo para expresar el dominio del patron.
 pub struct RecordBatcher {
     records: Vec<u32>,
     batch_size: usize,
@@ -6,6 +7,7 @@ pub struct RecordBatcher {
 }
 
 impl RecordBatcher {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(records: Vec<u32>, batch_size: usize) -> Self {
         Self {
             records,
@@ -14,6 +16,7 @@ impl RecordBatcher {
         }
     }
 
+    /// Modela la operacion `try new` dentro del ejemplo del patron.
     pub fn try_new(records: Vec<u32>, batch_size: usize) -> Result<Self, String> {
         if batch_size == 0 {
             return Err("batch size must be greater than zero".to_string());
@@ -24,8 +27,10 @@ impl RecordBatcher {
 }
 
 impl Iterator for RecordBatcher {
+    /// Tipo asociado `Item` producido por la abstraccion del ejemplo.
     type Item = Vec<u32>;
 
+    /// Operacion `next` definida por la abstraccion del ejemplo.
     fn next(&mut self) -> Option<Self::Item> {
         if self.index >= self.records.len() {
             return None;

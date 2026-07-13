@@ -2,12 +2,14 @@ use std::sync::mpsc::{self, Sender};
 use std::thread::{self, JoinHandle};
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `EmailRequest` usado por el ejemplo para expresar el dominio del patron.
 pub struct EmailRequest {
     recipient: String,
     subject: String,
 }
 
 impl EmailRequest {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(recipient: impl Into<String>, subject: impl Into<String>) -> Self {
         Self {
             recipient: recipient.into(),
@@ -17,12 +19,16 @@ impl EmailRequest {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Conjunto de estados o errores publicos de `EmailStatus` dentro del ejemplo.
 pub enum EmailStatus {
+    /// Variante `Sent` del estado o error del ejemplo.
     Sent,
+    /// Variante `Rejected` del estado o error del ejemplo.
     Rejected,
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `EmailDelivery` usado por el ejemplo para expresar el dominio del patron.
 pub struct EmailDelivery {
     recipient: String,
     subject: String,
@@ -30,6 +36,7 @@ pub struct EmailDelivery {
 }
 
 impl EmailDelivery {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(
         recipient: impl Into<String>,
         subject: impl Into<String>,
@@ -44,12 +51,14 @@ impl EmailDelivery {
 }
 
 #[derive(Debug)]
+/// Tipo publico `EmailActor` usado por el ejemplo para expresar el dominio del patron.
 pub struct EmailActor {
     sender: Sender<EmailCommand>,
     handle: JoinHandle<()>,
 }
 
 impl EmailActor {
+    /// Modela la operacion `start` dentro del ejemplo del patron.
     pub fn start() -> Self {
         let (sender, receiver) = mpsc::channel::<EmailCommand>();
         let handle = thread::spawn(move || {
@@ -84,6 +93,7 @@ impl EmailActor {
         Self { sender, handle }
     }
 
+    /// Simula el envio de la solicitud ya configurada.
     pub fn send(&self, request: EmailRequest) -> EmailDelivery {
         let (reply, response) = mpsc::channel();
         self.sender
@@ -95,6 +105,7 @@ impl EmailActor {
             .expect("email actor should reply to send command")
     }
 
+    /// Modela la operacion `history` dentro del ejemplo del patron.
     pub fn history(&self) -> Vec<EmailDelivery> {
         let (reply, response) = mpsc::channel();
         self.sender
@@ -106,6 +117,7 @@ impl EmailActor {
             .expect("email actor should reply with history")
     }
 
+    /// Modela la operacion `sent count` dentro del ejemplo del patron.
     pub fn sent_count(&self) -> usize {
         self.history()
             .iter()
@@ -113,6 +125,7 @@ impl EmailActor {
             .count()
     }
 
+    /// Modela la operacion `rejected count` dentro del ejemplo del patron.
     pub fn rejected_count(&self) -> usize {
         self.history()
             .iter()
@@ -120,6 +133,7 @@ impl EmailActor {
             .count()
     }
 
+    /// Modela la operacion `shutdown` dentro del ejemplo del patron.
     pub fn shutdown(self) {
         self.sender
             .send(EmailCommand::Shutdown)

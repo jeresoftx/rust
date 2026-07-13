@@ -1,5 +1,6 @@
 //! Catalogo didactico de patrones en Rust.
 
+/// Reexporta los ejemplos de patterns dentro del catalogo.
 pub mod patterns;
 
 /// Familias principales del catalogo en orden de aprendizaje.

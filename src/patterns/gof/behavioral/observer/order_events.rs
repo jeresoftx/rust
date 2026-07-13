@@ -1,6 +1,7 @@
 use std::collections::BTreeMap;
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `OrderCreated` usado por el ejemplo para expresar el dominio del patron.
 pub struct OrderCreated {
     order_id: String,
     customer_id: String,
@@ -8,6 +9,7 @@ pub struct OrderCreated {
 }
 
 impl OrderCreated {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(
         order_id: impl Into<String>,
         customer_id: impl Into<String>,
@@ -20,6 +22,7 @@ impl OrderCreated {
         }
     }
 
+    /// Operacion `as message` definida por la abstraccion del ejemplo.
     fn as_message(&self) -> String {
         format!(
             "order-created:{}:{}:{}",
@@ -29,21 +32,25 @@ impl OrderCreated {
 }
 
 #[derive(Debug, Default, Clone)]
+/// Tipo publico `OrderEventBus` usado por el ejemplo para expresar el dominio del patron.
 pub struct OrderEventBus {
     subscribers: BTreeMap<String, Vec<String>>,
 }
 
 impl OrderEventBus {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new() -> Self {
         Self {
             subscribers: BTreeMap::new(),
         }
     }
 
+    /// Modela la operacion `subscribe` dentro del ejemplo del patron.
     pub fn subscribe(&mut self, name: impl Into<String>) {
         self.subscribers.entry(name.into()).or_default();
     }
 
+    /// Modela la operacion `publish` dentro del ejemplo del patron.
     pub fn publish(&mut self, event: OrderCreated) {
         let message = event.as_message();
         for inbox in self.subscribers.values_mut() {
@@ -51,6 +58,7 @@ impl OrderEventBus {
         }
     }
 
+    /// Modela la operacion `received by` dentro del ejemplo del patron.
     pub fn received_by(&self, name: &str) -> Vec<String> {
         self.subscribers.get(name).cloned().unwrap_or_default()
     }

@@ -1,4 +1,5 @@
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `ProductStockSnapshot` usado por el ejemplo para expresar el dominio del patron.
 pub struct ProductStockSnapshot {
     sku: String,
     name: String,
@@ -7,6 +8,7 @@ pub struct ProductStockSnapshot {
 }
 
 impl ProductStockSnapshot {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(
         sku: impl Into<String>,
         name: impl Into<String>,
@@ -21,6 +23,7 @@ impl ProductStockSnapshot {
         }
     }
 
+    /// Operacion `status` definida por la abstraccion del ejemplo.
     fn status(&self) -> StockStatus {
         if self.available == 0 {
             StockStatus::OutOfStock
@@ -33,13 +36,18 @@ impl ProductStockSnapshot {
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+/// Conjunto de estados o errores publicos de `StockStatus` dentro del ejemplo.
 pub enum StockStatus {
+    /// Variante `OutOfStock` del estado o error del ejemplo.
     OutOfStock,
+    /// Variante `Low` del estado o error del ejemplo.
     Low,
+    /// Variante `Healthy` del estado o error del ejemplo.
     Healthy,
 }
 
 impl StockStatus {
+    /// Operacion `priority` definida por la abstraccion del ejemplo.
     fn priority(self) -> u8 {
         match self {
             Self::OutOfStock => 0,
@@ -50,6 +58,7 @@ impl StockStatus {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `InventorySummaryCard` usado por el ejemplo para expresar el dominio del patron.
 pub struct InventorySummaryCard {
     sku: String,
     name: String,
@@ -58,6 +67,7 @@ pub struct InventorySummaryCard {
 }
 
 impl InventorySummaryCard {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(
         sku: impl Into<String>,
         name: impl Into<String>,
@@ -72,37 +82,46 @@ impl InventorySummaryCard {
         }
     }
 
+    /// Modela la operacion `name` dentro del ejemplo del patron.
     pub fn name(&self) -> &str {
         &self.name
     }
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+/// Conjunto de estados o errores publicos de `DashboardQuery` dentro del ejemplo.
 pub enum DashboardQuery {
+    /// Variante `AllProducts` del estado o error del ejemplo.
     AllProducts,
+    /// Variante `NeedsAttention` del estado o error del ejemplo.
     NeedsAttention,
 }
 
 impl DashboardQuery {
+    /// Modela la operacion `all products` dentro del ejemplo del patron.
     pub fn all_products() -> Self {
         Self::AllProducts
     }
 
+    /// Modela la operacion `needs attention` dentro del ejemplo del patron.
     pub fn needs_attention() -> Self {
         Self::NeedsAttention
     }
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `InventoryDashboardReadModel` usado por el ejemplo para expresar el dominio del patron.
 pub struct InventoryDashboardReadModel {
     snapshots: Vec<ProductStockSnapshot>,
 }
 
 impl InventoryDashboardReadModel {
+    /// Modela la operacion `from snapshots` dentro del ejemplo del patron.
     pub fn from_snapshots(snapshots: Vec<ProductStockSnapshot>) -> Self {
         Self { snapshots }
     }
 
+    /// Procesa la entrada publica del ejemplo.
     pub fn handle(&self, query: DashboardQuery) -> Vec<InventorySummaryCard> {
         let mut cards = self
             .snapshots

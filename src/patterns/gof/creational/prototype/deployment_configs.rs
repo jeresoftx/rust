@@ -1,4 +1,5 @@
 #[derive(Clone, Debug, PartialEq, Eq)]
+/// Tipo publico `DeploymentConfig` usado por el ejemplo para expresar el dominio del patron.
 pub struct DeploymentConfig {
     service: String,
     environment: String,
@@ -8,6 +9,7 @@ pub struct DeploymentConfig {
 }
 
 impl DeploymentConfig {
+    /// Modela la operacion `web service base` dentro del ejemplo del patron.
     pub fn web_service_base() -> Self {
         Self {
             service: "web-api".to_string(),
@@ -18,6 +20,7 @@ impl DeploymentConfig {
         }
     }
 
+    /// Devuelve un resumen legible del estado actual.
     pub fn summary(&self) -> String {
         format!(
             "service={} env={} replicas={} domain={} features={}",
@@ -30,6 +33,7 @@ impl DeploymentConfig {
     }
 }
 
+/// Modela la operacion `staging deployment` dentro del ejemplo del patron.
 pub fn staging_deployment(base: &DeploymentConfig) -> DeploymentConfig {
     let mut deployment = base.clone();
     deployment.environment = "staging".to_string();
@@ -38,6 +42,7 @@ pub fn staging_deployment(base: &DeploymentConfig) -> DeploymentConfig {
     deployment
 }
 
+/// Modela la operacion `production deployment` dentro del ejemplo del patron.
 pub fn production_deployment(base: &DeploymentConfig) -> DeploymentConfig {
     let mut deployment = base.clone();
     deployment.environment = "production".to_string();

@@ -1,18 +1,29 @@
 use std::collections::HashMap;
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
+/// Tipo publico `ApiKey` usado por el ejemplo para expresar el dominio del patron.
 pub struct ApiKey(String);
 
 impl ApiKey {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(value: impl Into<String>) -> Self {
         Self(value.into())
     }
 }
 
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
+/// Conjunto de estados o errores publicos de `RateLimitDecision` dentro del ejemplo.
 pub enum RateLimitDecision {
-    Allowed { remaining: usize },
-    Rejected { retry_after_ticks: u64 },
+    /// Variante `Allowed` del estado o error del ejemplo.
+    Allowed {
+        /// Valor publico `remaining` asociado a la variante `Allowed`.
+        remaining: usize,
+    },
+    /// Variante `Rejected` del estado o error del ejemplo.
+    Rejected {
+        /// Valor publico `retry_after_ticks` asociado a la variante `Rejected`.
+        retry_after_ticks: u64,
+    },
 }
 
 #[derive(Debug, Clone, Copy)]
@@ -22,6 +33,7 @@ struct BucketState {
 }
 
 #[derive(Debug)]
+/// Tipo publico `ApiKeyRateLimiter` usado por el ejemplo para expresar el dominio del patron.
 pub struct ApiKeyRateLimiter {
     capacity: usize,
     refill_per_tick: usize,
@@ -29,6 +41,7 @@ pub struct ApiKeyRateLimiter {
 }
 
 impl ApiKeyRateLimiter {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(capacity: usize, refill_per_tick: usize) -> Self {
         Self {
             capacity,
@@ -37,6 +50,7 @@ impl ApiKeyRateLimiter {
         }
     }
 
+    /// Modela la operacion `allow` dentro del ejemplo del patron.
     pub fn allow(&mut self, key: &ApiKey, now_tick: u64) -> RateLimitDecision {
         let capacity = self.capacity;
         let refill_per_tick = self.refill_per_tick;
@@ -59,6 +73,7 @@ impl ApiKeyRateLimiter {
         }
     }
 
+    /// Modela la operacion `remaining` dentro del ejemplo del patron.
     pub fn remaining(&self, key: &ApiKey) -> usize {
         self.buckets
             .get(key)
@@ -66,11 +81,13 @@ impl ApiKeyRateLimiter {
             .unwrap_or(self.capacity)
     }
 
+    /// Modela la operacion `known keys` dentro del ejemplo del patron.
     pub fn known_keys(&self) -> usize {
         self.buckets.len()
     }
 }
 
+/// Operacion `refill bucket` definida por la abstraccion del ejemplo.
 fn refill_bucket(bucket: &mut BucketState, capacity: usize, refill_per_tick: usize, now_tick: u64) {
     if now_tick <= bucket.last_refill_tick {
         return;

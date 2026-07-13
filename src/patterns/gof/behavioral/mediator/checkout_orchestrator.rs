@@ -1,6 +1,7 @@
 use std::collections::BTreeMap;
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `CheckoutRequest` usado por el ejemplo para expresar el dominio del patron.
 pub struct CheckoutRequest {
     order_id: String,
     sku: String,
@@ -9,6 +10,7 @@ pub struct CheckoutRequest {
 }
 
 impl CheckoutRequest {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(
         order_id: impl Into<String>,
         sku: impl Into<String>,
@@ -25,18 +27,23 @@ impl CheckoutRequest {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `CheckoutResult` usado por el ejemplo para expresar el dominio del patron.
 pub struct CheckoutResult {
+    /// Campo publico `order_id` expuesto por el tipo del ejemplo.
     pub order_id: String,
+    /// Campo publico `tracking_code` expuesto por el tipo del ejemplo.
     pub tracking_code: String,
 }
 
 #[derive(Debug, Default, Clone)]
+/// Tipo publico `CheckoutMediator` usado por el ejemplo para expresar el dominio del patron.
 pub struct CheckoutMediator {
     stock: BTreeMap<String, u32>,
     events: Vec<String>,
 }
 
 impl CheckoutMediator {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new() -> Self {
         Self {
             stock: BTreeMap::new(),
@@ -44,10 +51,12 @@ impl CheckoutMediator {
         }
     }
 
+    /// Modela la operacion `stock item` dentro del ejemplo del patron.
     pub fn stock_item(&mut self, sku: impl Into<String>, quantity: u32) {
         self.stock.insert(sku.into(), quantity);
     }
 
+    /// Modela la operacion `checkout` dentro del ejemplo del patron.
     pub fn checkout(&mut self, request: CheckoutRequest) -> Result<CheckoutResult, String> {
         self.reserve_inventory(&request)?;
 
@@ -66,14 +75,17 @@ impl CheckoutMediator {
         })
     }
 
+    /// Modela la operacion `stock for` dentro del ejemplo del patron.
     pub fn stock_for(&self, sku: &str) -> u32 {
         self.stock.get(sku).copied().unwrap_or_default()
     }
 
+    /// Modela la operacion `events` dentro del ejemplo del patron.
     pub fn events(&self) -> Vec<String> {
         self.events.clone()
     }
 
+    /// Operacion `reserve inventory` definida por la abstraccion del ejemplo.
     fn reserve_inventory(&mut self, request: &CheckoutRequest) -> Result<(), String> {
         let available = self.stock_for(&request.sku);
         if available < request.quantity {
@@ -91,6 +103,7 @@ impl CheckoutMediator {
         Ok(())
     }
 
+    /// Operacion `release inventory` definida por la abstraccion del ejemplo.
     fn release_inventory(&mut self, request: &CheckoutRequest) {
         let available = self.stock_for(&request.sku);
         self.stock
@@ -101,6 +114,7 @@ impl CheckoutMediator {
         ));
     }
 
+    /// Operacion `charge payment` definida por la abstraccion del ejemplo.
     fn charge_payment(&mut self, amount_cents: u32) -> Result<(), String> {
         if amount_cents == 0 {
             self.events.push("payment:rejected".to_string());
@@ -111,6 +125,7 @@ impl CheckoutMediator {
         Ok(())
     }
 
+    /// Operacion `create shipping` definida por la abstraccion del ejemplo.
     fn create_shipping(&mut self, order_id: &str) -> String {
         let tracking_code = format!("SHIP-{order_id}");
         self.events

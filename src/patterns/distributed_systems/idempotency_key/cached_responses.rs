@@ -1,15 +1,18 @@
 use std::collections::HashMap;
 
 #[derive(Debug, Clone, PartialEq, Eq, Hash)]
+/// Tipo publico `IdempotencyKey` usado por el ejemplo para expresar el dominio del patron.
 pub struct IdempotencyKey(String);
 
 impl IdempotencyKey {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(value: impl Into<String>) -> Self {
         Self(value.into())
     }
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `RequestPayload` usado por el ejemplo para expresar el dominio del patron.
 pub struct RequestPayload {
     customer_id: String,
     sku: String,
@@ -17,6 +20,7 @@ pub struct RequestPayload {
 }
 
 impl RequestPayload {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new(customer_id: impl Into<String>, sku: impl Into<String>, quantity: u32) -> Self {
         Self {
             customer_id: customer_id.into(),
@@ -25,18 +29,21 @@ impl RequestPayload {
         }
     }
 
+    /// Operacion `fingerprint` definida por la abstraccion del ejemplo.
     fn fingerprint(&self) -> String {
         format!("{}:{}:{}", self.customer_id, self.sku, self.quantity)
     }
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `ApiResponse` usado por el ejemplo para expresar el dominio del patron.
 pub struct ApiResponse {
     status: u16,
     body: String,
 }
 
 impl ApiResponse {
+    /// Modela la operacion `created` dentro del ejemplo del patron.
     pub fn created(order_id: impl Into<String>) -> Self {
         Self {
             status: 201,
@@ -52,16 +59,19 @@ struct StoredResponse {
 }
 
 #[derive(Debug, Default)]
+/// Tipo publico `CachedResponseStore` usado por el ejemplo para expresar el dominio del patron.
 pub struct CachedResponseStore {
     responses: HashMap<IdempotencyKey, StoredResponse>,
     executions: usize,
 }
 
 impl CachedResponseStore {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new() -> Self {
         Self::default()
     }
 
+    /// Ejecuta el caso de uso o comando del ejemplo.
     pub fn execute(
         &mut self,
         key: IdempotencyKey,
@@ -88,10 +98,12 @@ impl CachedResponseStore {
         Ok(response)
     }
 
+    /// Modela la operacion `executions` dentro del ejemplo del patron.
     pub fn executions(&self) -> usize {
         self.executions
     }
 
+    /// Modela la operacion `cached entries` dentro del ejemplo del patron.
     pub fn cached_entries(&self) -> usize {
         self.responses.len()
     }

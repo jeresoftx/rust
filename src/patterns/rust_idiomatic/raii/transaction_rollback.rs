@@ -2,12 +2,14 @@ use std::cell::RefCell;
 use std::collections::HashMap;
 
 #[derive(Debug, Default)]
+/// Tipo publico `Ledger` usado por el ejemplo para expresar el dominio del patron.
 pub struct Ledger {
     balances: RefCell<HashMap<String, i64>>,
     events: RefCell<Vec<String>>,
 }
 
 #[derive(Debug)]
+/// Tipo publico `Transaction` usado por el ejemplo para expresar el dominio del patron.
 pub struct Transaction<'a> {
     ledger: &'a Ledger,
     id: String,
@@ -16,16 +18,19 @@ pub struct Transaction<'a> {
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
+/// Tipo publico `CommitReceipt` usado por el ejemplo para expresar el dominio del patron.
 pub struct CommitReceipt {
     transaction_id: String,
     entry_count: usize,
 }
 
 impl Ledger {
+    /// Crea una instancia valida para el ejemplo del patron.
     pub fn new() -> Self {
         Self::default()
     }
 
+    /// Modela la operacion `begin transaction` dentro del ejemplo del patron.
     pub fn begin_transaction(&self, id: impl Into<String>) -> Transaction<'_> {
         Transaction {
             ledger: self,
@@ -35,24 +40,29 @@ impl Ledger {
         }
     }
 
+    /// Modela la operacion `balance` dentro del ejemplo del patron.
     pub fn balance(&self, account: &str) -> i64 {
         *self.balances.borrow().get(account).unwrap_or(&0)
     }
 
+    /// Modela la operacion `events` dentro del ejemplo del patron.
     pub fn events(&self) -> Vec<String> {
         self.events.borrow().clone()
     }
 }
 
 impl Transaction<'_> {
+    /// Modela la operacion `credit` dentro del ejemplo del patron.
     pub fn credit(&mut self, account: impl Into<String>, amount: i64) {
         self.staged_entries.push((account.into(), amount));
     }
 
+    /// Modela la operacion `debit` dentro del ejemplo del patron.
     pub fn debit(&mut self, account: impl Into<String>, amount: i64) {
         self.staged_entries.push((account.into(), -amount));
     }
 
+    /// Modela la operacion `commit` dentro del ejemplo del patron.
     pub fn commit(mut self) -> CommitReceipt {
         let entry_count = self.staged_entries.len();
 
@@ -78,6 +88,7 @@ impl Transaction<'_> {
 }
 
 impl Drop for Transaction<'_> {
+    /// Operacion `drop` definida por la abstraccion del ejemplo.
     fn drop(&mut self) {
         if self.committed {
             return;
@@ -92,6 +103,7 @@ impl Drop for Transaction<'_> {
 }
 
 impl CommitReceipt {
+    /// Devuelve un resumen legible del estado actual.
     pub fn summary(&self) -> String {
         format!(
             "{} committed {} entries",

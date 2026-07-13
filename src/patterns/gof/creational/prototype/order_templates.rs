@@ -1,4 +1,5 @@
 #[derive(Clone, Debug, PartialEq, Eq)]
+/// Tipo publico `OrderTemplate` usado por el ejemplo para expresar el dominio del patron.
 pub struct OrderTemplate {
     customer_id: String,
     sku: String,
@@ -8,6 +9,7 @@ pub struct OrderTemplate {
 }
 
 impl OrderTemplate {
+    /// Modela la operacion `weekly office supplies` dentro del ejemplo del patron.
     pub fn weekly_office_supplies() -> Self {
         Self {
             customer_id: "<customer>".to_string(),
@@ -18,6 +20,7 @@ impl OrderTemplate {
         }
     }
 
+    /// Devuelve un resumen legible del estado actual.
     pub fn summary(&self) -> String {
         format!(
             "customer={} sku={} quantity={} cadence={} shipping={}",
@@ -26,6 +29,7 @@ impl OrderTemplate {
     }
 }
 
+/// Modela la operacion `create order from template` dentro del ejemplo del patron.
 pub fn create_order_from_template(
     template: &OrderTemplate,
     customer_id: &str,
